@@ -76,7 +76,7 @@ const config = {
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         // style: "primary",
-        title: "My Site",
+        title: "LanM",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
