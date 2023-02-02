@@ -19,7 +19,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/record"
           >
-            康康我的好东西
+            传送门 🚪
           </Link>
         </div>
       </div>

@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "蓝莓的Blog",
+  title: "蓝莓のBlog",
   tagline: "基于Dinosaurs",
   favicon: "img/favicon.ico",
 
@@ -75,6 +75,7 @@ const config = {
 
       image: "img/docusaurus-social-card.jpg",
       navbar: {
+        // style: "primary",
         title: "My Site",
         logo: {
           alt: "My Site Logo",
@@ -85,17 +86,26 @@ const config = {
             type: "doc",
             docId: "record",
             position: "left",
-            label: "Record",
+            label: "笔记",
           },
 
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "博客", position: "left" },
+
+          // {
+          //   type: "docsVersionDropdown",
+          //   position: "right",
+          // },
           {
             type: "localeDropdown",
             position: "left",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/BlueLanM/my-website",
             label: "GitHub",
+            position: "right",
+          },
+          {
+            type: "search",
             position: "right",
           },
         ],
@@ -120,8 +130,8 @@ const config = {
                 href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "CSDN",
+                href: "https://blog.csdn.net/BLUESKYwang66",
               },
               {
                 label: "Twitter",
@@ -138,7 +148,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/BlueLanM/my-website",
               },
             ],
           },
