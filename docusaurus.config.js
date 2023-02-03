@@ -7,44 +7,27 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
-  tagline: "基于Dinosaurs",
+  tagline: "记录人生",
   favicon: "img/favicon.ico",
-
-  // Set the production url of your site here
-  url: "https://your-docusaurus-test-site.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: "https://lanm-blog.vercel.app/",
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
-
+  organizationName: "LanM",
+  projectName: "blog",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "zh-Hans",
-    locales: ["zh-Hans"],
+    defaultLocale: "zh",
+    locales: ["en", "zh"],
     localeConfigs: {
       en: {
         htmlLang: "en-GB",
       },
-
-      // 如果你不需要覆盖默认值，你可以忽略这个语言（比如 zh-Hans）
-      fa: {
-        direction: "rtl",
-      },
     },
   },
-
+  // themes: ["@docusaurus/theme-search-algolia"],
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -64,6 +47,14 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        sitemap: {
+          changefreq: "daily",
+          priority: 0.5,
+        },
+        gtag: {
+          trackingID: "G-S4SD5NXWXF",
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -71,16 +62,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        // style: "primary",
         title: "LanM",
         logo: {
-          alt: "My Site Logo",
+          alt: "蓝莓",
           src: "img/logo.svg",
         },
+        hideOnScroll: true,
         items: [
           {
             type: "doc",
