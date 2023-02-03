@@ -100,7 +100,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "学习",
             items: [
               {
                 label: "笔记",
@@ -126,10 +126,10 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "更多",
             items: [
               {
-                label: "Blog",
+                label: "博客",
                 to: "/blog",
               },
               {
