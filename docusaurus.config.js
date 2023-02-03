@@ -103,13 +103,13 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Record",
+                label: "笔记",
                 to: "/docs/record",
               },
             ],
           },
           {
-            title: "Community",
+            title: "社区",
             items: [
               {
                 label: "Stack Overflow",

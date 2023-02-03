@@ -1,10 +1,10 @@
 {
-  "link.title.学习": {
-    "message": "Study",
-    "description": "The title of the footer links column with title=学习 in the footer"
+  "link.title.笔记": {
+    "message": "Record",
+    "description": "The title of the footer links column with title=笔记 in the footer"
   },
   "link.title.社交媒体": {
-    "message": "Social Media",
+    "message": "Community",
     "description": "The title of the footer links column with title=社交媒体 in the footer"
   },
   "link.title.更多": {
