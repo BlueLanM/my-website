@@ -11,8 +11,8 @@ const config = {
   favicon: "img/favicon.ico",
   url: "https://lanm-blog.vercel.app/",
   baseUrl: "/",
-  organizationName: "LanM",
-  projectName: "blog",
+  organizationName: "BlueLanM",
+  projectName: "my-website",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   i18n: {
@@ -27,7 +27,7 @@ const config = {
   // themes: ["@docusaurus/theme-search-algolia"],
   presets: [
     [
-      "@docusaurus/preset-classic",
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -46,14 +46,6 @@ const config = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
-        },
-        sitemap: {
-          changefreq: "daily",
-          priority: 0.5,
-        },
-        gtag: {
-          trackingID: "G-S4SD5NXWXF",
-          anonymizeIP: true,
         },
       }),
     ],
