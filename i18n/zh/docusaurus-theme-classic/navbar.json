@@ -10,6 +10,10 @@
   "item.label.博客": {
     "message": "博客",
     "description": "Navbar item with label 博客"
+  },
+  "item.label.导航": {
+    "message": "导航",
+    "description": "Navbar item with label 导航"
   }
   
 }
