@@ -3,17 +3,18 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 
 import styles from "./styles.module.css";
-// import { type Website } from '@site/data/website';
-// import Tooltip from '../../../project/_components/ShowcaseTooltip';
+import { type Website } from "../../../../../data/website";
 
-const WebsiteCard = memo(({ website }) => (
+const WebsiteCard = memo(({ website }: { website: Website }) => (
   <li
     key={website.name}
     className={clsx(styles.websiteCard, "padding-vert--sm padding-horiz--md")}
   >
     <img
       src={
-        typeof website.logo === "string" ? website.logo : website.logo?.src?.src
+        typeof website.logo === "string"
+          ? website.logo
+          : (website.logo as any)?.src?.src
       }
       alt={website.name}
       className={clsx(styles.websiteCardImage)}
