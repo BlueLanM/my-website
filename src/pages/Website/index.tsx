@@ -5,7 +5,7 @@ import { PageMetadata } from "@docusaurus/theme-common";
 import Layout from "@theme/Layout";
 import WebsiteCard from "./components/WebsiteCard";
 import BackToTopButton from "@theme/BackToTopButton";
-import { websiteData } from "@site/data/website";
+import { websiteData } from "../../../data/website";
 import styles from "./website.module.css";
 
 function CategoryNav() {
