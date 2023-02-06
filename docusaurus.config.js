@@ -45,12 +45,12 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
   ],
-
+  plugins: ["docusaurus-plugin-sass"],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -64,26 +64,48 @@ const config = {
         title: "LanM",
         logo: {
           alt: "蓝莓",
-          src: "img/logo.svg",
+          src: "img/logo.ico",
         },
         hideOnScroll: true,
         items: [
           {
-            type: "doc",
-            docId: "record",
-            position: "left",
-            label: "笔记",
+            label: "学习",
+            position: "right",
+            items: [
+              {
+                label: "标签",
+                to: "tags",
+              },
+              {
+                label: "归档",
+                to: "archive",
+              },
+              {
+                label: "笔记",
+                to: "docs/record",
+              },
+            ],
           },
+          // {
+          //   to: "/docs/record",
+          //   position: "right",
+          //   label: "笔记",
+          // },
 
-          { to: "/blog", label: "博客", position: "left" },
+          { to: "/blog", label: "博客", position: "right" },
 
+          {
+            label: "导航",
+            position: "right",
+            to: "website",
+          },
           // {
           //   type: "docsVersionDropdown",
           //   position: "right",
           // },
           {
             type: "localeDropdown",
-            position: "left",
+            position: "right",
           },
           {
             href: "https://github.com/BlueLanM/my-website",

@@ -1,0 +1,112 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #596ec6;
+  --ifm-color-primary-dark: #87aaeb;
+  --ifm-color-primary-darker: #3388e9fd;
+  --ifm-color-primary-darkest: #3388e9fd;
+  --ifm-color-primary-light: #5998d8;
+  --ifm-color-primary-lighter: #3388e9fd;
+  --ifm-color-primary-lightest: #bcdfcc;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #c7d6ff;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #6b80b9;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+.pagination-nav {
+  margin: 2em 0;
+
+  .pagination-nav__link {
+    background: linear-gradient(
+      90deg,
+      var(--ifm-color-primary-light) 11.3%,
+      var(--ifm-color-primary) 161.54%
+    );
+    color: white;
+    border: none;
+
+    .pagination-nav__sublabel {
+      color: white;
+    }
+  }
+}
+.markdown {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    border-bottom: 1px solid #338bff;
+    margin-top: 1rem;
+
+    &::before {
+      margin-right: 0.3em;
+      width: 0.4em;
+      display: inline-block;
+      background: var(--ifm-color-primary);
+      color: transparent;
+      content: ".";
+    }
+  }
+
+  h3 {
+    font-size: 1.5em;
+
+    &::before {
+      margin-right: 0.3em;
+      width: 0.3em;
+      display: inline-block;
+      background: var(--ifm-color-primary);
+      color: transparent;
+      content: ".";
+    }
+  }
+
+  h4 {
+    font-size: 1.2em;
+
+    &::before {
+      margin-right: 0.3em;
+      width: 0.2em;
+      display: inline-block;
+      background: var(--ifm-color-primary);
+      color: transparent;
+      content: ".";
+    }
+  }
+
+  > a {
+    transition: all 0.1s;
+    display: inline-block;
+
+    &:focus,
+    &:hover {
+      color: #db2828;
+    }
+  }
+
+  .markdown-body a:hover::before {
+    width: 100%;
+  }
+
+  img {
+    display: flex;
+    margin: 0 auto;
+  }
+}

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-### 1、无序列表
+## 1、无序列表
 
 > <font color='red'>在 Markdown 文件中，我们可以通过 \*、+、-，三种方式定义无序列表，这三种方式的发布后的效果一样</font>
 
@@ -16,7 +16,7 @@ sidebar_position: 3
 + 列表3  * 列表3  - 列表3
 ```
 
-### 2、有序列表
+## 2、有序列表
 
 > <font color='red'>在 Markdown 文件中，通过「数字 + . 」的形式定义有序列表</font>
 
@@ -57,7 +57,7 @@ sidebar_position: 3
 1. 项目 3
 ```
 
-### 3、列表的嵌套
+## 3、列表的嵌套
 
 > <font color='red'>Markdown 文件的列表支持多层嵌套，即每个列表里面允许增加下级列表，而且这个层级并没有限制。</font>
 
