@@ -28,6 +28,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+.blogtag__swith-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .pagination-nav {
   margin: 2em 0;
 

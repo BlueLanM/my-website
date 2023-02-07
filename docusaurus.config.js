@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -31,26 +32,54 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          path: "docs",
+          sidebarPath: "sidebars.js",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        // },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),
+        },
+        sitemap: {
+          changefreq: "daily",
+          priority: 0.5,
+        },
+        gtag: {
+          trackingID: "G-S4SD5NXWXF",
+          anonymizeIP: true,
         },
       }),
     ],
   ],
-  plugins: ["docusaurus-plugin-sass"],
+  plugins: [
+    "docusaurus-plugin-sass",
+    [
+      path.resolve(__dirname, "./src/plugin/plugin-content-blog"),
+      {
+        path: "blog",
+        routeBasePath: "/",
+        editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
+          `https://github.com/BlueLanM/my-website/edit/main/${blogDirPath}/${blogPath}`,
+        editLocalizedFiles: false,
+        blogSidebarCount: 10,
+        postsPerPage: 10,
+        showReadingTime: true,
+        readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+          defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+        feedOptions: {
+          type: "all",
+          title: "蓝莓",
+        },
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -69,7 +98,7 @@ const config = {
         hideOnScroll: true,
         items: [
           {
-            label: "学习",
+            label: "记录",
             position: "right",
             items: [
               {
@@ -92,7 +121,7 @@ const config = {
           //   label: "笔记",
           // },
 
-          { to: "/blog", label: "博客", position: "right" },
+          // { to: "/blog", label: "博客", position: "right" },
 
           {
             label: "导航",
@@ -117,6 +146,14 @@ const config = {
             position: "right",
           },
         ],
+      },
+      giscus: {
+        repo: "BlueLanM/my-website",
+        repoId: "R_kgDOI4VNdQ",
+        category: "Comments",
+        categoryId: "DIC_kwDOI4VNdc4CUC_9",
+        mapping: "title",
+        lang: "zh-CN",
       },
       footer: {
         style: "dark",
