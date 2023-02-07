@@ -188,10 +188,6 @@ const config = {
             title: "更多",
             items: [
               {
-                label: "博客",
-                to: "/blog",
-              },
-              {
                 label: "GitHub",
                 href: "https://github.com/BlueLanM/my-website",
               },
