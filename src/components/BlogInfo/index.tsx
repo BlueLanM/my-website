@@ -85,7 +85,7 @@ export function BlogUser({
         </Link>
         <Link
           className="bloginfo__num-item"
-          href="/project"
+          href="/website"
           data-tips="project count"
         >
           <Icon icon="ph:projector-screen" width="20" height="20" />
