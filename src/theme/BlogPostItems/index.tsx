@@ -15,7 +15,7 @@ export default function BlogPostItems({
           key={BlogPostContent.metadata.permalink}
           content={BlogPostContent}
         >
-          <Fade direction="left" duration={800} triggerOnce={true}>
+          <Fade direction="right" duration={800} triggerOnce={true}>
             <BlogPostItemComponent>
               <BlogPostContent />
             </BlogPostItemComponent>

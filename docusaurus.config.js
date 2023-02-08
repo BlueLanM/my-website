@@ -93,24 +93,24 @@ const config = {
         title: "LanM",
         logo: {
           alt: "蓝莓",
-          src: "img/logo.ico",
+          src: "img/3.ico",
         },
         hideOnScroll: true,
         items: [
           {
-            label: "记录",
+            label: "📘 学习",
             position: "right",
             items: [
               {
-                label: "标签",
+                label: "🏷️ 标签",
                 to: "tags",
               },
               {
-                label: "归档",
+                label: "📜 归档",
                 to: "archive",
               },
               {
-                label: "笔记",
+                label: "📓 笔记",
                 to: "docs/record",
               },
             ],
@@ -124,25 +124,19 @@ const config = {
           // { to: "/blog", label: "博客", position: "right" },
 
           {
-            label: "导航",
+            label: "🚀 导航",
             position: "right",
             to: "website",
           },
-          // {
-          //   type: "docsVersionDropdown",
-          //   position: "right",
-          // },
+
           {
             type: "localeDropdown",
             position: "right",
           },
           {
             href: "https://github.com/BlueLanM/my-website",
-            label: "GitHub",
-            position: "right",
-          },
-          {
-            type: "search",
+            className: "header-github-link",
+            // label: "⭐GitHub",
             position: "right",
           },
         ],
@@ -199,6 +193,15 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      socials: {
+        github: "https://github.com/BlueLanM",
+        twitter: "https://twitter.com/Jason__Wang_",
+        csdn: "https://blog.csdn.net/BLUESKYwang66",
+        qq: "https://wpa.qq.com/msgrd?v=3&amp;uin=2351406802&amp;site=qq",
+        zhihu: "https://www.zhihu.com/people/lanm-82-86",
+        cloudmusic: "https://music.163.com/#/user/home?id=428851176",
+        steam: "https://steamcommunity.com/profiles/76561198892079974/",
       },
     }),
 };
