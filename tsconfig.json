@@ -38,6 +38,5 @@
     "skipLibCheck": false,
     "types": ["jest"]
   },
-  "exclude": ["src/sw.js", "node_modules/**/*"],
-  "include": ["./**/*.ts"]
+  "exclude": ["src/sw.js"]
 }

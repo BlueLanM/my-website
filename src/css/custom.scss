@@ -15,6 +15,10 @@
   --ifm-color-primary-lightest: #bcdfcc;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  -site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
+  --text-color: #2b333e;
+  --site-color-tooltip: #fff;
+  --site-color-tooltip-background: #353738;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -32,6 +36,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+html {
+  --divider-color: #ebebeb;
+  --post-shadow-color: rgb(220 220 220 / 30%);
+  --post-shadow: 0 0 20px 10px var(--post-shadow-color);
+  --blog-item-background-color: linear-gradient(180deg, #fff, #fcfcfc);
+  --content-background-color: #f8f9fa;
+  --blog-item-shadow: 0 20px 20px rgb(0 0 0 / 10.5%),
+    0 50px 80px rgb(0 0 0 / 5%);
 }
 html,
 body {

@@ -25,3 +25,18 @@ pre-commit(客户端)钩子，它会在Git键入提交信息前运行做代码�
 postBuffer = 524288000
 此问题的原因就是推送代码的大小超出了git默认的范围，可以调整git推送代码的最大值。
 ```
+
+### GitHub Clone/Push 代码失败 OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 的解决办法
+
+```jsx title='解决办法'
+step1: 检查是否开了网络代理，如果有先关闭；
+step2:在命令行输入如下命令
+git config --global http.sslVerifyfalse
+
+git config --global --unset http.proxy
+
+git config --global --unset https.proxy
+
+git config --global http.sslBackend "openssl"
+
+```
