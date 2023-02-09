@@ -672,7 +672,7 @@ export const websiteData: WebsiteCategory[] = [
     ]
   },
   {
-    name: 'Node/Deno',
+    name: 'Node',
     websites: [
       {
         name: 'Node',

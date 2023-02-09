@@ -74,8 +74,8 @@ export default function Websites() {
       <PageMetadata title={title} description={description} />
       <Layout>
         <div className="container margin-top--md">
-          <div className="row1" style={{ display: "flex" }}>
-            <aside className="col">
+          <div className="row">
+            <aside className="col col--1">
               <CategoryNav />
             </aside>
             <main className="col col--11">
