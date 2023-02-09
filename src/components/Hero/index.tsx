@@ -58,7 +58,7 @@ function Hero() {
                 </Link>
               ),
               idea: (
-                <Link to="/tags/感悟">
+                <Link to="/tags/随笔">
                   <Translate id="hompage.hero.idea">想法感悟</Translate>
                 </Link>
               ),
