@@ -40,7 +40,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: "思否",
         desc: "思否是开放式协作的问答社区。探寻以开放、对等、共享的理念，凝聚开发者智慧，共同推动技术进步。",
-        logo: "/img/website/sifou.svg",
+        logo: "/img/website/SFIcon.svg",
         href: "https://segmentfault.com/",
       },
       {
@@ -59,9 +59,32 @@ export const websiteData: WebsiteCategory[] = [
     ],
   },
   {
-    name:'资源🗂️',
+    name:'学习🗂️',
     websites:[
-      
+      {
+        name:'FreeCodeCamp',
+        desc:'编程练习',
+        logo:'/img/website/freeCode.svg',
+        href:"https://www.freecodecamp.org/chinese/learn/"
+      },
+      {
+        name:'前端面试题汇总',
+        desc:'前端面试题汇总',
+        logo:'/img/website/face.svg',
+        href:"https://www.yuque.com/cuggz/interview"
+      },
+      {
+        name:'前端最全面经',
+        desc:'前端最全面经总结',
+        logo:'https://p3-passport.byteimg.com/img/user-avatar/61130727b6e6bf9ed813434aeaed8ac3~100x100.awebp',
+        href:"https://juejin.cn/post/6905294475539513352"
+      },
+      {
+        name:'前端知识进阶',
+        desc:'前端知识进阶',
+        logo:'/img/website/face.svg',
+        href:"https://www.yuque.com/cuggz/feplus"
+      }
     ]
   },
   {
@@ -106,12 +129,6 @@ export const websiteData: WebsiteCategory[] = [
         logo: 'https://img.thosefree.com/static/logo.png',
         href: 'https://www.thosefree.com/',
         tags: [''],
-      },
-      {
-        name: 'Emoji表情大全',
-        desc: '发现好用的emoji表情',
-        logo: '/img/website/emoji.svg',
-        href: 'https://www.emojiall.com/zh-hans',
       },
       {
         name: '正则大全',
@@ -161,14 +178,14 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: '在线工具',
         desc: '在线工具,开发人员工具,代码格式化、压缩、加密、解密,下载链接转换,ico图标制作,字帖生成',
-        logo: 'https://tool.lu/favicon.ico',
+        logo: '/img/website/toolWeb.png',
         href: 'https://tool.lu/',
         tags: ['工具'],
       },
       {
         name: '菜鸟工具',
         desc: '菜鸟工具，为开发设计人员提供在线工具，提供在线PHP、Python、 CSS、JS 调试，中文简繁体转换，进制转换等工具',
-        logo: '/img/website/runoob.png',
+        logo: '/img/website/noobTools.ico',
         href: 'https://c.runoob.com/',
         tags: ['工具'],
       },
@@ -182,11 +199,17 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'Terminal Gif Maker',
         desc: '在线生成 Terminal GIF',
-        logo: '/img/website/favicon.ico',
+        logo: '/img/website/Terminal.ico',
         href: 'https://www.terminalgif.com',
-        tags: [],
+        tags: ['工具'],
       },
-
+      {
+        name: 'onlineconvertfree',
+        desc: '在线转换视频，音频，文档',
+        logo: '/img/website/zhuan.svg',
+        href: 'https://onlineconvertfree.com/zh/',
+        tags: ['工具'],
+      },
       {
         name: 'AST Explorer',
         desc: '一个 Web 工具，用于探索由各种解析器生成的 AST 语法树',
@@ -204,7 +227,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'Hoppscotch',
         desc: '开源 API 开发生态系统',
-        logo: '/img/website/hoppscotch.png',
+        logo: '/img/website/hopIcon.png',
         href: 'https://hoppscotch.io/',
         tags: ['api'],
       },
@@ -230,7 +253,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'GitHub',
         desc: '全球最大的软件项目托管平台，发现优质开源项目',
-        logo: 'https://github.githubassets.com/favicons/favicon.svg',
+        logo: '/img/website/github.svg',
         href: 'https://github.com/',
         tags: ['GitHub', '代码托管'],
       },
@@ -372,14 +395,14 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'VueUse',
         desc: '基本 Vue 合成实用程序的集合',
-        logo: 'https://vueuse.org/favicon.ico',
+        logo: '/img/website/vueuse.svg',
         href: 'https://vueuse.org/',
         tags: ['前端', 'Vue', '文档', '框架'],
       },
       {
         name: 'Vitest',
         desc: '一个 Vite 原生单元测试框架。它很快！',
-        logo: 'https://vitest.dev/favicon.ico',
+        logo: '/img/website/vitest.svg',
         href: 'https://cn.vitest.dev/',
         tags: ['前端', 'Vue', '框架'],
       },
@@ -396,9 +419,44 @@ export const websiteData: WebsiteCategory[] = [
         tags: ['前端', 'React', '框架'],
       },
       {
+        name:"卡颂React解析",
+        desc:'React卡颂解析',
+        logo: 'https://reactjs.org/favicon.ico',
+        href:'https://react.iamkasong.com/',
+        tags: ['前端', 'React','源码'],
+      },
+      {
+        name:"React源码解析",
+        desc:'React源码解析',
+        logo: 'https://reactjs.org/favicon.ico',
+        href:'https://react.jokcy.me/',
+        tags: ['前端', 'React','源码'],
+      },
+      {
+        name:"React图解解析",
+        desc:'React图解解析',
+        logo: 'https://reactjs.org/favicon.ico',
+        href:'https://7kms.github.io/react-illustration-series/main/macro-structure/',
+        tags: ['前端', 'React','源码'],
+      },
+      {
+        name:"React Hooks-Docs(Beta)",
+        desc:'React Hooks文档(Beta)',
+        logo: '/img/website/ReactHooks.svg',
+        href:'https://beta.reactjs.org/',
+        tags: ['前端', 'React'],
+      },
+      {
+        name: 'react-use',
+        desc: '一个强大的 React Hooks 库',
+        logo: 'https://reactjs.org/favicon.ico',
+        href: 'https://github.com/streamich/react-use',
+        tags: ['前端', 'React', '脚手架'],
+      },
+      {
         name: 'Next.js',
         desc: 'Next.js 为您提供生产环境所需的所有功能以及最佳的开发体验：包括静态及服务器端融合渲染、 支持 TypeScript、智能化打包、 路由预取等功能 无需任何配置',
-        logo: 'https://nextjs.org/static/favicon/favicon.ico',
+        logo: '/img/website/next.svg',
         href: 'https://nextjs.org/',
         tags: ['前端', 'React', '框架'],
       },
@@ -415,13 +473,6 @@ export const websiteData: WebsiteCategory[] = [
         logo: 'https://pro.ant.design/favicon.png',
         href: 'https://pro.ant.design',
         tags: ['前端', 'React', '后台', '项目'],
-      },
-      {
-        name: 'react-use',
-        desc: '一个强大的 React Hooks 库',
-        logo: 'https://reactjs.org/favicon.ico',
-        href: 'https://github.com/streamich/react-use',
-        tags: ['前端', 'React', '脚手架'],
       },
       {
         name: 'ahooks',
@@ -543,7 +594,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: '神奇UI样式',
         desc: '我们赋予任何人创建、分享和使用用 CSS 和 HTML 制作的漂亮自定义元素的权力。',
-        logo: '/img/website/uiverse.png',
+        logo: '/img/website/uiverse.svg',
         href: 'https://uiverse.io',
         tags: ['Css'],
       },
@@ -761,7 +812,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'TypeORM',
         desc: 'TypeORM 是一个 ORM 框架，它可以运行在 NodeJS、Browser、Cordova、PhoneGap、Ionic、React Native、Expo 和 Electron 平台上，可以与 TypeScript 和 JavaScript (ES5,ES6,ES7,ES8)一起使用',
-        logo: '/img/website/typeorm.ico',
+        logo: '/img/website/typeorm.svg',
         href: 'https://typeorm.bootcss.com',
         tags: ['Nodejs', 'ORM'],
       },
@@ -801,7 +852,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'Webpack',
         desc: 'webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)。当 webpack 处理应用程序时，它会递归地构建一个依赖关系图(dependency graph)，其中包含应用程序需要的每个模块，然后将所有这些模块打包成一个或多个 bundle',
-        logo: '/img/website/webpack.png',
+        logo: '/img/website/webpack.svg',
         href: 'https://www.webpackjs.com',
         tags: ['构建工具'],
       },
@@ -914,12 +965,11 @@ export const websiteData: WebsiteCategory[] = [
         href: 'https://igoutu.cn/',
         tags: ['插画', 'svg'],
       },
-      {
-        name: 'Emojiall',
-        desc: 'Emoji表情大全',
-        logo: 'https://www.emojiall.com/apple-touch-icon.png',
+     {
+        name: 'Emoji表情大全',
+        desc: '发现好用的emoji表情',
+        logo: '/img/website/emoji.svg',
         href: 'https://www.emojiall.com/zh-hans',
-        tags: ['图标', 'emoji'],
       },
       {
         name: '渐变色网站',
@@ -1032,7 +1082,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'Halo',
         desc: '一款现代化的开源博客/CMS系统，值得一试',
-        logo: 'https://halo.run/themes/run.halo.official2/assets/favicons/favicon-96x96.png',
+        logo: '/img/website/halo.png',
         href: 'https://halo.run/',
         tags: ['前端', '站点'],
       },
@@ -1044,28 +1094,28 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'Gitstar Ranking',
         desc: '针对用户、组织和存储库的非官方 GitHub 星级排名',
-        logo: '/img/website/github.ico',
+        logo: '/img/website/github.svg',
         href: 'https://gitstar-ranking.com/',
         tags: [],
       },
       {
         name: 'Metrics',
         desc: 'Create your own metrics',
-        logo: '/img/website/github.ico',
+        logo: '/img/website/github.svg',
         href: 'https://metrics.lecoq.io/',
         tags: [],
       },
       {
         name: 'Github主页 README 生成器',
         desc: '一个Github 个人主页 README 生成器',
-        logo: '/img/website/github.ico',
+        logo: '/img/website/github.svg',
         href: 'https://rahuldkjain.github.io/gh-profile-readme-generator/',
         tags: [],
       },
       {
         name: 'Github 统计生成器',
         desc: 'Github 在你的 README 中获取动态生成的 GitHub 统计信息！',
-        logo: '/img/website/github.ico',
+        logo: '/img/website/github.svg',
         href: 'https://github.com/anuraghazra/github-readme-stats',
         tags: [],
       },
