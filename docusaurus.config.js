@@ -143,6 +143,7 @@ const config = {
             href: "https://github.com/BlueLanM/my-website",
             className: "header-github-link",
             // label: "⭐GitHub",
+            "aria-label": "GitHub repository",
             position: "right",
           },
         ],

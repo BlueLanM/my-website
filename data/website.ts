@@ -29,67 +29,74 @@ export const websiteData: WebsiteCategory[] = [
     websites: friends,
   },
   {
-    name: '每周必刷🔥',
+    name: '社区🏘️',
     websites: [
       {
         name: "稀土掘金",
         desc: "稀土掘金是一个技术博客平台，是程序员发布自己的技术文章、分享知识的地方",
-        logo: "/img/website/juejin.png",
+        logo: "/img/website/juejin.svg",
         href: "https://juejin.cn/",
       },
       {
-        name: 'OSS Insight',
-        desc: 'Open Source Software Insight',
-        logo: '/img/website/ossinsight.png',
-        href: 'https://ossinsight.io/',
+        name: "思否",
+        desc: "思否是开放式协作的问答社区。探寻以开放、对等、共享的理念，凝聚开发者智慧，共同推动技术进步。",
+        logo: "/img/website/sifou.svg",
+        href: "https://segmentfault.com/",
       },
       {
-        name: 'Javascript Weekly',
-        desc: 'A newsletter of JavaScript articles, news and cool projects',
-        logo: '/img/website/javascript.svg',
-        href: 'https://javascriptweekly.com/',
+        name: "开源中国",
+        desc: "为中国开发者提供了最新开源资讯、软件更新资讯、技术分享和交流的技术平台。",
+        logo: "/img/website/OSChina.svg",
+        href: "https://www.oschina.net/",
       },
-      {
-        name: 'State of JavaScript',
-        desc: 'JavaScript 生态系统的年度开发人员调查',
-        logo: '/img/website/stateofjs.svg',
-        href: 'https://stateofjs.com',
-      },
+     
       {
         name: '前端食堂',
         desc: '周周尝鲜，人工筛选前端圈每周最新资讯。—— 由 童欧巴 创作',
-        logo: '/img/website/zhubai.png',
+        logo: '/img/website/zhubai.svg',
         href: 'https://hungryturbo.zhubai.love/',
       }
     ],
   },
   {
+    name:'资源🗂️',
+    websites:[
+      
+    ]
+  },
+  {
     name: '站点🖥️',
     websites: [
       {
+        name:'web全栈体系',
+        desc:'了解 web 全栈工程师的知识体系，让自己的学习有方向。',
+        logo:'/img/website/web.svg',
+        href:'https://senior-frontend.pages.dev/'
+      },
+      {
         name: "Developer Roadmap",
         desc: "Roadmap to becoming a web developer.",
-        logo: "https://roadmap.sh/logo.svg",
+        logo: "/img/website/Roadmap.svg",
         href: "https://roadmap.sh/",
       },
       {
         name: 'Shields.io',
         desc: '为你的开源项目生成高质量小徽章图标',
-        logo: '/img/website/shields.png',
+        logo: '/img/website/shields.svg',
         href: 'https://shields.io/',
         tags: ['图标', '首页'],
       },
       {
         name: 'NGINX 配置',
         desc: '配置高性能、安全、稳定的NGINX服务器的最简单方法',
-        logo: '/img/website/digitalocean.png',
+        logo: '/img/website/digitalocean.svg',
         href: 'https://www.digitalocean.com/community/tools/nginx',
         tags: ['nginx'],
       },
       {
         name: 'BootCDN',
         desc: '稳定、快速、免费的前端开源项目 CDN 加速服务',
-        logo: 'https://www.bootcdn.cn/assets/ico/favicon.ico',
+        logo: 'https://www.bootcdn.cn/assets/ico/apple-touch-icon-144-precomposed.png?1675527469767',
         href: 'https://www.bootcdn.cn/',
         tags: ['cdn'],
       },
@@ -101,9 +108,15 @@ export const websiteData: WebsiteCategory[] = [
         tags: [''],
       },
       {
+        name: 'Emoji表情大全',
+        desc: '发现好用的emoji表情',
+        logo: '/img/website/emoji.svg',
+        href: 'https://www.emojiall.com/zh-hans',
+      },
+      {
         name: '正则大全',
         desc: '🦕 常用正则大全, 支持web / vscode / idea / Alfred Workflow多平台',
-        logo: '/img/website/any-rule.ico',
+        logo: '/img/website/any-rule.svg',
         href: 'https://any-rule.vercel.app/',
         tags: [''],
       },
@@ -115,14 +128,14 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: 'MDN',
         desc: '从2005年开始记录网络技术，包括 CSS、 HTML 和 JavaScript。',
-        logo: '/img/website/mdn.png',
+        logo: '/img/website/mdn.svg',
         href: 'https://developer.mozilla.org/zh-CN/',
         tags: ['Css', '教程'],
       },
       {
         name: 'ES6 入门教程',
         desc: '《ECMAScript 6 入门教程》是一本开源的 JavaScript 语言教程，全面介绍 ECMAScript 6 新引入的语法特性',
-        logo: '/img/website/es6.png',
+        logo: '/img/website/es6.svg',
         href: 'https://es6.ruanyifeng.com/',
         tags: ['文档'],
       },
