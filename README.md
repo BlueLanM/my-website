@@ -7,7 +7,7 @@
 
 - 📝 I regularly write articles on [https://lanm.netlify.app/](https://lanm.netlify.app/)
 
-- 💬 Ask me about **react**
+- 💬 Ask me about **react**, **JavaScript**
 
 - 📫 How to reach me **w2351406802@163.com**
 
