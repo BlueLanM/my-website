@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on [my-website](https://github.com/BlueLanM/my-website)
 
-- 📝 I regularly write articles on [https://lanm.netlify.app/](https://lanm.netlify.app/)
+- 📝 I regularly write articles on [https://lanm.love/](https://lanm.love/)
 
 - 💬 Ask me about **react**, **JavaScript**
 
