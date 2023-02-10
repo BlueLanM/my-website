@@ -8,9 +8,9 @@ const path = require("path");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
-  tagline: "摆烂",
+  tagline: "开摆",
   favicon: "img/favicon.ico",
-  url: "https://lanm.netlify.app/",
+  url: "https://lanm.love/",
   baseUrl: "/",
   organizationName: "BlueLanM",
   projectName: "my-website",
@@ -218,7 +218,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} - PRESENT LanM Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
