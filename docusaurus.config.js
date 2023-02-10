@@ -206,12 +206,12 @@ const config = {
             items: [
               {
                 label: "项目",
-                href: "project",
+                to: "project",
               },
-              // {
-              //   label: "导航",
-              //   href: "website",
-              // },
+              {
+                label: "导航",
+                to: "website",
+              },
               {
                 html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`,
               },
