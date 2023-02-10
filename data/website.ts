@@ -248,6 +248,17 @@ export const websiteData: WebsiteCategory[] = [
     ],
   },
   {
+    name: "摸鱼 🐟",
+    websites: [
+      {
+        name: "建设小猫咪",
+        desc: "猫咪共和国",
+        logo: "",
+        href: "https://static.oschina.net/trytry/cat-zh/#",
+      },
+    ],
+  },
+  {
     name: "代码托管",
     websites: [
       {

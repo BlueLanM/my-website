@@ -66,7 +66,7 @@ const config = {
         path: "blog",
         routeBasePath: "/",
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/BlueLanM/my-website/edit/main/${blogDirPath}/${blogPath}`,
+          `https://github.com/BlueLanM/my-website/edit/master/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogSidebarCount: 10,
         postsPerPage: 10,
@@ -140,10 +140,15 @@ const config = {
             position: "right",
             to: "website",
           },
-
           {
             type: "localeDropdown",
+            position: "left",
+          },
+          {
+            href: "https://space.bilibili.com/347207525",
             position: "right",
+            className: "header-bilibili-link",
+            "aria-label": "Bilibili",
           },
           {
             href: "https://github.com/BlueLanM/my-website",
@@ -151,6 +156,12 @@ const config = {
             // label: "⭐GitHub",
             "aria-label": "GitHub repository",
             position: "right",
+          },
+          {
+            position: "right",
+            to: "https://steamcommunity.com/profiles/76561198892079974/",
+            className: "header-steam-link",
+            "aria-label": "Steam",
           },
         ],
       },
