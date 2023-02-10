@@ -48,12 +48,12 @@ function Hero() {
                 </Link>
               ),
               project: (
-                <Link to="/website">
+                <Link to="/project">
                   <Translate id="hompage.hero.project">实战项目</Translate>
                 </Link>
               ),
               link: (
-                <Link to="/project">
+                <Link to="/website">
                   <Translate id="hompage.hero.link">网址导航</Translate>
                 </Link>
               ),
