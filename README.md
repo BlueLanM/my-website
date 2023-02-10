@@ -1,6 +1,9 @@
 <h1 align="center">Hi 👋, I'm LanM</h1>
 <h3 align="center">A passionate frontend developer from China</h3>
 
+
+
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=bluelanm&label=Profile%20views&color=0e75b6&style=flat" alt="bluelanm" /> </p>
 
 - 🔭 I’m currently working on [my-website](https://github.com/BlueLanM/my-website)
@@ -10,6 +13,8 @@
 - 💬 Ask me about **react**, **JavaScript**
 
 - 📫 How to reach me **w2351406802@163.com**
+
+- 如果你觉得这个项目对你有帮助，Give me a star ღ 
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
