@@ -61,6 +61,7 @@ const config = {
     "docusaurus-plugin-sass",
     [
       path.resolve(__dirname, "./src/plugin/plugin-content-blog"),
+
       {
         path: "blog",
         routeBasePath: "/",
@@ -78,6 +79,7 @@ const config = {
         },
       },
     ],
+
     [
       "@docusaurus/plugin-ideal-image",
       {
