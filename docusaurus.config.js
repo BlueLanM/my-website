@@ -8,9 +8,9 @@ const path = require("path");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
-  tagline: "记录人生",
+  tagline: "摆烂",
   favicon: "img/favicon.ico",
-  url: "https://lanm-blog.vercel.app/",
+  url: "https://lanm.netlify.app/",
   baseUrl: "/",
   organizationName: "BlueLanM",
   projectName: "my-website",
@@ -128,7 +128,11 @@ const config = {
           // },
 
           // { to: "/blog", label: "博客", position: "right" },
-
+          {
+            label: "📌 项目",
+            position: "right",
+            to: "project",
+          },
           {
             label: "🚀 导航",
             position: "right",
@@ -163,6 +167,14 @@ const config = {
             title: "学习",
             items: [
               {
+                label: "标签",
+                to: "tags",
+              },
+              {
+                label: "归档",
+                to: "archive",
+              },
+              {
                 label: "笔记",
                 to: "/docs/record",
               },
@@ -172,8 +184,12 @@ const config = {
             title: "社区",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "关于我",
+                href: "/about",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/BlueLanM/my-website",
               },
               {
                 label: "CSDN",
@@ -181,7 +197,7 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/Jason__Wang_",
               },
             ],
           },
@@ -189,8 +205,15 @@ const config = {
             title: "更多",
             items: [
               {
-                label: "GitHub",
-                href: "https://github.com/BlueLanM/my-website",
+                label: "项目",
+                href: "project",
+              },
+              {
+                label: "导航",
+                href: "website",
+              },
+              {
+                html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`,
               },
             ],
           },

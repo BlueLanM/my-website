@@ -1,11 +1,20 @@
 import React from "react";
 import Link from "@docusaurus/Link";
-import { translate } from "@docusaurus/Translate";
+import Translate, { translate } from "@docusaurus/Translate";
 import { PageMetadata } from "@docusaurus/theme-common";
-import styles from "./styles.module.css";
 import Layout from "@theme/Layout";
+import type { ArchiveBlogPost, Props } from "@theme/BlogArchivePage";
+import { Icon } from "@iconify/react";
+import styles from "./styles.module.css";
+
 import dayjs from "dayjs";
-function Year({ posts }) {
+
+type YearProp = {
+  year: string;
+  posts: ArchiveBlogPost[];
+};
+
+function Year({ posts }: YearProp) {
   return (
     <>
       <ul className={styles.archiveList}>
@@ -23,33 +32,40 @@ function Year({ posts }) {
     </>
   );
 }
-function YearsSection({ years }) {
+
+function YearsSection({ years }: { years: YearProp[] }) {
   return (
-    <section className="margin-vert--lg">
-      <div className="container">
-        <div className="row">
-          {years.map((_props, idx) => (
-            <div key={idx} className="col col--4 margin-vert--lg">
-              <Year {..._props} />
-            </div>
-          ))}
+    <div className="margin-top--md margin-left--sm">
+      {years.map((_props, idx) => (
+        <div key={idx}>
+          <h3 className={styles.archiveYear}>
+            {_props.year}
+            <span>
+              <i>{(years[idx] as YearProp).posts.length} </i>
+              <Translate id="theme.blog.archive.posts.unit">篇</Translate>
+            </span>
+          </h3>
+          <Year {..._props} />
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 }
-function listPostsByYears(blogPosts) {
+
+function listPostsByYears(blogPosts: readonly ArchiveBlogPost[]): YearProp[] {
   const postsByYear = blogPosts.reduceRight((posts, post) => {
-    const year = post.metadata.date.split("-")[0];
+    const year = post.metadata.date.split("-")[0]!;
     const yearPosts = posts.get(year) ?? [];
     return posts.set(year, [post, ...yearPosts]);
-  }, new Map());
+  }, new Map<string, ArchiveBlogPost[]>());
+
   return Array.from(postsByYear, ([year, posts]) => ({
     year,
     posts,
-  }));
+  })).reverse();
 }
-export default function BlogArchive({ archive }) {
+
+export default function BlogArchive({ archive }: Props) {
   const title = translate({
     id: "theme.blog.archive.title",
     message: "Archive",
@@ -60,18 +76,29 @@ export default function BlogArchive({ archive }) {
     message: "Archive",
     description: "The page & hero description of the blog archive page",
   });
-  // const years = listPostsByYears(archive.blogPosts);
+
+  const years = listPostsByYears(archive.blogPosts);
   return (
     <>
       <PageMetadata title={title} description={description} />
       <Layout>
-        <header className="hero hero--primary">
-          <div className="container">
-            <h1 className="hero__title">{title}</h1>
-            <p className="hero__subtitle">{description}</p>
+        <div className="container-wrapper padding-vert--md">
+          <div className={styles.archive}>
+            <h2 className={styles.archiveTitle}>
+              <Icon icon="carbon:blog" width={24} height={24} />
+              {title}
+            </h2>
+            <div className={styles.archiveCount}>
+              <Translate
+                id="theme.blog.archive.posts.total"
+                values={{ total: archive.blogPosts.length }}
+              >
+                {`共 {total} 篇文章`}
+              </Translate>
+            </div>
+            {years.length > 0 && <YearsSection years={years} />}
           </div>
-        </header>
-        {/* <main>{years.length > 0 && <YearsSection years={years} />}</main> */}
+        </div>
       </Layout>
     </>
   );
