@@ -25,6 +25,7 @@
     "@mdx-js/react": "^1.6.22",
     "@popperjs/core": "^2.11.6",
     "@react-spring/web": "^9.6.1",
+    "@vercel/analytics": "^0.1.8",
     "clsx": "^1.2.1",
     "dayjs": "^1.11.7",
     "docusaurus-plugin-image-zoom": "^0.1.1",
