@@ -165,6 +165,11 @@ const config = {
           },
         ],
       },
+      algolia: {
+        appId: "KFB5UP84UF",
+        apiKey: "2527b8673db145613ad39c1e5416b4cf",
+        indexName: "lanm",
+      },
       giscus: {
         repo: "BlueLanM/my-website",
         repoId: "R_kgDOI4VNdQ",

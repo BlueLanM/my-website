@@ -5,7 +5,7 @@ import Translate from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Link from "@docusaurus/Link";
 
-import HeroMain from "./img/hero_main.svg";
+import HeroMain from "./img/hero_4.svg";
 
 import JuejinIcon from "./img/hero_main.svg";
 import { Icon } from "@iconify/react";
