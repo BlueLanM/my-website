@@ -15,9 +15,9 @@
     "message": "Archive",
     "description": "Navbar item with label 归档"
   },
-  "item.label.标签": {
-    "message": "Tags",
-    "description": "Navbar item with label 标签"
+  "item.label.🏷️ 标签": {
+    "message": "🏷️ Tags",
+    "description": "Navbar item with label 🏷️ 标签"
   },
   "item.label.项目": {
     "message": "Project",
