@@ -8,19 +8,16 @@ import styles from "./styles.module.css";
 
 export default function BlogSidebarDesktop({ sidebar }: Props): JSX.Element {
   console.log(sidebar);
-
+  const title = translate({
+    id: "theme.blog.sidebar.navAriaLabel",
+    message: "Blog recent posts navigation",
+    description: "The ARIA label for recent posts in the blog sidebar",
+  });
   return (
     <aside className="col col--3">
-      <nav
-        className={clsx(styles.sidebar, "thin-scrollbar")}
-        aria-label={translate({
-          id: "theme.blog.sidebar.navAriaLabel",
-          message: "Blog recent posts navigation",
-          description: "The ARIA label for recent posts in the blog sidebar",
-        })}
-      >
+      <nav className={clsx(styles.sidebar, "thin-scrollbar")}>
         <div className={clsx(styles.sidebarItemTitle, "margin-bottom--md")}>
-          {sidebar.title}
+          {title}
         </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
           {sidebar.items.map((item) => (
