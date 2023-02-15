@@ -11,6 +11,14 @@
     "message": "更多",
     "description": "The title of the footer links column with title=更多 in the footer"
   },
+  "link.item.label.标签": {
+    "message": "标签",
+    "description": "The label of footer link with label=标签 linking to tags"
+  },
+  "link.item.label.归档": {
+    "message": "归档",
+    "description": "The label of footer link with label=归档 linking to archive"
+  },
   "link.item.label.笔记": {
     "message": "笔记",
     "description": "The label of footer link with label=笔记 linking to docs/record"

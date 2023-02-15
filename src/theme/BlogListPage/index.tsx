@@ -25,7 +25,6 @@ import { useViewType } from "./useViewType";
 import Translate from "@docusaurus/Translate";
 import { Icon } from "@iconify/react";
 import { Fade } from "react-awesome-reveal";
-import { Analytics } from "@vercel/analytics/react";
 
 function BlogListPageMetadata(props: Props): JSX.Element {
   const { metadata } = props;
@@ -269,7 +268,7 @@ export default function BlogListPage(props: Props): JSX.Element {
       )}
     >
       <BlogListPageMetadata {...props} />
-      <Analytics />
+
       <BlogListPageContent {...props} />
     </HtmlClassNameProvider>
   );
