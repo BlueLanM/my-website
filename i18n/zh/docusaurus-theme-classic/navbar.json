@@ -11,9 +11,9 @@
     "message": "笔记",
     "description": "Navbar item with label 笔记"
   },
-  "item.label.标签": {
-    "message": "标签",
-    "description": "Navbar item with label 标签"
+  "item.label.🏷️ 标签": {
+    "message": "🏷️ 标签",
+    "description": "Navbar item with label 🏷️ 标签"
   },
   "item.label.归档": {
     "message": "归档",
