@@ -3,6 +3,10 @@
     "message": "LanM",
     "description": "The title in the navbar"
   },
+  "item.label.学习":{
+    "message":"Study",
+    "description":"Navbar item with label 学习"
+  },
   "item.label.笔记": {
     "message": "Record",
     "description": "Navbar item with label 笔记"
@@ -16,7 +20,7 @@
     "description": "Navbar item with label 标签"
   },
   "item.label.项目": {
-    "message": "项目",
+    "message": "Project",
     "description": "Navbar item with label 项目"
   },
   "item.label.导航": {

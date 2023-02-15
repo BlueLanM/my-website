@@ -25,7 +25,7 @@
     "description": "hero look"
   },
   "hompage.hero.note": {
-    "message": "学习",
+    "message": "笔记",
     "description": "Note link label"
   },
   "hompage.hero.project": {
@@ -40,10 +40,7 @@
     "message": "想法感悟",
     "description": "Idea label"
   },
-  "homepage.qqgroup": {
-    "message": "QQ 群：5478458",
-    "description": "qq group"
-  },
+ 
   "自我介绍": {
     "message": "自我介绍",
     "description": "follow me btn text"
