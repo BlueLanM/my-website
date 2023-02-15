@@ -3,6 +3,14 @@
     "message": "蓝莓",
     "description": "The title in the navbar"
   },
+  "item.label.学习":{
+    "message":"学习",
+    "description":"Navbar item with label 学习"
+  },
+  "item.label.笔记": {
+    "message": "笔记",
+    "description": "Navbar item with label 笔记"
+  },
   "item.label.标签": {
     "message": "标签",
     "description": "Navbar item with label 标签"
@@ -10,10 +18,6 @@
   "item.label.归档": {
     "message": "归档",
     "description": "Navbar item with label 归档"
-  },
-  "item.label.笔记": {
-    "message": "笔记",
-    "description": "Navbar item with label 笔记"
   },
   "item.label.项目": {
     "message": "项目",
