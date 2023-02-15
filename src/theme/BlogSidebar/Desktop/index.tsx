@@ -20,7 +20,7 @@ export default function BlogSidebarDesktop({ sidebar }: Props): JSX.Element {
         })}
       >
         <div className={clsx(styles.sidebarItemTitle, "margin-bottom--md")}>
-          近期文章
+          {sidebar.title}
         </div>
         <ul className={clsx(styles.sidebarItemList, "clean-list")}>
           {sidebar.items.map((item) => (

@@ -25,15 +25,15 @@
     "description": "hero look"
   },
   "hompage.hero.note": {
-    "message": "技术笔记",
+    "message": "学习",
     "description": "Note link label"
   },
   "hompage.hero.project": {
-    "message": "实战项目",
+    "message": "项目",
     "description": "Project link label"
   },
   "hompage.hero.link": {
-    "message": "网址导航",
+    "message": "导航",
     "description": "Link link label"
   },
   "hompage.hero.idea": {
