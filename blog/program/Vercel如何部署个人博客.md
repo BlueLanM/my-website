@@ -51,3 +51,7 @@ sticky: 2
 ![image](./img/vercel-deploy-blog.png)
 
 此时网站已经成功搭建完毕了，点击图片即可跳转到 Vercel 所提供的二级域名访问。
+
+## 自定义域名
+
+如果你有自己的域名，可以在 Setting --> Domains
