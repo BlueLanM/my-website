@@ -54,4 +54,6 @@ sticky: 2
 
 ## 自定义域名
 
-如果你有自己的域名，可以在 Setting --> Domains
+如果你有自己的域名，可以在 Setting --> Domains 添加域名。
+
+![image](./img/domains-vercel.png)
