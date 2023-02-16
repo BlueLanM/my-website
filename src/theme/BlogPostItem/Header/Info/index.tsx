@@ -55,8 +55,6 @@ export default function BlogPostItemHeaderInfo({
 }: Props): JSX.Element {
   const { metadata } = useBlogPost();
   const { date, formattedDate, readingTime } = metadata;
-  console.log(formattedDate);
-
   return (
     <div className={clsx(styles.container, "margin-vert--md", className)}>
       <Date date={date} formattedDate={formattedDate} />
