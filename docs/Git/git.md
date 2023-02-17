@@ -1,4 +1,11 @@
 ---
+id: git-record
+slug: /git-record
+title: Git问题记录
+date: 2023-02-17
+authors: LanM
+tags: [git]
+keywords: [git]
 siderbar_position: 1
 ---
 
