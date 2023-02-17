@@ -9,8 +9,6 @@ keywords: [react]
 sidebar_position: 1
 ---
 
-<!-- truncate -->
-
 ## create-react-app
 
 使用 create-react-app 官方脚手架创建 React 应用
