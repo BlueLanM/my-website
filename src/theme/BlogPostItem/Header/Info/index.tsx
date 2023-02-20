@@ -26,7 +26,6 @@ function useReadingTimePlural() {
     );
   };
 }
-
 export function ReadingTime({ readingTime }: { readingTime: number }) {
   const readingTimePlural = useReadingTimePlural();
   return <>{readingTimePlural(readingTime)}</>;
