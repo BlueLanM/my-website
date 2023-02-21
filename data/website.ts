@@ -253,8 +253,14 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: "建设小猫咪",
         desc: "猫咪共和国",
-        logo: "/img/website/cat.webg",
+        logo: "/img/website/cat.webp",
         href: "https://static.oschina.net/trytry/cat-zh/#",
+      },
+      {
+        name: "迷你任务",
+        desc: "任务RPG",
+        logo: "/img/website/cat.webp",
+        href: "https://static.oschina.net/trytry/MiniTES/",
       },
     ],
   },
