@@ -259,7 +259,7 @@ export const websiteData: WebsiteCategory[] = [
       {
         name: "迷你任务",
         desc: "任务RPG",
-        logo: "/img/website/cat.webp",
+        logo: "/img/website/OSChina.svg",
         href: "https://static.oschina.net/trytry/MiniTES/",
       },
     ],
