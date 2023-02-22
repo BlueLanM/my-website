@@ -17,6 +17,14 @@ export const projects: Project[] = [
     tags: ["opensource", "design", "personal", "favorite"],
     type: "other",
   },
+  {
+    title: "数据填报平台",
+    description: "实现对数据里的模型管理",
+    preview: "/img/project/dataModal.png",
+    website: "",
+    tags: ["personal", "favorite"],
+    type: "personal",
+  },
 ];
 
 export type Tag = {
