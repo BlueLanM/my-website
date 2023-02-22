@@ -244,10 +244,10 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      colorMode: {
-        disableSwitch: true,
-        defaultMode: "dark",
-      },
+      // colorMode: {
+      //   disableSwitch: true,
+      //   defaultMode: "dark",
+      // },
       socials: {
         github: "https://github.com/BlueLanM",
         twitter: "https://twitter.com/Jason__Wang_",
