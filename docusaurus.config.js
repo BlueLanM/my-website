@@ -8,7 +8,7 @@ const path = require("path");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
-  tagline: "LanM",
+  tagline: "轻舟已过万重山",
   favicon: "img/favicon.ico",
   url: "https://lanm.love/",
   baseUrl: "/",
