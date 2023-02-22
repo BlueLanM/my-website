@@ -28,17 +28,16 @@ function Hero() {
     <animated.div className={styles.hero}>
       <div className={styles.bloghome__intro}>
         <animated.div style={trails[0]} className={styles.hero_text}>
-          <Translate id="homepage.hero.greet">Hello! 我是</Translate>
+          <Translate id="homepage.hero.greet">蓝莓の</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">蓝莓</Translate>
+            <Translate id="homepage.hero.name">Blog</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           {/* <Translate id="homepage.hero.text">
             {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
           </Translate> */}
-          <br />
-          <br />
+
           <Translate
             id="homepage.hero.look"
             values={{
@@ -70,7 +69,7 @@ function Hero() {
         <SocialLinks style={trails[2]} />
         <animated.div style={trails[3]}>
           <a className={styles.intro} href={"./about"}>
-            <Translate id="hompage.hero.introduce">自我介绍</Translate>
+            <Translate id="hompage.hero.introduce">关于我</Translate>
           </a>
         </animated.div>
       </div>
