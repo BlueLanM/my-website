@@ -8,7 +8,7 @@ const path = require("path");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
-  tagline: "开摆",
+  tagline: "LanM",
   favicon: "img/favicon.ico",
   url: "https://lanm.love/",
   baseUrl: "/",
@@ -34,6 +34,7 @@ const config = {
         docs: {
           path: "docs",
           sidebarPath: "sidebars.js",
+          showLastUpdateTime: true,
         },
         // blog: {
         //   showReadingTime: true,
@@ -96,6 +97,7 @@ const config = {
           hideable: true,
         },
       },
+
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "LanM",
@@ -241,6 +243,10 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        disableSwitch: true,
+        defaultMode: "dark",
       },
       socials: {
         github: "https://github.com/BlueLanM",
