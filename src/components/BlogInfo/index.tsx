@@ -8,6 +8,7 @@ import type {
 import Link from "@docusaurus/Link";
 import { Icon } from "@iconify/react";
 import { SocialLinks } from "../Hero";
+import Translate from "@docusaurus/Translate";
 import { useThemeConfig } from "@docusaurus/theme-common";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -153,7 +154,9 @@ export default function BlogInfo() {
             <div className="row bloginfo__card">
               <div style={{ display: "inline-flex", alignItems: "center" }}>
                 <Icon icon="ri:price-tag-3-line" width="20" height="20" />
-                <span className="margin-horiz--sm">标签</span>
+                <Translate id="theme_bloginfo_card">
+                  <span className="margin-horiz--sm">标签</span>
+                </Translate>
               </div>
               <TagsSection data={Object.values(tagData)} />
             </div>
