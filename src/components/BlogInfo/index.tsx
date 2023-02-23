@@ -153,9 +153,15 @@ export default function BlogInfo() {
           <div className="bloghome__posts-card margin-bottom--md">
             <div className="row bloginfo__card">
               <div style={{ display: "inline-flex", alignItems: "center" }}>
-                <Icon icon="ri:price-tag-3-line" width="20" height="20" />
+                <Icon
+                  icon="ri:price-tag-3-line"
+                  width="20"
+                  height="20"
+                  style={{ marginRight: "10px" }}
+                />
                 <Translate id="theme_bloginfo_card">
-                  <span className="margin-horiz--sm">标签</span>
+                  {/* <span className="margin-horiz--sm">标签</span> */}
+                  标签
                 </Translate>
               </div>
               <TagsSection data={Object.values(tagData)} />
