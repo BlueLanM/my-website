@@ -1,8 +1,14 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 import React from "react";
 import Translate from "@docusaurus/Translate";
 import { ThemeClassNames } from "@docusaurus/theme-common";
 import type { Props } from "@theme/LastUpdated";
-import dayjs from "dayjs";
 
 function LastUpdatedAtDate({
   lastUpdatedAt,
@@ -18,7 +24,9 @@ function LastUpdatedAtDate({
       values={{
         date: (
           <b>
-            <time>{dayjs(`${new Date()}`).format("YYYY年MM月DD日")}</time>
+            <time dateTime={new Date(lastUpdatedAt * 1000).toISOString()}>
+              {formattedLastUpdatedAt}
+            </time>
           </b>
         ),
       }}
@@ -51,7 +59,6 @@ export default function LastUpdated({
   formattedLastUpdatedAt,
   lastUpdatedBy,
 }: Props): JSX.Element {
-  console.log(lastUpdatedAt, formattedLastUpdatedAt, lastUpdatedBy);
   return (
     <span className={ThemeClassNames.common.lastUpdated}>
       <Translate
@@ -65,7 +72,7 @@ export default function LastUpdated({
                 formattedLastUpdatedAt={formattedLastUpdatedAt}
               />
             ) : (
-              "LanM"
+              ""
             ),
           byUser: lastUpdatedBy ? (
             <LastUpdatedByUser lastUpdatedBy={lastUpdatedBy} />
@@ -79,7 +86,7 @@ export default function LastUpdated({
       {process.env.NODE_ENV === "development" && (
         <div>
           {/* eslint-disable-next-line @docusaurus/no-untranslated-text */}
-          <small> (Simulated during dev for better perf)</small>
+          <small> (byLanM)</small>
         </div>
       )}
     </span>
