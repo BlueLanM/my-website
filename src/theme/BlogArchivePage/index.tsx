@@ -15,6 +15,8 @@ type YearProp = {
 };
 
 function Year({ posts }: YearProp) {
+  console.log(posts);
+
   return (
     <>
       <ul className={styles.archiveList}>
