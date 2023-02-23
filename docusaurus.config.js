@@ -87,6 +87,34 @@ const config = {
         disableInDev: false,
       },
     ],
+    // [
+    //   "@docusaurus/plugin-pwa",
+    //   {
+    //     debug: true,
+    //     offlineModeActivationStrategies: [
+    //       "appInstalled",
+    //       "standalone",
+    //       "queryString",
+    //     ],
+    //     pwaHead: [
+    //       {
+    //         tagName: "link",
+    //         rel: "icon",
+    //         href: "/img/logo.png",
+    //       },
+    //       {
+    //         tagName: "link",
+    //         rel: "manifest",
+    //         href: "/manifest.json",
+    //       },
+    //       {
+    //         tagName: "meta",
+    //         name: "theme-color",
+    //         content: "rgb(51 139 255)",
+    //       },
+    //     ],
+    //   },
+    // ],
   ],
 
   themeConfig:
@@ -121,15 +149,15 @@ const config = {
               },
               {
                 label: "📓 笔记",
-                to: "docs/record",
+                to: "docs/record/",
               },
             ],
           },
-          // {
-          //   to: "/docs/record",
-          //   position: "right",
-          //   label: "笔记",
-          // },
+          {
+            to: "docs/life/",
+            position: "right",
+            label: "🎯 生活",
+          },
 
           // { to: "/blog", label: "博客", position: "right" },
           {
@@ -196,7 +224,7 @@ const config = {
               },
               {
                 label: "笔记",
-                to: "/docs/record",
+                to: "docs/record/",
               },
             ],
           },
