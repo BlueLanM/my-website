@@ -84,6 +84,9 @@
   "theme.blog.title.new":{
     "message": "New Blog"
   },
+  "theme_bloginfo_card":{
+    "message":"Tags"
+  },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"

@@ -159,6 +159,9 @@
   "theme.blog.title.new":{
     "message": "最新博客"
   },
+  "theme_bloginfo_card":{
+    "message":"标签"
+  },
   "theme.blog.tagTitle": {
     "message": "{nPosts} 含有标签「{tagName}」",
     "description": "The title of the page for a blog tag"
