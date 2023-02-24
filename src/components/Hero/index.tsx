@@ -5,7 +5,7 @@ import Translate from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Link from "@docusaurus/Link";
 
-import HeroMain from "./img/hero_4.svg";
+import HeroMain from "./img/hero_6.svg";
 
 import JuejinIcon from "./img/hero_main.svg";
 import { Icon } from "@iconify/react";
@@ -58,12 +58,12 @@ function Hero() {
               ),
               idea: (
                 <Link to="/tags/随笔">
-                  <Translate id="hompage.hero.idea">想法感悟</Translate>
+                  <Translate id="hompage.hero.idea">生活随笔</Translate>
                 </Link>
               ),
             }}
           >
-            {`你可以随处逛逛，查看{note}、{project}、{link}、以及我的{idea}。`}
+            {`记录个人随笔，快捷查看{note}、{project}、{link}、以及我的{idea}。`}
           </Translate>
         </animated.p>
         <SocialLinks style={trails[2]} />
