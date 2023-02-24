@@ -83,12 +83,12 @@ export default function LastUpdated({
       >
         {"Last updated{atDate}{byUser}"}
       </Translate>
-      {process.env.NODE_ENV === "development" && (
-        <div>
-          {/* eslint-disable-next-line @docusaurus/no-untranslated-text */}
-          <small> (byLanM)</small>
-        </div>
-      )}
+      {/* {process.env.NODE_ENV === "development" && ( */}
+      <div>
+        {/* eslint-disable-next-line @docusaurus/no-untranslated-text */}
+        <small> (byLanM)</small>
+      </div>
+      {/* )} */}
     </span>
   );
 }
