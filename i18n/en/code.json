@@ -12,7 +12,7 @@
     "description": "hero text"
   },
   "homepage.hero.look": {
-    "message": "You can take a look at it casually and check {note}, {project}, {link}. I will also share {idea} for programming learning",
+    "message": "Record personal notes, quickly view {note}, {project}, {link}, and {idea}.",
     "description": "hero need"
   },
   "hompage.hero.note": {
@@ -25,7 +25,7 @@
     "message": "Link"
   },
   "hompage.hero.idea": {
-    "message": "Idea"
+    "message": "Life essay"
   },
   "hompage.hero.introduce": {
     "message": "Introduce"

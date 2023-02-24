@@ -21,7 +21,7 @@
     "description": "hero text"
   },
   "homepage.hero.look":{
-    "message": "你可以随处逛逛，查看{note}、{project}、{link}、以及我的{idea}。",
+    "message": "记录个人随笔，快捷查看{note}、{project}、{link}、以及{idea}。",
     "description": "hero look"
   },
   "hompage.hero.note": {
@@ -37,7 +37,7 @@
     "description": "Link link label"
   },
   "hompage.hero.idea": {
-    "message": "想法感悟",
+    "message": "生活随笔",
     "description": "Idea label"
   },
  
