@@ -43,7 +43,7 @@ const sidebars = {
       ],
     },
   ],
-  // life: ["Life/introduction"],
+  life: ["Life/introduction"],
 };
 
 module.exports = sidebars;
