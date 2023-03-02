@@ -1,7 +1,7 @@
 ---
 slug: vercel-deploy-blog
 title: 用Vercel部署个人博客
-data: 2023-02-13
+date: 2023-02-13
 authors: LanM
 tags: [vercel, blog]
 keywords: [vercel, blog]
