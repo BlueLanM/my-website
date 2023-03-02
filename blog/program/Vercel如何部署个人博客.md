@@ -7,7 +7,6 @@ tags: [vercel, blog]
 keywords: [vercel, blog]
 description: 使用 Vercel 部署个人博客过程记录，简单方便、访问快、免费部署。
 image: /assets/images/vercel-deploy-blog-f2311a4656f22ccc8b585e485a07f237.png
-sticky: 2
 ---
 
 ![image](./img/vercel-deploy-blog.png)
