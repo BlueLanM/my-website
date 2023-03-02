@@ -5,7 +5,6 @@ data: 2023-02-09
 authors: LanM
 tags: [react, node, project]
 keywords: [node, project]
-sticky: 1
 ---
 
 **为什么要设置一键启动呢？**
