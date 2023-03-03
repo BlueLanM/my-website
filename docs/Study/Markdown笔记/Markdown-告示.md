@@ -4,8 +4,8 @@ slug: /markdown-note
 title: Markdown-告示
 date: 2023-02-07
 authors: LanM
-tags: [markdown]
-keywords: [markdown]
+tags: [Markdown]
+keywords: [Markdown]
 sidebar_position: 1
 ---
 

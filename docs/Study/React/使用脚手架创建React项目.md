@@ -4,8 +4,8 @@ slug: /create-react-app
 title: 使用脚手架创建React项目
 date: 2023-02-17
 authors: LanM
-tags: [react]
-keywords: [react]
+tags: [React]
+keywords: [React]
 sidebar_position: 1
 ---
 
