@@ -13,6 +13,15 @@ const sidebars = {
       items: ["Study/Git/git-record"],
     },
     {
+      label: "Topic",
+      type: "category",
+      link: {
+        type: "generated-index",
+      },
+      items: ["Study/Topic/http", "Study/Topic/window_onload", 'Study/Topic/事件委托'],
+
+    },
+    {
       label: "React",
       type: "category",
       link: {
@@ -28,6 +37,7 @@ const sidebars = {
       },
       items: ["Study/TypeScript/typescript-type"],
     },
+
     {
       label: "Markdown",
       type: "category",
