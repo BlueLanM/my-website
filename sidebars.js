@@ -30,6 +30,14 @@ const sidebars = {
       items: ["Study/React/create-react-app"],
     },
     {
+      label: "Collect_questions",
+      type: "category",
+      link: {
+        type: "generated-index",
+      },
+      items: ["Study/Collect_questions/console"],
+    },
+    {
       label: "TypeScript",
       type: "category",
       link: {
