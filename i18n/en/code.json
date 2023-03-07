@@ -12,7 +12,7 @@
     "description": "hero text"
   },
   "homepage.hero.look": {
-    "message": "Record personal notes, quickly view {note}, {project}, {link}, and {idea}.",
+    "message": "Record, quickly view {note}, {project}, {link}, and {idea}.",
     "description": "hero need"
   },
   "hompage.hero.note": {
@@ -79,10 +79,10 @@
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.title.recommend":{
-    "message": "Recommend Blog"
+    "message": "💕 Recommend Blog"
   },
   "theme.blog.title.new":{
-    "message": "New Blog"
+    "message": "✨ New Blog"
   },
   "theme_bloginfo_card":{
     "message":"Tags"

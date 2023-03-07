@@ -21,7 +21,7 @@
     "description": "hero text"
   },
   "homepage.hero.look":{
-    "message": "记录个人随笔，快捷查看{note}、{project}、{link}、以及{idea}。",
+    "message": "记录，快捷查看{note}、{project}、{link}、以及{idea}。",
     "description": "hero look"
   },
   "hompage.hero.note": {
@@ -154,10 +154,10 @@
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.title.recommend":{
-    "message": "推荐阅读"
+    "message": "💕 推荐阅读"
   },
   "theme.blog.title.new":{
-    "message": "最新博客"
+    "message": "✨ 最新博客"
   },
   "theme_bloginfo_card":{
     "message":"标签"
