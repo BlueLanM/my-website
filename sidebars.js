@@ -18,8 +18,11 @@ const sidebars = {
       link: {
         type: "generated-index",
       },
-      items: ["Study/Topic/http", "Study/Topic/window_onload", 'Study/Topic/事件委托'],
-
+      items: [
+        "Study/Topic/http",
+        "Study/Topic/window_onload",
+        "Study/Topic/事件委托",
+      ],
     },
     {
       label: "React",
@@ -61,7 +64,14 @@ const sidebars = {
       ],
     },
   ],
-  life: ["Life/introduction"],
+  life: [
+    "Life/introduction",
+    {
+      label: "享受孤独",
+      type: "category",
+      items: ["Life/lonely"],
+    },
+  ],
 };
 
 module.exports = sidebars;
