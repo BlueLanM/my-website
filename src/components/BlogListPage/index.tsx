@@ -150,7 +150,7 @@ function BlogRecommend({
         >
           {!isPaginated && (
             <h2 className="blog__section-title">
-              <Translate id="theme.blog.title.recommend">推荐阅读</Translate>
+              <Translate id="theme.blog.title.recommend">💕 推荐阅读</Translate>
             </h2>
           )}
           <div className="row">

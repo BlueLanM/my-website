@@ -25,58 +25,86 @@ function Hero() {
   });
 
   return (
-    <animated.div className={styles.hero}>
-      <div className={styles.bloghome__intro}>
-        <animated.div style={trails[0]} className={styles.hero_text}>
-          <Translate id="homepage.hero.greet">蓝莓の</Translate>
-          <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">Blog</Translate>
-          </span>
-        </animated.div>
-        <animated.p style={trails[1]}>
-          {/* <Translate id="homepage.hero.text">
+    <>
+      <animated.div className={styles.hero}>
+        <div className={styles.bloghome__intro}>
+          <animated.div style={trails[0]} className={styles.hero_text}>
+            <Translate id="homepage.hero.greet">蓝莓の</Translate>
+            <span className={styles.intro__name}>
+              <Translate id="homepage.hero.name">Blog</Translate>
+            </span>
+          </animated.div>
+          <animated.p style={trails[1]}>
+            {/* <Translate id="homepage.hero.text">
             {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
           </Translate> */}
 
-          <Translate
-            id="homepage.hero.look"
-            values={{
-              note: (
-                <Link to="/docs/record">
-                  <Translate id="hompage.hero.note">技术笔记</Translate>
-                </Link>
-              ),
-              project: (
-                <Link to="/project">
-                  <Translate id="hompage.hero.project">实战项目</Translate>
-                </Link>
-              ),
-              link: (
-                <Link to="/website">
-                  <Translate id="hompage.hero.link">网址导航</Translate>
-                </Link>
-              ),
-              idea: (
-                <Link to="/tags/随笔">
-                  <Translate id="hompage.hero.idea">生活随笔</Translate>
-                </Link>
-              ),
-            }}
+            <Translate
+              id="homepage.hero.look"
+              values={{
+                note: (
+                  <Link to="/docs/record">
+                    <Translate id="hompage.hero.note">技术笔记</Translate>
+                  </Link>
+                ),
+                project: (
+                  <Link to="/project">
+                    <Translate id="hompage.hero.project">实战项目</Translate>
+                  </Link>
+                ),
+                link: (
+                  <Link to="/website">
+                    <Translate id="hompage.hero.link">网址导航</Translate>
+                  </Link>
+                ),
+                idea: (
+                  <Link to="/tags/随笔">
+                    <Translate id="hompage.hero.idea">生活随笔</Translate>
+                  </Link>
+                ),
+              }}
+            >
+              {`记录，快捷查看{note}、{project}、{link}、以及我的{idea}。`}
+            </Translate>
+          </animated.p>
+          <SocialLinks style={trails[2]} />
+          <animated.div style={trails[3]}>
+            <a className={styles.intro} href={"./about"}>
+              <Translate id="hompage.hero.introduce">关于我</Translate>
+            </a>
+          </animated.div>
+        </div>
+        <div className={styles.bloghome__image}>
+          <HeroMain />
+        </div>
+      </animated.div>
+      <div className={styles.footer}>
+        <div className={styles.innerheader}></div>
+        <div>
+          <svg
+            className={styles.waves}
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
           >
-            {`记录个人随笔，快捷查看{note}、{project}、{link}、以及我的{idea}。`}
-          </Translate>
-        </animated.p>
-        <SocialLinks style={trails[2]} />
-        <animated.div style={trails[3]}>
-          <a className={styles.intro} href={"./about"}>
-            <Translate id="hompage.hero.introduce">关于我</Translate>
-          </a>
-        </animated.div>
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g className={styles.parallax}>
+              <use xlinkHref="#gentle-wave" x="48" y="0" />
+              <use xlinkHref="#gentle-wave" x="48" y="3" />
+              <use xlinkHref="#gentle-wave" x="48" y="5" />
+              <use xlinkHref="#gentle-wave" x="48" y="7" />
+            </g>
+          </svg>
+        </div>
       </div>
-      <div className={styles.bloghome__image}>
-        <HeroMain />
-      </div>
-    </animated.div>
+    </>
   );
 }
 
