@@ -9,7 +9,7 @@ import HeroMain from "./img/hero_6.svg";
 
 import JuejinIcon from "./img/hero_main.svg";
 import { Icon } from "@iconify/react";
-
+import DayAndNight from "../Day&Night/index";
 import styles from "./index.module.scss";
 // const styles = require("./index.module.scss");
 
@@ -67,8 +67,11 @@ function Hero() {
               {`记录，快捷查看{note}、{project}、{link}、以及我的{idea}。`}
             </Translate>
           </animated.p>
+
           <SocialLinks style={trails[2]} />
+
           <animated.div style={trails[3]}>
+            <DayAndNight />
             <a className={styles.intro} href={"./about"}>
               <Translate id="hompage.hero.introduce">关于我</Translate>
             </a>
