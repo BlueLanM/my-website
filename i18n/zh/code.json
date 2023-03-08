@@ -13,7 +13,7 @@
     "description": "hero greet"
   },
   "蓝莓": {
-    "message": "蓝莓",
+    "message": "LanM",
     "description": "my name"
   },
   "homepage.hero.text": {
@@ -21,7 +21,7 @@
     "description": "hero text"
   },
   "homepage.hero.look":{
-    "message": "记录，快捷查看{note}、{project}、{link}、以及{idea}。",
+    "message": "快捷查看{note}、{project}、{link}、以及{idea}。",
     "description": "hero look"
   },
   "hompage.hero.note": {
@@ -122,7 +122,7 @@
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} 分钟阅读",
+    "message": "阅读需{readingTime} 分钟",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMoreLabel": {

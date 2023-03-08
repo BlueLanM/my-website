@@ -29,10 +29,10 @@ function Hero() {
       <animated.div className={styles.hero}>
         <div className={styles.bloghome__intro}>
           <animated.div style={trails[0]} className={styles.hero_text}>
-            <Translate id="homepage.hero.greet">蓝莓の</Translate>
-            <span className={styles.intro__name}>
+            <Translate id="homepage.hero.greet">LanM</Translate>
+            {/* <span className={styles.intro__name}>
               <Translate id="homepage.hero.name">Blog</Translate>
-            </span>
+            </span> */}
           </animated.div>
           <animated.p style={trails[1]}>
             {/* <Translate id="homepage.hero.text">

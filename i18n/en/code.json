@@ -12,7 +12,7 @@
     "description": "hero text"
   },
   "homepage.hero.look": {
-    "message": "Record, quickly view {note}, {project}, {link}, and {idea}.",
+    "message": "Quickly view {note}, {project}, {link}, and {idea}.",
     "description": "hero need"
   },
   "hompage.hero.note": {
