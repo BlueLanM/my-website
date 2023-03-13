@@ -60,6 +60,7 @@ const config = {
   ],
   plugins: [
     "docusaurus-plugin-sass",
+    "@docusaurus/plugin-google-analytics",
     path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
 
