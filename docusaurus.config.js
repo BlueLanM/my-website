@@ -63,6 +63,7 @@ const config = {
     "docusaurus-plugin-sass",
 
     path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"),
+    path.resolve(__dirname, "./src/plugin/plugin-google"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
 
     [
