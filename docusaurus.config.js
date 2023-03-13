@@ -51,11 +51,7 @@ const config = {
           changefreq: "daily",
           priority: 0.5,
         },
-        googleAnalytics: {
-          trackingID: "G-58V3HGPSD1",
-          // Optional fields.
-          anonymizeIP: true, // Should IPs be anonymized?
-        },
+
         gtag: {
           trackingID: "G-58V3HGPSD1",
           anonymizeIP: true,
