@@ -16,13 +16,6 @@ module.exports = function (context, options) {
             })();
           `,
           },
-          {
-            tagName: "meta",
-            attributes: {
-              name: "baidu-site-verification",
-              content: "code-rqLUw5reVS",
-            },
-          },
         ],
       };
     },
