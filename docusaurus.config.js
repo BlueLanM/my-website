@@ -198,6 +198,11 @@ const config = {
           },
         ],
       },
+      googleAnalytics: {
+        trackingID: "G-58V3HGPSD1",
+        // Optional fields.
+        anonymizeIP: true, // Should IPs be anonymized?
+      },
       algolia: {
         appId: "KFB5UP84UF",
         apiKey: "2527b8673db145613ad39c1e5416b4cf",
