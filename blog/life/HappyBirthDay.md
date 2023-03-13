@@ -13,4 +13,4 @@ import Happy from "./happy.tsx";
 
 <!-- truncate -->
 
-<Happy/>
+<center><Happy/></center>
