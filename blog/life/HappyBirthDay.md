@@ -9,7 +9,7 @@ keywords: [life, 随笔]
 
 import Happy from "./happy.tsx";
 
-祝我生日快乐 🎂
+祝自己生日快乐 🎂
 
 <!-- truncate -->
 
