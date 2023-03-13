@@ -1,6 +1,6 @@
 ---
 slug: /happyBirthday
-title: Happy birthday!
+title: Happy Birthday!
 date: 2023-03-10
 authors: LanM
 tags: [life, 随笔]
