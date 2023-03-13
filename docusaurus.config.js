@@ -200,7 +200,7 @@ const config = {
         ],
       },
       googleAnalytics: {
-        trackingID: "G-58V3HGPSD1",
+        trackingID: "4699133048",
         // Optional fields.
         anonymizeIP: true, // Should IPs be anonymized?
       },
