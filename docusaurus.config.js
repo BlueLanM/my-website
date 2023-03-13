@@ -57,7 +57,7 @@ const config = {
           anonymizeIP: true, // Should IPs be anonymized?
         },
         gtag: {
-          trackingID: "G-S4SD5NXWXF",
+          trackingID: "G-58V3HGPSD1",
           anonymizeIP: true,
         },
       }),
