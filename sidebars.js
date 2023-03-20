@@ -3,7 +3,14 @@ const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   record: [
     "Study/introduction",
-
+    {
+      label: "IQ",
+      type: "category",
+      link: {
+        type: "generated-index",
+      },
+      items: ["Study/IQ/IQ"],
+    },
     {
       label: "Git",
       type: "category",
