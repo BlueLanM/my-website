@@ -215,6 +215,8 @@ html[data-theme="dark"] .theme-code-block {
 }
 
 .markdown {
+ 
+
   h1 {
     font-size: 2.2em;
   }
@@ -238,7 +240,7 @@ html[data-theme="dark"] .theme-code-block {
 
       border-bottom: 4px solid var(--ifm-color-primary);
       animation: h2An 2s ease infinite alternate;
-      
+
 
     }
 
@@ -264,61 +266,68 @@ html[data-theme="dark"] .theme-code-block {
   }
 
   @keyframes h2An {
-   0% {
+    0% {
       width: 20%;
       opacity: 0;
     }
-   
+
     100% {
       opacity: 1;
-      width: 100% 
-    } 
+      width: 100%
+    }
   }
+
   @keyframes h2AnAfter {
-  from {
-     
+    from {
+
       opacity: 0;
     }
-   
+
     to {
       opacity: 1;
-     
-    } 
+
+    }
   }
 
   h3 {
     font-size: 1.4em;
     display: flex;
+
     &::before {
       margin-right: 0.5em;
       width: 1.3em;
-      
+      height: 1.3em;
       display: inline-block;
       display: flex;
       justify-content: center;
       border-radius: 50%;
       background: var(--ifm-color-primary);
       text-align: center;
-      animation: h3Before 1.5s  infinite  alternate-reverse;
-    
+      animation: h3Before 2s infinite alternate-reverse;
+
       color: white;
       content: "✖";
     }
   }
-  @keyframes h3Before{
-    from{
+
+  @keyframes h3Before {
+    from {
       transform: rotate(0deg);
     }
-    to{
+
+    to {
       transform: rotate(360deg);
     }
   }
+
   h4 {
     font-size: 1.1em;
     display: flex;
+
     &::before {
       margin-right: 0.5em;
       width: 1.3em;
+      height: 1.3em;
       display: inline-block;
       display: flex;
       justify-content: center;
