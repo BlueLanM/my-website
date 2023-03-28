@@ -216,64 +216,65 @@ const config = {
         lang: "zh-CN",
       },
       footer: {
-        style: "dark",
-        links: [
-          {
-            title: "学习",
-            items: [
-              {
-                label: "标签",
-                to: "tags",
-              },
-              {
-                label: "归档",
-                to: "archive",
-              },
-              {
-                label: "笔记",
-                to: "docs/record/",
-              },
-            ],
-          },
-          {
-            title: "社区",
-            items: [
-              {
-                label: "关于我",
-                href: "/about",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/BlueLanM/my-website",
-              },
-              {
-                label: "CSDN",
-                href: "https://blog.csdn.net/BLUESKYwang66",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/Jason__Wang_",
-              },
-            ],
-          },
-          {
-            title: "更多",
-            items: [
-              {
-                label: "项目",
-                to: "project",
-              },
-              {
-                label: "导航",
-                to: "website",
-              },
-              {
-                html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`,
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} - PRESENT LanM Built with Docusaurus.`,
+        style: "light",
+
+        // links: [
+        //   {
+        //     title: "学习",
+        //     items: [
+        //       {
+        //         label: "标签",
+        //         to: "tags",
+        //       },
+        //       {
+        //         label: "归档",
+        //         to: "archive",
+        //       },
+        //       {
+        //         label: "笔记",
+        //         to: "docs/record/",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "社区",
+        //     items: [
+        //       {
+        //         label: "关于我",
+        //         href: "/about",
+        //       },
+        //       {
+        //         label: "GitHub",
+        //         href: "https://github.com/BlueLanM/my-website",
+        //       },
+        //       {
+        //         label: "CSDN",
+        //         href: "https://blog.csdn.net/BLUESKYwang66",
+        //       },
+        //       {
+        //         label: "Twitter",
+        //         href: "https://twitter.com/Jason__Wang_",
+        //       },
+        //     ],
+        //   },
+        //   {
+        //     title: "更多",
+        //     items: [
+        //       {
+        //         label: "项目",
+        //         to: "project",
+        //       },
+        //       {
+        //         label: "导航",
+        //         to: "website",
+        //       },
+        //       {
+        //         html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`,
+        //       },
+        //     ],
+        //   },
+        // ],
+        copyright: `@${new Date().getFullYear()} LanM. All rights reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
