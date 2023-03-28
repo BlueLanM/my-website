@@ -304,10 +304,10 @@ html[data-theme="dark"] .theme-code-block {
       background: var(--ifm-color-primary);
       text-align: center;
       animation: h3Before 2s infinite alternate-reverse;
-
       color: white;
       content: "✖";
-    }
+      -webkit-animation: h3Before 2s infinite alternate-reverse;
+}
   }
 
   @keyframes h3Before {
@@ -681,12 +681,13 @@ html[data-theme="dark"] .pagination-nav__link {
   position: relative;
   text-align: center;
   height: 100%;
-  background: linear-gradient(60deg,
-      rgba(84, 58, 183, 1) 0%,
-      rgba(0, 172, 193, 1) 100%);
+  background-color: #fff;
+  // background: linear-gradient(60deg,
+  //     rgba(84, 58, 183, 1) 0%,
+  //     rgba(0, 172, 193, 1) 100%);
   /* background: linear-gradient(0deg, rgb(112, 96, 177) 0%, rgb(184, 221, 236) 100%); */
   /* background: #fff; */
-  color: white;
+  // color: white;
 }
 
 .footer__link-item {
