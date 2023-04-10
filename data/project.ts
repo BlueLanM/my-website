@@ -5,7 +5,25 @@ export const projects: Project[] = [
     preview: "/img/project/blog.png",
     website: "https://lanm.love",
     source: "https://github.com/BlueLanM/my-website",
-    tags: ["opensource", "design", "favorite"],
+    tags: ["opensource", "design", "favorite", "personal"],
+    type: "web",
+  },
+  {
+    title: "蓝莓的组件库",
+    description: "基于storyBook开发的个人组件库",
+    preview: "/img/project/component.png",
+    website: "https://component.lanm.love/",
+    source: "https://github.com/BlueLanM/lanm-component",
+    tags: ["opensource", "design", "favorite", "personal"],
+    type: "web",
+  },
+  {
+    title: "蓝莓的CSS玩具库",
+    description: "个人CSS收集库,基于Vite",
+    preview: "/img/project/toy.png",
+    website: "https://tools.lanm.love",
+    source: "https://github.com/BlueLanM/lanm-toy-library",
+    tags: ["opensource", "design", "favorite", "personal"],
     type: "web",
   },
   {
@@ -14,7 +32,7 @@ export const projects: Project[] = [
     preview: "/img/project/nodejs.png",
     website: "https://github.com/BlueLanM/NodeJs",
     source: "https://github.com/BlueLanM/NodeJs",
-    tags: ["opensource", "design", "personal", "favorite"],
+    tags: ["opensource", "design", "personal"],
     type: "other",
   },
   {
@@ -22,7 +40,15 @@ export const projects: Project[] = [
     description: "实现对数据里的模型管理",
     preview: "/img/project/dataModal.png",
     website: "",
-    tags: ["personal", "favorite"],
+    tags: ["design", "large"],
+    type: "personal",
+  },
+  {
+    title: "数据填报前台",
+    description: "前台页面展示",
+    preview: "/img/project/home.png",
+    website: "",
+    tags: ["design", "large"],
     type: "personal",
   },
 ];
@@ -47,7 +73,7 @@ export type Project = {
   title: string;
   description: string;
   preview?: any;
-  website: string;
+  website?: string;
   source?: string | null;
   tags: TagType[];
   type: ProjectType;
