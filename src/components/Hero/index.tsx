@@ -71,7 +71,7 @@ function Hero() {
           <SocialLinks style={trails[2]} />
 
           <animated.div style={trails[3]} className={styles.animated}>
-            <DayAndNight />
+            {/* <DayAndNight /> */}
             <a className={styles.intro} href={"./about"}>
               <Translate id="hompage.hero.introduce">关于我</Translate>
             </a>
