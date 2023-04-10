@@ -172,6 +172,20 @@ const config = {
             to: "project",
           },
           {
+            label: "工具",
+            position: "right",
+            items: [
+              {
+                label: "组件库",
+                to: "https://component.lanm.love",
+              },
+              {
+                label: "玩具库",
+                to: "https://tools.lanm.love",
+              },
+            ],
+          },
+          {
             label: "🚀 导航",
             position: "right",
             to: "website",
