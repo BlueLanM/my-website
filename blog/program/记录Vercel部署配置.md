@@ -24,3 +24,5 @@ keywords: [vercel, blog]
 ![image](./img/vercel-script.png)
 
 解释一下，此处的 ** -o .docs-story ** 的意思是，在打包时创建名为 docs-story 的文件夹，并将打包好的静态资源全部存入这个文件夹中
+
+### 接下来重新 deploy 就好了
