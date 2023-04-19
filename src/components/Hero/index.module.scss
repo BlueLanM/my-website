@@ -20,6 +20,198 @@
   padding-left: 4em;
   position: relative;
   z-index: 10;
+
+  // cursor: pointer;
+}
+.introCard {
+  position: absolute;
+  transform-origin: bottom right;
+  transform: rotateZ(0deg);
+  // opacity: 0;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 13px;
+  // min-width: 560px;
+  // width: 90%;
+  // max-width: 650px;
+  // height: 400px;
+  // background: #f6f8fa;
+  // border-radius: 10px;
+  // box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s all ease-in-out;
+  pointer-events: none;
+}
+.card {
+  opacity: 0;
+}
+.front {
+  // @extend .introCard;
+  position: absolute;
+  transform-origin: bottom right;
+  // transform: rotateZ(-6deg);
+  opacity: 1;
+  transform: rotateZ(0);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 13px;
+  min-width: 560px;
+  width: 90%;
+  max-width: 650px;
+  height: 450px;
+  background: #f6f8fa;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s all ease-in-out;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.followed {
+  // @extend .introCard;
+  position: absolute;
+  transform-origin: bottom right;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 13px;
+  min-width: 560px;
+  width: 90%;
+  max-width: 650px;
+  height: 450px;
+  background: #f6f8fa;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s all ease-in-out;
+  opacity: 0.5;
+  transform-origin: bottom right;
+  transform: rotateZ(6deg);
+  box-shadow: none;
+  z-index: 8;
+}
+.fall {
+  // @extend .introCard;
+  position: absolute;
+  transform-origin: bottom right;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 13px;
+  min-width: 560px;
+  width: 90%;
+  max-width: 650px;
+  height: 450px;
+  background: #f6f8fa;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.5s all ease-in-out;
+  transform-origin: bottom right;
+  box-shadow: none;
+  // z-index: 12;
+  animation: falldown 1s ease-in-out;
+}
+
+@keyframes falldown {
+  0% {
+    opacity: 1;
+    transform: rotateZ(0);
+  }
+
+  70% {
+    opacity: 0.5;
+  }
+
+  90% {
+    opacity: 0;
+    transform: rotateZ(-90deg) scale(0.9);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateZ(-90deg) scale(0);
+  }
+}
+.circles {
+  display: flex;
+  /* padding: 15px 0 15px 13px; */
+}
+
+.navCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fefefe;
+  margin: 0 4px;
+}
+
+.red {
+  background: #ed4040;
+}
+
+.yellow {
+  background: #ecb62c;
+}
+
+.green {
+  background: #26e05a;
+}
+
+.procode {
+  margin-top: 20px;
+  /* font-size: 1.5em; */
+  font-size: 19.5px;
+  line-height: 25px;
+  color: #fefefe;
+}
+.procode pre {
+  // background-color: #2a2a32;
+  padding: 0;
+
+  background-color: #f6f8fa;
+}
+
+html[data-theme="dark"] .introCard {
+  transition: none;
+  background-color: #2a2a32;
+}
+html[data-theme="dark"] .procode pre {
+  transition: none;
+  background-color: #2a2a32;
+}
+.cm_mao {
+  color: #393a34;
+  margin-right: 10px;
+}
+.cm_dou {
+  color: #393a34;
+}
+.cm_keyword {
+  color: #00009f;
+}
+
+.cm_def {
+  color: #393a34;
+}
+
+.cm_operator {
+  color: #393a34;
+}
+
+.cm_string {
+  color: #e3116c;
+}
+
+.cm_property {
+  color: #36acaa;
+}
+
+.CodeMirror_line {
+  overflow: visible;
+  white-space: pre-wrap;
+  word-break: normal;
+  margin: 0;
 }
 
 .bloghome__intro .hero_text {
@@ -56,6 +248,9 @@ html[data-theme="dark"] .bloghome__intro > p {
   z-index: 5;
   align-items: center;
   justify-items: center;
+  // padding: 1em;
+  // padding-left: 4em;
+  // position: relative;
 }
 
 .bloghome__image svg {
@@ -316,7 +511,15 @@ html[data-theme="dark"] .parallax > use:nth-child(4) {
     flex-direction: column;
     align-items: center;
   }
-
+  .front {
+    width: 5em;
+  }
+  .followed {
+    width: 5em;
+  }
+  .fall {
+    width: 5em;
+  }
   .bloghome__image {
     width: 100%;
     justify-self: center;
@@ -346,7 +549,15 @@ html[data-theme="dark"] .parallax > use:nth-child(4) {
     height: auto;
     padding-left: 12px;
   }
-
+  .front {
+    width: 3em;
+  }
+  .followed {
+    width: 3em;
+  }
+  .fall {
+    width: 3em;
+  }
   .bloghome__intro {
     padding-top: 2em;
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useTrail, animated } from "@react-spring/web";
 import Translate from "@docusaurus/Translate";
@@ -11,9 +11,15 @@ import JuejinIcon from "./img/hero_main.svg";
 import { Icon } from "@iconify/react";
 import DayAndNight from "../Day&Night/index";
 import styles from "./index.module.scss";
+import { IntroCard, LangCard, SocialCard, ProjectCard } from "./card";
+
 // const styles = require("./index.module.scss");
 
 function Hero() {
+  const [card1, setCard1] = useState(1);
+  const [card2, setCard2] = useState(2);
+  const [card3, setCard3] = useState(-1);
+  const [card4, setCard4] = useState(0);
   const trails = useTrail(4, {
     from: { opacity: 0, transform: "translate3d(0px, 2em, 0px)" },
     to: { opacity: 1, transform: "translate3d(0px, 0px, 0px)" },
@@ -23,21 +29,41 @@ function Hero() {
       friction: 45,
     },
   });
+  const handleOnClick = () => {
+    if (card1 == 2) setCard1(-1);
+    else setCard1(card1 + 1);
 
+    if (card2 == 2) setCard2(-1);
+    else setCard2(card2 + 1);
+
+    if (card3 == 2) setCard3(-1);
+    else setCard3(card3 + 1);
+
+    if (card4 == 2) setCard4(-1);
+    else setCard4(card4 + 1);
+  };
+  const states = {
+    "-3": "",
+    "-2": "",
+    "-1": "card",
+    "0": "followed",
+    "1": "front",
+    "2": "fall",
+  };
   return (
     <>
       <animated.div className={styles.hero}>
         <div className={styles.bloghome__intro}>
           <animated.div style={trails[0]} className={styles.hero_text}>
             <Translate id="homepage.hero.greet">LanM</Translate>
-            {/* <span className={styles.intro__name}>
-              <Translate id="homepage.hero.name">Blog</Translate>
-            </span> */}
+            <span className={styles.intro__name}>
+              {/* <Translate id="homepage.hero.name">Blog</Translate> */}
+            </span>
           </animated.div>
-          <animated.p style={trails[1]}>
-            {/* <Translate id="homepage.hero.text">
-            {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
-          </Translate> */}
+          {/* <animated.p style={trails[1]}>
+            <Translate id="homepage.hero.text">
+              {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
+            </Translate>
 
             <Translate
               id="homepage.hero.look"
@@ -66,7 +92,7 @@ function Hero() {
             >
               {`记录，快捷查看{note}、{project}、{link}、以及我的{idea}。`}
             </Translate>
-          </animated.p>
+          </animated.p> */}
 
           <SocialLinks style={trails[2]} />
 
@@ -76,7 +102,16 @@ function Hero() {
               <Translate id="hompage.hero.introduce">关于我</Translate>
             </a>
           </animated.div>
+          {/* <HeroMain /> */}
         </div>
+        {/* <div className={styles.bloghome__image} onClick={handleOnClick}>
+          <div className={styles.introCard}>
+            <IntroCard count={0} curState={states[card1]} />
+            <LangCard count={1} curState={states[card2]} />
+            <SocialCard count={2} curState={states[card3]} />
+            <ProjectCard count={3} curState={states[card4]} />
+          </div>
+        </div> */}
         <div className={styles.bloghome__image}>
           <HeroMain />
         </div>
