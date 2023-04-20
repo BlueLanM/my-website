@@ -2,7 +2,7 @@ export const projects: Project[] = [
   {
     title: "蓝莓的小站",
     description: "基于Docusaurus v2 静态网站生成器实现个人博客",
-    preview: "/img/project/blog.png",
+    preview: "/img/project/blog2.0.png",
     website: "https://lanm.love",
     source: "https://github.com/BlueLanM/my-website",
     tags: ["opensource", "design", "favorite", "personal"],
