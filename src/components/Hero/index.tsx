@@ -17,8 +17,8 @@ import { IntroCard, LangCard, SocialCard, ProjectCard } from "./card";
 
 function Hero() {
   const [card1, setCard1] = useState(1);
-  const [card2, setCard2] = useState(2);
-  const [card3, setCard3] = useState(-1);
+  const [card2, setCard2] = useState(-1);
+  const [card3, setCard3] = useState(-2);
   const [card4, setCard4] = useState(0);
   const trails = useTrail(4, {
     from: { opacity: 0, transform: "translate3d(0px, 2em, 0px)" },
@@ -44,7 +44,7 @@ function Hero() {
   };
   const states = {
     "-3": "",
-    "-2": "",
+    "-2": "cards",
     "-1": "card",
     "0": "followed",
     "1": "front",
@@ -102,18 +102,18 @@ function Hero() {
               <Translate id="hompage.hero.introduce">关于我</Translate>
             </a>
           </animated.div>
-          {/* <HeroMain /> */}
+
+          <div className={styles.bloghome__image}>
+            <HeroMain />
+          </div>
         </div>
-        {/* <div className={styles.bloghome__image} onClick={handleOnClick}>
+        <div className={styles.bloghome__image} onClick={handleOnClick}>
           <div className={styles.introCard}>
             <IntroCard count={0} curState={states[card1]} />
             <LangCard count={1} curState={states[card2]} />
             <SocialCard count={2} curState={states[card3]} />
             <ProjectCard count={3} curState={states[card4]} />
           </div>
-        </div> */}
-        <div className={styles.bloghome__image}>
-          <HeroMain />
         </div>
       </animated.div>
       <div className={styles.footer}>

@@ -29,7 +29,8 @@
   transform: rotateZ(0deg);
   // opacity: 0;
   z-index: 1;
-  top: 0;
+  top: -60px;
+  right: 50px;
   display: flex;
   flex-direction: column;
   padding: 15px 13px;
@@ -46,20 +47,25 @@
 .card {
   opacity: 0;
 }
+.cards {
+  opacity: 0;
+}
 .front {
   // @extend .introCard;
   position: absolute;
+
   transform-origin: bottom right;
   // transform: rotateZ(-6deg);
   opacity: 1;
   transform: rotateZ(0);
-  top: 0;
+  top: 230px;
+  right: 310px;
   display: flex;
   flex-direction: column;
   padding: 15px 13px;
-  min-width: 560px;
+  min-width: 610px;
   width: 90%;
-  max-width: 650px;
+  max-width: 610px;
   height: 450px;
   background: #f6f8fa;
   border-radius: 10px;
@@ -73,13 +79,14 @@
   // @extend .introCard;
   position: absolute;
   transform-origin: bottom right;
-  top: 0;
+  top: 230px;
+  right: 310px;
   display: flex;
   flex-direction: column;
   padding: 15px 13px;
-  min-width: 560px;
+  min-width: 610px;
   width: 90%;
-  max-width: 650px;
+  max-width: 610px;
   height: 450px;
   background: #f6f8fa;
   border-radius: 10px;
@@ -95,13 +102,14 @@
   // @extend .introCard;
   position: absolute;
   transform-origin: bottom right;
-  top: 0;
+  top: 230px;
+  right: 310px;
   display: flex;
   flex-direction: column;
   padding: 15px 13px;
-  min-width: 560px;
+  min-width: 610px;
   width: 90%;
-  max-width: 650px;
+  max-width: 610px;
   height: 450px;
   background: #f6f8fa;
   border-radius: 10px;
@@ -168,17 +176,54 @@
 .procode pre {
   // background-color: #2a2a32;
   padding: 0;
-
+  margin-bottom: 3px;
   background-color: #f6f8fa;
 }
 
 html[data-theme="dark"] .introCard {
   transition: none;
-  background-color: #2a2a32;
+  // background-color: #2a2a32;
+}
+html[data-theme="dark"] .front {
+  // transition: none;
+  box-shadow: 0 10px 60px 5px #1d6c94, 0 0 10px 0 #1d6c94;
+  background-color: #1e1e1e;
+}
+html[data-theme="dark"] .fall {
+  // transition: none;
+  box-shadow: 0 10px 60px 5px #1d6c94, 0 0 10px 0 #1d6c94;
+  background-color: #1e1e1e;
+}
+html[data-theme="dark"] .followed {
+  // transition: none;
+  box-shadow: 0 10px 60px 5px #1d6c94, 0 0 10px 0 #1d6c94;
+
+  background-color: #1e1e1e;
 }
 html[data-theme="dark"] .procode pre {
-  transition: none;
-  background-color: #2a2a32;
+  // transition: none;
+  background-color: #1e1e1e;
+}
+html[data-theme="dark"] .cm_keyword {
+  color: #9878c6;
+}
+html[data-theme="dark"] .cm_def {
+  color: #f8f8f2;
+}
+html[data-theme="dark"] .cm_operator {
+  color: #f8f8f2;
+}
+html[data-theme="dark"] .cm_string {
+  color: #d668a7;
+}
+html[data-theme="dark"] .cm_property {
+  color: #f8f8f2;
+}
+html[data-theme="dark"] .cm_dou {
+  color: #f8f8f2;
+}
+html[data-theme="dark"] .cm_mao {
+  color: #f8f8f2;
 }
 .cm_mao {
   color: #393a34;
@@ -499,6 +544,9 @@ html[data-theme="dark"] .parallax > use:nth-child(4) {
     /* background-position: center bottom;
         background-size: 70vh; */
   }
+  .introCard {
+    display: none;
+  }
   .animated {
     display: flex;
     flex-direction: column;
@@ -539,7 +587,9 @@ html[data-theme="dark"] .parallax > use:nth-child(4) {
   .hero {
     height: auto;
   }
-
+  .introCard {
+    display: none;
+  }
   .bloghome__image {
     padding-top: 2em;
   }
