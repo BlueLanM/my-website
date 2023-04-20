@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     title: "蓝莓的CSS玩具库",
     description: "个人CSS收集库,基于Vite",
-    preview: "/img/project/toy.png",
+    preview: "/img/project/toy2.0.png",
     website: "https://tools.lanm.love",
     source: "https://github.com/BlueLanM/lanm-toy-library",
     tags: ["opensource", "design", "favorite", "personal"],
