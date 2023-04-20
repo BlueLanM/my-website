@@ -19,9 +19,25 @@
     "message": "🏷️ Tags",
     "description": "Navbar item with label 🏷️ 标签"
   },
+  "item.label.🎯 生活": {
+    "message": "🎯 Life",
+    "description": "Navbar item with label 🎯 生活"
+  },
   "item.label.📌 项目": {
     "message": "📌 Project",
     "description": "Navbar item with label 📌 项目"
+  },
+  "item.label.🧰 工具": {
+    "message": "🧰 Tools",
+    "description": "Navbar item with label 🧰 工具"
+  },
+  "item.label.⚙️ 组件库": {
+    "message": "⚙️ Component",
+    "description": "Navbar item with label ⚙️ 组件库"
+  },
+  "item.label.🧩 玩具库": {
+    "message": "🧩 Toy",
+    "description": "Navbar item with label 🧩 玩具库"
   },
   "item.label.🚀 导航": {
     "message": "🚀 Website",
