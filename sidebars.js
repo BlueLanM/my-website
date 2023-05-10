@@ -9,7 +9,7 @@ const sidebars = {
       link: {
         type: "generated-index",
       },
-      items: ["Study/IQ/IQ"],
+      items: ["Study/IQ/IQ-CSS", "Study/IQ/IQ-JavaScript"],
     },
     {
       label: "Git",

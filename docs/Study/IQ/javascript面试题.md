@@ -1,86 +1,15 @@
 ---
-id: IQ
-slug: /IQ
-title: 面试题
-date: 2023-03-20
+id: IQ-JavaScript
+slug: /IQ/JavaScript
+title: JavaScript面试题
+date: 2023-05-10
 authors: LanM
-tags: [IQ]
-keywords: [IQ]
-siderbar_position: 1
+tags: [IQ, JavaScript]
+keywords: [IQ, JavaScript]
+siderbar_position: 2
 ---
 
-## Html5 和 CSS3
-
-![image](./img/html.png)
-![image](./img/CSS.jpg)
-
-### src 和 href 的区别
-
-src 用于替换当前元素，href 用于在当前文档和引用资源之间确认联系。
-
-- src
-  src 是 source 的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置，
-
-### 常见的水平垂直居中实现方案
-
-- flex 布局方法
-
-  ```css
-  .father {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .son {
-    ...;
-  }
-  ```
-
-- 绝对定位配合 margin:auto，的实现方案
-
-  ```css
-  .father {
-    position: relative;
-  }
-  .son {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-  }
-  ```
-
-- 绝对定位配合 transform 实现
-
-  ```css
-  .father {
-    position: relative;
-  }
-  .son {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  ```
-
-### BFC 问题
-
-BFC：块格式上下文，是一块独立的渲染区域，内部元素不会影响外部的元素。
-
-### flex:1; 是哪些属性的缩写，对应的属性代表什么含义
-
-flex:1 分别是<br/> **flex-grow**（设置了对应元素的增长系数）<br/>**flex-shrink**(指定了对应元素的收缩规则，只有在所有元素的默认宽度之和大于容器宽度时才会触发)<br/>**flex-basis**（指定了对应元素在主轴上的大小）
-
-![image](./img/flex.jpg)
-
-### 隐藏元素的属性有哪些
-
-- display: none;
-- visibility: hidden;
-- opacity: 0;
+![image](./img/javascript.png)
 
 ## JavaScript
 
@@ -90,6 +19,39 @@ flex:1 分别是<br/> **flex-grow**（设置了对应元素的增长系数）<br
 
 typeof 能识别所有的值类型，识别函数，能区分是否是引用类型。<br/>
 instanceof 用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上。
+
+### 数据类型的检测方式有哪些
+
+- typeof
+
+```jsx
+console.log(typeof 2); //number
+console.log(typeof true); //boolean
+console.log(typeof "str"); //string
+console.log(typeof []); //object
+console.log(typeof {}); //object
+console.log(typeof function () {}); //function
+console.log(typeof undefined); //undefined
+console.log(typeof null); //object
+```
+
+其中，数组、对象和 null 都会判断为 object
+
+- instanceof
+
+`instanceof`可以正确判断对象的类型，**其内部运行机制是判断在其原型链中能否找到该类型的原型。**
+
+```jsx
+console.log(2 instanceof Number); //false
+console.log(true instanceof Boolean); //false
+console.log("str" instanceof String); //false
+
+console.log([] instanceof Array); //true
+console.log(function () {} instanceof Function); //true
+console.log({} instanceof Object); //true
+```
+
+可以看到，`instanceof`只能正确判断引用数据类型，而不能判断基本数据类型。`instanceof`运算符可以用来测试一个对象在其原型链中是否存在一个构造函数的`prototype`属性。
 
 ### 数组的 forEach 和 map 方法有哪些区别？常用哪些方法去对数组进行增、删、改
 
@@ -147,9 +109,3 @@ console.log("p.name :>> ", p.name); // p.name :>>  Jerome
 const 保证的并不是变量的值不能改动，而是变量指向的那个内存地址不能改动，而对于基本类型的数据（数值、字符串、布尔值），它的值就保存在变量指向的内存地址，因此等同于常量。
 
 但如果对于引用数据类型的数据（对象，数组）来说，变量指向数据的内存地址，保存的只是一个指针，const 只能保证这个指针不变，至于它的数据结构是不是可变得，就不能控制了。
-
-## React
-
-```
-
-```
