@@ -78,6 +78,11 @@ const sidebars = {
       type: "category",
       items: ["Life/lonely"],
     },
+    {
+      label: "圆了一个小小的梦",
+      type: "category",
+      items: ["Life/dream"],
+    },
   ],
 };
 
