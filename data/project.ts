@@ -51,6 +51,14 @@ export const projects: Project[] = [
     tags: ["design", "large"],
     type: "personal",
   },
+  {
+    title: "八爪鱼数据中台",
+    description: "",
+    preview: "/img/project/bazhuayu.png",
+    website: "",
+    tags: ["design", "large"],
+    type: "personal",
+  },
 ];
 
 export type Tag = {
