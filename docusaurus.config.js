@@ -33,7 +33,7 @@ const config = {
       ({
         docs: {
           path: "docs",
-          sidebarPath: "sidebars.js",
+          sidebarPath: "sidebars.ts",
           showLastUpdateTime: true,
         },
         // blog: {
