@@ -3,8 +3,8 @@ slug: js-key-value
 title: JavaScript中的键值对
 date: 2023-04-03
 authors: LanM
-tags: [react, JavaScript]
-keywords: [react, JavaScript]
+tags: [Study]
+keywords: [Study]
 ---
 
 ### 关于对象中的键值对，我一直都是云里雾里，在此记录一下今天遇到的问题。
