@@ -53,7 +53,7 @@ export const projects: Project[] = [
   },
   {
     title: "八爪鱼数据中台",
-    description: "",
+    description: "一带一路文献库",
     preview: "/img/project/bazhuayu.png",
     website: "",
     tags: ["design", "large"],
