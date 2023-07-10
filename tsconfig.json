@@ -35,8 +35,8 @@
     // with our declaration files (mostly names that are forgotten to be
     // imported, invalid semantics...). Because we don't have end-to-end type
     // tests, removing this would make things much harder to catch.
-    "skipLibCheck": false,
-    "types": ["jest"]
+    "skipLibCheck": false
+    // "types": ["jest"]
   },
   "exclude": ["src/sw.js"]
 }
