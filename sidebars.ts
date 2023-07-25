@@ -80,6 +80,7 @@ const sidebars = {
     },
     "Life/dream",
     "Life/house",
+    "Life/network",
     "Life/workPlace",
 
     {
