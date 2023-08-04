@@ -5,11 +5,11 @@ date: 2023-08-04
 authors: LanM
 tags: [Study]
 keywords: [Study]
-image: /assets/images/XRender-62b1a8a543599f937884d84f3d56f0da.png
+image: /assets/images/Xrender-62b1a8a543599f937884d84f3d56f0da.png
 sticky: 4
 ---
 
-![image](./img/XRender.png)
+![image](./img/Xrender.png)
 
 入职到现在，目前接触到了一个万能表格组件----XRender，其中分为 FormRender、TableRender 以及 ChartRender
 
