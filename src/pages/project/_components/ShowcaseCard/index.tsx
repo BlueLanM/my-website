@@ -91,9 +91,6 @@ const ShowcaseCard = memo(({ project }: { project: Project }) => {
             src={project.preview}
             alt={project.title}
             img={project.preview}
-            onClick={() => {
-              window.open(`${project.preview}`, "imageWindow", "toolbar=no");
-            }}
           />
         </div>
       )}

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { useTrail, animated } from "@react-spring/web";
 import Translate from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Link from "@docusaurus/Link";
-
+import Typed from "typed.js";
 import HeroMain from "./img/hero_6.svg";
 
 import JuejinIcon from "./img/hero_main.svg";
@@ -20,6 +20,8 @@ function Hero() {
   const [card2, setCard2] = useState(-1);
   const [card3, setCard3] = useState(-2);
   const [card4, setCard4] = useState(0);
+  const typingElement = React.useRef(null);
+  const descElement = React.useRef(null);
   const trails = useTrail(4, {
     from: { opacity: 0, transform: "translate3d(0px, 2em, 0px)" },
     to: { opacity: 1, transform: "translate3d(0px, 0px, 0px)" },
@@ -29,6 +31,20 @@ function Hero() {
       friction: 45,
     },
   });
+
+  useEffect(() => {
+    const typed = new Typed(typingElement.current, {
+      stringsElement: descElement.current,
+      typeSpeed: 35,
+      loop: true,
+      backDelay: 1500,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   const handleOnClick = () => {
     if (card1 == 2) setCard1(-1);
     else setCard1(card1 + 1);
@@ -54,57 +70,36 @@ function Hero() {
     <>
       <animated.div className={styles.hero}>
         <div className={styles.bloghome__intro}>
-          <animated.div style={trails[0]} className={styles.hero_text}>
-            <Translate id="homepage.hero.greet">LanM</Translate>
-            <span className={styles.intro__name}>
-              {/* <Translate id="homepage.hero.name">Blog</Translate> */}
-            </span>
-          </animated.div>
-          {/* <animated.p style={trails[1]}>
-            <Translate id="homepage.hero.text">
-              {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
-            </Translate>
-
-            <Translate
-              id="homepage.hero.look"
-              values={{
-                note: (
-                  <Link to="/docs/record">
-                    <Translate id="hompage.hero.note">技术笔记</Translate>
-                  </Link>
-                ),
-                project: (
-                  <Link to="/project">
-                    <Translate id="hompage.hero.project">实战项目</Translate>
-                  </Link>
-                ),
-                link: (
-                  <Link to="/website">
-                    <Translate id="hompage.hero.link">网址导航</Translate>
-                  </Link>
-                ),
-                idea: (
-                  <Link to="/tags/随笔">
-                    <Translate id="hompage.hero.idea">生活随笔</Translate>
-                  </Link>
-                ),
-              }}
-            >
-              {`记录，快捷查看{note}、{project}、{link}、以及我的{idea}。`}
-            </Translate>
-          </animated.p> */}
-
-          <SocialLinks style={trails[2]} />
-
-          <animated.div style={trails[3]} className={styles.animated}>
-            {/* <DayAndNight /> */}
-            <a className={styles.intro} href={"./about"}>
+          <div className={styles.bloghome__intro_div}>
+            <animated.div style={trails[0]} className={styles.hero_text}>
+              <Translate id="homepage.hero.greet">LanM</Translate>
+              <span className={styles.intro__name}>
+                {/* <Translate id="homepage.hero.name">Blog</Translate> */}
+              </span>
+            </animated.div>
+            <SocialLinks style={trails[2]} />
+            <animated.div style={trails[3]} className={styles.animated}>
+              {/* <DayAndNight /> */}
+              {/* <a className={styles.intro} href={"./about"}>
               <Translate id="hompage.hero.introduce">关于我</Translate>
-            </a>
-          </animated.div>
+            </a> */}
+            </animated.div>
+            <span className={styles.word_item} ref={typingElement} />
+            <div ref={descElement} className={styles.desc_list}>
+              <span>
+                <Translate id="home.intro.desc1">前端开发</Translate>
+              </span>
 
-          <div className={styles.bloghome__image}>
-            <HeroMain />
+              <span>
+                <Translate id="home.intro.desc2">
+                  技术栈： React, Typescript, Sass, Node
+                </Translate>
+              </span>
+
+              <span>
+                <Translate id="home.intro.desc3">开源爱好者</Translate>
+              </span>
+            </div>
           </div>
         </div>
         <div className={styles.bloghome__image} onClick={handleOnClick}>
