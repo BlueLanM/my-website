@@ -153,13 +153,14 @@ function BlogRecommend({
               <Translate id="theme.blog.title.recommend">💕 推荐阅读</Translate>
             </h2>
           )}
+
           <div className="row">
             <div className="col col--12">
               <div className="bloghome__posts">
                 <ul className="blog__recommend">
                   <Fade direction="up" duration={800} triggerOnce={true}>
                     {recommendedPosts.map((post) => (
-                      <li className={clsx("card")} key={post.permalink}>
+                      <li className={clsx("card")}>
                         {post.frontMatter.image && (
                           <div className={clsx("card__image")}>
                             <Image

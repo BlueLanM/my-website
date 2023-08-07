@@ -142,19 +142,19 @@ const config = {
         hideOnScroll: true,
         items: [
           {
-            label: "📘 学习",
+            label: "学习",
             position: "right",
             items: [
               {
-                label: "🏷️ 标签",
+                label: "标签",
                 to: "tags",
               },
               {
-                label: "📜 归档",
+                label: "归档",
                 to: "archive",
               },
               {
-                label: "📓 笔记",
+                label: "笔记",
                 to: "docs/record/",
               },
             ],
@@ -162,31 +162,31 @@ const config = {
           {
             to: "docs/life/",
             position: "right",
-            label: "🎯 生活",
+            label: "生活",
           },
 
           // { to: "/blog", label: "博客", position: "right" },
           {
-            label: "📌 项目",
+            label: "项目",
             position: "right",
             to: "project",
           },
           {
-            label: "🧰 工具",
+            label: "工具",
             position: "right",
             items: [
               {
-                label: "⚙️ 组件库",
+                label: "组件库",
                 to: "https://component.lanm.love",
               },
               {
-                label: "🧩 玩具库",
+                label: "玩具库",
                 to: "https://tools.lanm.love",
               },
             ],
           },
           {
-            label: "🚀 导航",
+            label: "导航",
             position: "right",
             to: "website",
           },

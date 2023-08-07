@@ -1,6 +1,12 @@
 import clsx from "clsx";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import { Autoplay, FreeMode, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
 import Link from "@docusaurus/Link";
 import Image from "@theme/IdealImage";
 import {
@@ -157,29 +163,46 @@ function BlogRecommend({
               <div className="bloghome__posts">
                 <ul className="blog__recommend">
                   <Fade direction="up" duration={800} triggerOnce={true}>
-                    {recommendedPosts.map((post) => {
-                      console.log(post);
-
-                      return (
-                        <li className={clsx("card")} key={post.permalink}>
-                          {post.frontMatter.image && (
-                            <div className={clsx("card__image")}>
-                              <Image
-                                src={post.frontMatter.image!}
-                                alt={post.title}
-                                img={""}
-                              />
-                            </div>
-                          )}
-                          <div className="card__body">
-                            <h4>
-                              <Link href={post.permalink}>{post.title}</Link>
-                            </h4>
-                            <p>{post.description}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
+                    <Swiper
+                      spaceBetween={50}
+                      slidesPerGroup={1}
+                      slidesPerView={2}
+                      loop={true}
+                      speed={5000}
+                      autoplay={{
+                        delay: 0,
+                        reverseDirection: true,
+                        disableOnInteraction: false,
+                      }}
+                      freeMode={true}
+                      modules={[Autoplay, Navigation, FreeMode]}
+                    >
+                      {recommendedPosts.map((post) => {
+                        return (
+                          <li className={clsx("card")} key={post.permalink}>
+                            <SwiperSlide>
+                              {post.frontMatter.image && (
+                                <div className={clsx("card__image")}>
+                                  <Image
+                                    src={post.frontMatter.image!}
+                                    alt={post.title}
+                                    img={""}
+                                  />
+                                </div>
+                              )}
+                              <div className="card__body">
+                                <h4>
+                                  <Link href={post.permalink}>
+                                    {post.title}
+                                  </Link>
+                                </h4>
+                                <p>{post.description}</p>
+                              </div>
+                            </SwiperSlide>
+                          </li>
+                        );
+                      })}
+                    </Swiper>
                   </Fade>
                 </ul>
               </div>
@@ -226,10 +249,10 @@ function BlogListPageContent(props: Props) {
           )}
           <div className="row">
             <div className={"col col--12"}>
-              <ViewTypeSwitch
+              {/* <ViewTypeSwitch
                 viewType={viewType}
                 toggleViewType={toggleViewType}
-              />
+              /> */}
             </div>
           </div>
           <div className="row">

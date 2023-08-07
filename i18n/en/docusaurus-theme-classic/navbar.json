@@ -3,45 +3,45 @@
     "message": "LanM",
     "description": "The title in the navbar"
   },
-  "item.label.📘 学习":{
-    "message":"📘 Study",
-    "description":"Navbar item with label 📘 学习"
+  "item.label.学习":{
+    "message":"Study",
+    "description":"Navbar item with label 学习"
   },
-  "item.label.📓 笔记": {
-    "message": "📓 Record",
-    "description": "Navbar item with label 📓 笔记"
+  "item.label.笔记": {
+    "message": "Record",
+    "description": "Navbar item with label 笔记"
   },
-  "item.label.📜 归档": {
-    "message": "📜 Archive",
-    "description": "Navbar item with label 📜 归档"
+  "item.label.归档": {
+    "message": "Archive",
+    "description": "Navbar item with label 归档"
   },
-  "item.label.🏷️ 标签": {
-    "message": "🏷️ Tags",
-    "description": "Navbar item with label 🏷️ 标签"
+  "item.label.标签": {
+    "message": "Tags",
+    "description": "Navbar item with label 标签"
   },
-  "item.label.🎯 生活": {
-    "message": "🎯 Life",
-    "description": "Navbar item with label 🎯 生活"
+  "item.label.生活": {
+    "message": "Life",
+    "description": "Navbar item with label 生活"
   },
-  "item.label.📌 项目": {
-    "message": "📌 Project",
-    "description": "Navbar item with label 📌 项目"
+  "item.label.项目": {
+    "message": "Project",
+    "description": "Navbar item with label 项目"
   },
-  "item.label.🧰 工具": {
-    "message": "🧰 Tools",
-    "description": "Navbar item with label 🧰 工具"
+  "item.label.工具": {
+    "message": "Tools",
+    "description": "Navbar item with label 工具"
   },
-  "item.label.⚙️ 组件库": {
-    "message": "⚙️ Component",
-    "description": "Navbar item with label ⚙️ 组件库"
+  "item.label.组件库": {
+    "message": "Component",
+    "description": "Navbar item with label 组件库"
   },
-  "item.label.🧩 玩具库": {
-    "message": "🧩 Toy",
-    "description": "Navbar item with label 🧩 玩具库"
+  "item.label.玩具库": {
+    "message": "Toy",
+    "description": "Navbar item with label 玩具库"
   },
-  "item.label.🚀 导航": {
-    "message": "🚀 Website",
-    "description": "Navbar item with label 🚀 导航"
+  "item.label.导航": {
+    "message": "Website",
+    "description": "Navbar item with label 导航"
   }
   
 }

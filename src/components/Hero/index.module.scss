@@ -7,7 +7,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 8fr 11fr;
-  align-items: center;
+  // align-items: center;
   position: relative;
   /* background: url("/img/hero_main.svg") no-repeat right; */
   /* background-size: 60vw; */
@@ -20,31 +20,49 @@
   padding-left: 4em;
   position: relative;
   z-index: 10;
-
-  // cursor: pointer;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  .bloghome__intro_div{
+    width: 100%;
+  }
+}
+.word_item{
+  font-size: 1.5rem;
+  color:#6c63ff
+}
+.desc_list {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .introCard {
-  position: absolute;
-  transform-origin: bottom right;
-  transform: rotateZ(0deg);
-  // opacity: 0;
-  z-index: 1;
-  top: -120px;
-  right: 0px;
-  display: flex;
-  flex-direction: column;
-  padding: 15px 13px;
-  // min-width: 560px;
-  // width: 90%;
-  // max-width: 650px;
-  // height: 400px;
-  // background: #f6f8fa;
-  // border-radius: 10px;
-  // box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  max-height: 100vh;
+  position: relative;
+ 
+  width: 65%;
+
   transition: 0.5s all ease-in-out;
   pointer-events: none;
 }
 .card {
+  position: absolute;
+ 
+  top: 100px;
+  right: -185px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 13px;
+  min-width: 610px;
+  width: 90%;
+  max-width: 610px;
+  height: 450px;
+  background: #f6f8fa;
+  border-radius: 10px;
+  box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
+  
   opacity: 0;
 }
 .cards {
@@ -58,8 +76,8 @@
   // transform: rotateZ(-6deg);
   opacity: 1;
   transform: rotateZ(0);
-  top: 230px;
-  right: 310px;
+  top: 100px;
+  right: -185px;
   display: flex;
   flex-direction: column;
   padding: 15px 13px;
@@ -79,8 +97,8 @@
   // @extend .introCard;
   position: absolute;
   transform-origin: bottom right;
-  top: 230px;
-  right: 310px;
+  top: 100px;
+  right: -185px;
   display: flex;
   flex-direction: column;
   padding: 15px 13px;
@@ -102,8 +120,8 @@
   // @extend .introCard;
   position: absolute;
   transform-origin: bottom right;
-  top: 230px;
-  right: 310px;
+  top: 100px;
+  right: -185px;
   display: flex;
   flex-direction: column;
   padding: 15px 13px;
@@ -288,9 +306,10 @@ html[data-theme="dark"] .bloghome__intro > p {
 }
 
 .bloghome__image {
-  overflow: hidden;
+  // overflow: hidden;
   width: 100%;
   z-index: 5;
+  position: relative;
   align-items: center;
   justify-items: center;
   // padding: 1em;
@@ -406,6 +425,7 @@ html[data-theme="dark"] .bloghome__intro > p {
   padding: 0.75em 20px;
   margin-top: 1rem;
   margin-left: -2px;
+  margin-bottom: 1rem;
   font-weight: 600;
   background: linear-gradient(
     90deg,
@@ -556,8 +576,15 @@ html[data-theme="dark"] .parallax > use:nth-child(4) {
     padding: 0 var(--ifm-spacing-horizontal);
     padding-top: 4em;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    .bloghome__intro_div{
+      // display: flex;
+      display: inline-flex;
+      flex-direction: column;
+
+      align-items: center;
+    }
+    // flex-direction: column;
+    // align-items: center;
   }
   .front {
     width: 5em;
