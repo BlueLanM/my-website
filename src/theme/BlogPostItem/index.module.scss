@@ -13,34 +13,62 @@ body{
   --yellow: #ffbb00;
 
   --background: var(--black);
-  --accent: var(--red);
+  --accent: #6F67FF;
 }
-::-webkit-scrollbar {
-    height: 12px;
-    width: 5px;
-    background: var(--background);
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    -webkit-border-radius: 1ex;
-  }
-  
-  ::-webkit-scrollbar-corner {
-    background: var(--background);
-  }
+
 .progress {
-    position: sticky;
-    top: 100px;
-    left: 0px;
-    width: 80px;
-    height: 80px;
+    position: fixed;
+    top: 6rem;
+    left:9rem;
+    width: 6rem;
+    height: 6rem;
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    
   }
- 
+ .number{
+    position: absolute;
+    top: 55px;
+    left: -45px;
+    font-size: 1.5rem;
+ }
+ .desc{
+    position: absolute;
+    top: 150px;
+    width: 10rem;
+    left: -6.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    // border: 1px solid;
+    color:#fff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: #726BFF;
+    
+    &::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+       
+        border: 8px solid #fff;
+        border-bottom-color: #726BFF;
+        left:5.5rem;
+        bottom: 100%;
+        margin-left: -15px;
+    }
+   
+ }
+
+ .num0{
+    position: absolute;
+    top: 55px;
+    left: -2.2rem;
+    font-size: 1.5rem;
+ }
   
   .progress svg {
+   
     transform: translateX(-100px) rotate(-90deg);
   }
   
@@ -51,10 +79,17 @@ body{
   }
   
   .bg {
-    stroke:var(--accent)d;
+    stroke:var(--accent);
     opacity: 0.2;
   }
   
   .progress .indicator {
     stroke:var(--accent);
   }
+
+  @media only screen and (max-width: 996px) {
+    .progress{
+        display: none;
+    }
+  }
+  

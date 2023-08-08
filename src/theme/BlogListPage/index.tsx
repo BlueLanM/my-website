@@ -216,6 +216,7 @@ function BlogRecommend({
 
 function BlogListPageContent(props: Props) {
   const { metadata, items } = props;
+  // console.log(items);
 
   const isBlogOnlyMode = !metadata.permalink.includes("page");
   const isPaginated = metadata.page > 1;
@@ -249,10 +250,10 @@ function BlogListPageContent(props: Props) {
           )}
           <div className="row">
             <div className={"col col--12"}>
-              {/* <ViewTypeSwitch
+              <ViewTypeSwitch
                 viewType={viewType}
                 toggleViewType={toggleViewType}
-              /> */}
+              />
             </div>
           </div>
           <div className="row">

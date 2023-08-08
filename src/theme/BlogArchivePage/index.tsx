@@ -5,6 +5,7 @@ import { PageMetadata } from "@docusaurus/theme-common";
 import Layout from "@theme/Layout";
 import type { ArchiveBlogPost, Props } from "@theme/BlogArchivePage";
 import { Icon } from "@iconify/react";
+import { motion, Variants } from "framer-motion";
 import styles from "./styles.module.css";
 
 import dayjs from "dayjs";
@@ -14,21 +15,45 @@ type YearProp = {
   posts: ArchiveBlogPost[];
 };
 
+const variants: Variants = {
+  from: { opacity: 0.01, y: 50 },
+  to: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 25,
+      stiffness: 100,
+      bounce: 0.2,
+      duration: 0.3,
+      delay: i * 0.1,
+    },
+  }),
+};
+
 function Year({ posts }: YearProp) {
   console.log(posts);
 
   return (
     <>
       <ul className={styles.archiveList}>
-        {posts.map((post) => (
-          <li key={post.metadata.permalink} className={styles.archiveItem}>
+        {posts.map((post, i) => (
+          <motion.li
+            key={post.metadata.permalink}
+            className={styles.archiveItem}
+            custom={i}
+            initial="from"
+            animate="to"
+            variants={variants}
+            viewport={{ once: true, amount: 0.8 }}
+          >
             <Link to={post.metadata.permalink}>
               <time className={styles.archiveTime}>
                 {dayjs(post.metadata.date).format("MM-DD")}
               </time>
               <span>{post.metadata.title}</span>
             </Link>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </>
