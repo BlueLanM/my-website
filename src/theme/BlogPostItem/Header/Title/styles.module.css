@@ -9,6 +9,52 @@
   text-decoration: none;
 }
 
+.progress{
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: fixed;
+  right:6rem;
+  background-color:#6D65FD ;
+}
+
+#progress {
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+.bg {
+  stroke: red;
+  opacity: 0.3;
+}
+
+#progress .indicator {
+  stroke: red;
+}
+
+
+
+.progress::after{
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  content: '';
+  border: 1px solid #000;
+  border-radius: 50%;
+  right:6.9rem;
+  top: 146px;
+  background-color:#fff ;
+}
+
 .titleLink:hover::after {
   visibility: visible;
   /* transform: scaleX(1); */
