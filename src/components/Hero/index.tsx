@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
+
 import { useThemeConfig } from "@docusaurus/theme-common";
 import { useTrail, animated } from "@react-spring/web";
 import Translate from "@docusaurus/Translate";
@@ -23,6 +23,7 @@ function Hero() {
   const {
     navbar: { logo = { src: "" } },
   } = useThemeConfig();
+
   const logoLink = useBaseUrl(logo.src || "/");
   const typingElement = React.useRef(null);
   const descElement = React.useRef(null);
@@ -65,7 +66,6 @@ function Hero() {
   };
   return (
     <>
-      <motion.div />
       <animated.div className={styles.hero}>
         <div className={styles.bloghome__intro}>
           <div className={styles.bloghome__intro_div}>
@@ -85,6 +85,7 @@ function Hero() {
                 self-discipline, love, and creation.
               </div>
             </animated.div>
+
             <SocialLinks style={trails[2]} />
             <animated.div style={trails[3]} className={styles.animated}>
               {/* <DayAndNight /> */}

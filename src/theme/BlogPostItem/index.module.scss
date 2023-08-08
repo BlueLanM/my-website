@@ -1,0 +1,60 @@
+body{
+    --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--black);
+  --accent: var(--red);
+}
+::-webkit-scrollbar {
+    height: 12px;
+    width: 5px;
+    background: var(--background);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: var(--background);
+  }
+.progress {
+    position: sticky;
+    top: 100px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+  .progress svg {
+    transform: translateX(-100px) rotate(-90deg);
+  }
+  
+  circle {
+    stroke-dashoffset: 0;
+    stroke-width: 5%;
+    fill: none;
+  }
+  
+  .bg {
+    stroke:var(--accent)d;
+    opacity: 0.2;
+  }
+  
+  .progress .indicator {
+    stroke:var(--accent);
+  }

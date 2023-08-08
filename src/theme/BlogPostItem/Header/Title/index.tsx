@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
+
 import { useBlogPost } from "@docusaurus/theme-common/internal";
 import type { Props } from "@theme/BlogPostItem/Header/Title";
 
@@ -11,6 +12,7 @@ export default function BlogPostItemHeaderTitle({
 }: Props): JSX.Element {
   const { metadata, isBlogPostPage } = useBlogPost();
   const { permalink, title } = metadata;
+
   const TitleHeading = isBlogPostPage ? "h1" : "h2";
   return (
     <TitleHeading className={clsx(styles.title, className)} itemProp="headline">
