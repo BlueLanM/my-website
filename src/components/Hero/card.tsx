@@ -173,7 +173,7 @@ export const LangCard = (props) => {
             role="presentation"
             style={{ paddingRight: "0.1px", marginLeft: "20px" }}
           >
-            &nbsp;<span className={styles.cm_property}>JavaScript</span>
+            &nbsp;<span className={styles.cm_property}>TypeScript</span>
             <span className={styles.cm_mao}>:</span>
             <span className={styles.cm_string}>"Proficiency"</span>
             <span className={styles.cm_dou}>,</span> &nbsp; &nbsp;
@@ -184,7 +184,7 @@ export const LangCard = (props) => {
             role="presentation"
             style={{ paddingRight: "0.1px", marginLeft: "20px" }}
           >
-            &nbsp;<span className={styles.cm_property}>CSS</span>
+            &nbsp;<span className={styles.cm_property}>SASS</span>
             <span className={styles.cm_mao}>:</span>
             <span className={styles.cm_string}>"Intermediate"</span>
             <span className={styles.cm_dou}>,</span> &nbsp; &nbsp;
@@ -223,7 +223,7 @@ export const LangCard = (props) => {
             <span className={styles.cm_dou}>,</span> &nbsp; &nbsp;
           </span>
         </pre>
-        <pre className={styles.CodeMirror_line} role="presentation">
+        {/* <pre className={styles.CodeMirror_line} role="presentation">
           <span
             role="presentation"
             style={{ paddingRight: "0.1px", marginLeft: "20px" }}
@@ -233,7 +233,7 @@ export const LangCard = (props) => {
             <span className={styles.cm_string}>"Average"</span>
             <span className={styles.cm_dou}>,</span> &nbsp; &nbsp;
           </span>
-        </pre>
+        </pre> */}
         <pre className={styles.CodeMirror_line} role="presentation">
           <span
             role="presentation"
