@@ -17,12 +17,13 @@
 
 .bloghome__intro {
   padding: 1em;
-  padding-left: 4em;
+  padding-left: 4rem;
+  padding-top:4rem;
   position: relative;
   z-index: 10;
   display: flex;
   // flex-direction: column;
-  align-items: center;
+  align-items: start;
   .intro_desc{
     width: 24rem;
     color:#6c63ff
