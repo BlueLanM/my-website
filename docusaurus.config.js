@@ -8,7 +8,7 @@ const path = require("path");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
-  tagline: "轻舟已过万重山",
+  tagline: "据说最高级的快乐有三种：自律，爱，创造",
   favicon: "img/favicon.ico",
   url: "https://lanm.love/",
   baseUrl: "/",
