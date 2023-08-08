@@ -11,7 +11,7 @@
 
 .titleLink:hover::after {
   visibility: visible;
-  transform: scaleX(1);
+  /* transform: scaleX(1); */
 }
 
 .titleLink::after {

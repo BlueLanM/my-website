@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
-
+import { useThemeConfig } from "@docusaurus/theme-common";
 import { useTrail, animated } from "@react-spring/web";
 import Translate from "@docusaurus/Translate";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Link from "@docusaurus/Link";
 import Typed from "typed.js";
-import HeroMain from "./img/hero_6.svg";
-
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import JuejinIcon from "./img/hero_main.svg";
 import { Icon } from "@iconify/react";
-import DayAndNight from "../Day&Night/index";
 import styles from "./index.module.scss";
 import { IntroCard, LangCard, SocialCard, ProjectCard } from "./card";
 
@@ -20,6 +18,10 @@ function Hero() {
   const [card2, setCard2] = useState(-1);
   const [card3, setCard3] = useState(-2);
   const [card4, setCard4] = useState(0);
+  const {
+    navbar: { logo = { src: "" } },
+  } = useThemeConfig();
+  const logoLink = useBaseUrl(logo.src || "/");
   const typingElement = React.useRef(null);
   const descElement = React.useRef(null);
   const trails = useTrail(4, {
@@ -46,17 +48,10 @@ function Hero() {
     };
   }, []);
   const handleOnClick = () => {
-    if (card1 == 2) setCard1(-1);
-    else setCard1(card1 + 1);
-
-    if (card2 == 2) setCard2(-1);
-    else setCard2(card2 + 1);
-
-    if (card3 == 2) setCard3(-1);
-    else setCard3(card3 + 1);
-
-    if (card4 == 2) setCard4(-1);
-    else setCard4(card4 + 1);
+    setCard1((card1) => (card1 === 2 ? -1 : card1 + 1));
+    setCard2((card2) => (card2 === 2 ? -1 : card2 + 1));
+    setCard3((card3) => (card3 === 2 ? -1 : card3 + 1));
+    setCard4((card4) => (card4 === 2 ? -1 : card4 + 1));
   };
   const states = {
     "-3": "",
@@ -72,10 +67,20 @@ function Hero() {
         <div className={styles.bloghome__intro}>
           <div className={styles.bloghome__intro_div}>
             <animated.div style={trails[0]} className={styles.hero_text}>
-              <Translate id="homepage.hero.greet">LanM</Translate>
-              <span className={styles.intro__name}>
-                {/* <Translate id="homepage.hero.name">Blog</Translate> */}
-              </span>
+              <Link href="/about">
+                <img
+                  className={styles.bloginfo__img_avator}
+                  src={logoLink}
+                  alt="logo"
+                ></img>
+              </Link>
+              <span className={styles.intro__name}></span>
+            </animated.div>
+            <animated.div style={trails[1]}>
+              <div className={styles.intro_desc}>
+                It is said that there are three types of supreme happiness:
+                self-discipline, love, and creation.
+              </div>
             </animated.div>
             <SocialLinks style={trails[2]} />
             <animated.div style={trails[3]} className={styles.animated}>
@@ -83,23 +88,24 @@ function Hero() {
               {/* <a className={styles.intro} href={"./about"}>
               <Translate id="hompage.hero.introduce">关于我</Translate>
             </a> */}
+
+              <span className={styles.word_item} ref={typingElement} />
+              <div ref={descElement} className={styles.desc_list}>
+                <span>
+                  <Translate id="home.intro.desc1">Developer</Translate>
+                </span>
+
+                <span>
+                  <Translate id="home.intro.desc2">
+                    技术栈： React, Typescript, Sass, Node
+                  </Translate>
+                </span>
+
+                <span>
+                  <Translate id="home.intro.desc3">开源爱好者</Translate>
+                </span>
+              </div>
             </animated.div>
-            <span className={styles.word_item} ref={typingElement} />
-            <div ref={descElement} className={styles.desc_list}>
-              <span>
-                <Translate id="home.intro.desc1">前端开发</Translate>
-              </span>
-
-              <span>
-                <Translate id="home.intro.desc2">
-                  技术栈： React, Typescript, Sass, Node
-                </Translate>
-              </span>
-
-              <span>
-                <Translate id="home.intro.desc3">开源爱好者</Translate>
-              </span>
-            </div>
           </div>
         </div>
         <div className={styles.bloghome__image} onClick={handleOnClick}>

@@ -53,6 +53,7 @@
     "message": "标签",
     "description": "The title of the tag list page"
   },
+  
   "blogtagpage.title": {
     "message": "下的博客",
     "description": "blog tag page title"
