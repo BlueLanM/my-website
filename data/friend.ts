@@ -11,6 +11,18 @@ export const Friends: Friend[] = [
     website: "https://www.matto.top",
     avatar: "https://avatars.githubusercontent.com/u/54560462?v=4",
   },
+  {
+    title: "freejishu的美丽世界",
+    description: "A New World",
+    website: "http://www.freejishu.com",
+    avatar: "https://cdn-p.freejishu.com/img/2022/01/19/gNxI.jpg",
+  },
+  {
+    title: "清絮的博客",
+    description: "人生如逆旅，我亦是行人",
+    website: "https://blog.linioi.com/",
+    avatar: "https://blog.linioi.com/hotlink-ok/images/avatar.jpg",
+  },
 ];
 
 export type Friend = {
@@ -19,3 +31,8 @@ export type Friend = {
   website: string;
   avatar?: any;
 };
+
+// 昵称：蓝莓
+// 网址：https://lanm.love
+// 站点图标：https://lanm.love/img/3.ico
+// 描述：据说最高级的快乐有三种：自律，爱，创造。

@@ -172,6 +172,11 @@ const config = {
             to: "project",
           },
           {
+            label: "友链",
+            position: "right",
+            to: "friend",
+          },
+          {
             label: "工具",
             position: "right",
             items: [
