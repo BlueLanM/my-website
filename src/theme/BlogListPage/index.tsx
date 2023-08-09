@@ -216,7 +216,7 @@ function BlogRecommend({
 
 function BlogListPageContent(props: Props) {
   const { metadata, items } = props;
-  // console.log(items);
+  console.log(items);
 
   const isBlogOnlyMode = !metadata.permalink.includes("page");
   const isPaginated = metadata.page > 1;
