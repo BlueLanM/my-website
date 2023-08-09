@@ -19,7 +19,7 @@ body{
 .progress {
     position: fixed;
     top: 6rem;
-    left:9rem;
+    left:7.5%;
     width: 6rem;
     height: 6rem;
     margin: 0;
@@ -35,8 +35,8 @@ body{
  .desc{
     position: absolute;
     top: 150px;
-    width: 10rem;
-    left: -6.5rem;
+    width: 7rem;
+    left: -5rem;
     font-size: 1.5rem;
     text-align: center;
     // border: 1px solid;
@@ -53,7 +53,7 @@ body{
        
         border: 8px solid #fff;
         border-bottom-color: #726BFF;
-        left:5.5rem;
+        left:4rem;
         bottom: 100%;
         margin-left: -15px;
     }
