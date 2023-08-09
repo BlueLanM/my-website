@@ -58,7 +58,6 @@ export default function BlogPostItem({
       setDesc("");
     }
   });
-  console.log(window.location.pathname.includes("/tags"));
 
   const containerClassName = useContainerClassName();
   return (
@@ -68,7 +67,7 @@ export default function BlogPostItem({
     >
       <BlogPostItemHeader />
 
-      {window.location.pathname == "/" ||
+      {/* {window.location.pathname == "/" ||
       window.location.pathname.includes("/tags") ? (
         <></>
       ) : (
@@ -111,7 +110,7 @@ export default function BlogPostItem({
             </svg>
           </figure>
         </>
-      )}
+      )} */}
       <BlogPostItemContent>{children}</BlogPostItemContent>
       <BlogPostItemFooter />
     </BlogPostItemContainer>
