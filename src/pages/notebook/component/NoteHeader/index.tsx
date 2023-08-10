@@ -1,4 +1,5 @@
 import React from "react";
+
 import Translate, { translate } from "@docusaurus/Translate";
 
 function NoteHeader() {
