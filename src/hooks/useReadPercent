@@ -4,7 +4,7 @@ import { useLayoutEffect, useMemo, useRef, useState } from "react";
 export const useReadPercent = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
 
-  const postRef = useRef<HTMLElement | null>(null);
+  const postRef = useRef(null);
   const { scrollYProgress } = useScroll({ container: postRef });
 
   //   useLayoutEffect(() => {
