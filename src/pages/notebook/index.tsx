@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "@theme/Layout";
 import Translate, { translate } from "@docusaurus/Translate";
 import Comment from "../../../src/components/Comment";
 import styles from "./index.module.scss";
+import SakanaReact from "sakana-react";
 import NoteHeader from "./component/NoteHeader";
 
 const TITLE = translate({
@@ -21,6 +22,7 @@ function NoteBook() {
         <div className={styles.container}>
           <NoteHeader />
           <Comment />
+          <SakanaReact />
         </div>
       </main>
     </Layout>
