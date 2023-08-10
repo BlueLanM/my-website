@@ -5,12 +5,12 @@ export const Friends: Friend[] = [
     website: "https://blog.lkurococ.top/",
     avatar: "https://cdn.jsdelivr.net/gh/6isixi/imgcloud/avatar.jpg",
   },
-  {
-    title: "matto",
-    description: "天天摸鱼身体棒~",
-    website: "https://www.matto.top",
-    avatar: "https://avatars.githubusercontent.com/u/54560462?v=4",
-  },
+  // {
+  //   title: "matto",
+  //   description: "天天摸鱼身体棒~",
+  //   website: "https://www.matto.top",
+  //   avatar: "https://avatars.githubusercontent.com/u/54560462?v=4",
+  // },
   {
     title: "freejishu的美丽世界",
     description: "A New World",
@@ -22,6 +22,12 @@ export const Friends: Friend[] = [
     description: "人生如逆旅，我亦是行人",
     website: "https://blog.linioi.com/",
     avatar: "https://blog.linioi.com/hotlink-ok/images/avatar.jpg",
+  },
+  {
+    title: "妖の森",
+    website: "https://fjwr.xyz",
+    avatar: "https://cdn.fjwr.xyz:1883/handsome/assets/img/header.jpg",
+    description: "一个划水摸鱼的博主",
   },
 ];
 
