@@ -1,6 +1,9 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import Translate, { translate } from "@docusaurus/Translate";
+import Comment from "../../../src/components/Comment";
+import styles from "./index.module.scss";
+import NoteHeader from "./component/NoteHeader";
 
 const TITLE = translate({
   id: "theme.friend.title",
@@ -14,7 +17,12 @@ const DESCRIPTION = translate({
 function NoteBook() {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
-      <main className="margin-vert--lg"></main>
+      <main className="margin-vert--lg">
+        <div className={styles.container}>
+          <NoteHeader />
+          <Comment />
+        </div>
+      </main>
     </Layout>
   );
 }

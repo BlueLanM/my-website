@@ -28,7 +28,7 @@ export default function BlogSidebarDesktop({ sidebar }: Props): JSX.Element {
     description: "The ARIA label for recent posts in the blog sidebar",
   });
   return (
-    <aside className="col col--3">
+    <aside className="col col--2">
       <nav className={clsx(styles.sidebar, "thin-scrollbar")}>
         <div className={clsx(styles.sidebarItemTitle, "margin-bottom--md")}>
           {title}

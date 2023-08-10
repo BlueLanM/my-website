@@ -37,7 +37,7 @@ export default function BlogPostItemFooter(): JSX.Element | null {
         <hr className={styles.divider} />
         <div className={styles.blogPostInfo}>
           {authorsExists && (
-            <>
+            <div className={styles.tagFlex}>
               <Icon icon="ri:user-fill" color="#c4d3e0" />
               {authors.map((a) => (
                 <span key={a.url} className="blog__author">
@@ -46,10 +46,10 @@ export default function BlogPostItemFooter(): JSX.Element | null {
                   </a>
                 </span>
               ))}
-            </>
+            </div>
           )}
           {date && (
-            <>
+            <div className={styles.tagFlex}>
               <Icon icon="ri:calendar-fill" color="#c4d3e0" />
               <time
                 dateTime={date}
@@ -58,10 +58,10 @@ export default function BlogPostItemFooter(): JSX.Element | null {
               >
                 {formattedDate}
               </time>
-            </>
+            </div>
           )}
           {tagsExists && (
-            <>
+            <div className={styles.tagFlex}>
               <Icon icon="ri:price-tag-3-fill" color="#c4d3e0" />
               <span className={styles.blogPostInfoTags}>
                 {tags.map(({ label, permalink: tagPermalink }) => (
@@ -72,17 +72,17 @@ export default function BlogPostItemFooter(): JSX.Element | null {
                   />
                 ))}
               </span>
-            </>
+            </div>
           )}
           {readingTime && (
-            <>
+            <div className={styles.tagFlex}>
               <Icon icon="ri:time-fill" color="#c4d3e0" />
               <span
                 className={clsx(styles.blogPostReadTime, "blog__readingTime")}
               >
                 <ReadingTime readingTime={readingTime} />
               </span>
-            </>
+            </div>
           )}
         </div>
       </>
@@ -102,11 +102,11 @@ export default function BlogPostItemFooter(): JSX.Element | null {
         </div>
       )}
 
-      {isBlogPostPage && editUrl && (
+      {/* {isBlogPostPage && editUrl && (
         <div className="col margin-top--sm">
           <EditThisPage editUrl={editUrl} />
         </div>
-      )}
+      )} */}
 
       {truncatedPost && (
         <div
