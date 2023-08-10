@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: var(--ifm-spacing-m);
-  gap: 4px;
+  gap: 25px;
   color: rgb(156 163 175);
 }
 
@@ -48,6 +48,11 @@
   border: 0;
   height: var(--ifm-hr-height);
   margin: 0.25rem 0;
+}
+
+.tagFlex{
+  display: flex;
+  align-items: center;
 }
 
 html[data-theme='dark'] .divider {

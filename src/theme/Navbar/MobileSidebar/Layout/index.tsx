@@ -10,6 +10,7 @@ export default function NavbarMobileSidebarLayout({
   secondaryMenu,
 }: Props): JSX.Element {
   const { shown: secondaryMenuShown } = useNavbarSecondaryMenu();
+
   return (
     <div className="navbar-sidebar">
       {header}

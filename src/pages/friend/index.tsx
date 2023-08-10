@@ -95,67 +95,70 @@ function FriendCard() {
           <ul className={styles.friend_card}>
             {Friends.map((item: any, i: any) => {
               return (
-                <motion.li
-                  key={item.title}
-                  className={styles.friend_card_li}
-                  custom={i}
-                  initial="from"
-                  animate="to"
-                  whileHover="hover"
-                  onHoverStart={(e) => {
-                    setHover(true);
-                    setItems(item);
-                  }}
-                  onHoverEnd={(e) => {
-                    setHover(false);
-                    setItems({});
-                  }}
-                  variants={variants}
-                  viewport={{ once: true, amount: 0.8 }}
-                >
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                      duration: 2,
-                      delay: i * 0.5,
-                      ease: [0, 0.71, 0.2, 1.01],
+                <a href={item.website} key={item.title} target={"_blank"}>
+                  <motion.li
+                    className={styles.friend_card_li}
+                    custom={i}
+                    initial="from"
+                    animate="to"
+                    whileHover="hover"
+                    onHoverStart={(e) => {
+                      setHover(true);
+                      setItems(item);
                     }}
-                    className={styles.card_avatar}
+                    onHoverEnd={(e) => {
+                      setHover(false);
+                      setItems({});
+                    }}
+                    variants={variants}
+                    viewport={{ once: true, amount: 0.8 }}
                   >
-                    <Image
-                      src={item.avatar}
-                      alt={item.title}
-                      img={item.avatar}
-                    />
-                  </motion.div>
-                  <motion.div className={styles.card_info}>
                     <motion.div
-                      className={styles.card_info_title}
-                      initial="from"
-                      animate="to"
-                      custom={i}
-                      variants={
-                        items.title === item.title && hover ? variantsTitle : ""
-                      }
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 2,
+                        delay: i * 0.5,
+                        ease: [0, 0.71, 0.2, 1.01],
+                      }}
+                      className={styles.card_avatar}
                     >
-                      {item.title}
+                      <Image
+                        src={item.avatar}
+                        alt={item.title}
+                        img={item.avatar}
+                      />
                     </motion.div>
-                    {items.title === item.title && hover ? (
+                    <motion.div className={styles.card_info}>
                       <motion.div
-                        className={styles.card_info_desc}
+                        className={styles.card_info_title}
                         initial="from"
                         animate="to"
                         custom={i}
-                        variants={variantsHover}
+                        variants={
+                          items.title === item.title && hover
+                            ? variantsTitle
+                            : ""
+                        }
                       >
-                        {item.description}
+                        {item.title}
                       </motion.div>
-                    ) : (
-                      <></>
-                    )}
-                  </motion.div>
-                </motion.li>
+                      {items.title === item.title && hover ? (
+                        <motion.div
+                          className={styles.card_info_desc}
+                          initial="from"
+                          animate="to"
+                          custom={i}
+                          variants={variantsHover}
+                        >
+                          {item.description}
+                        </motion.div>
+                      ) : (
+                        <></>
+                      )}
+                    </motion.div>
+                  </motion.li>
+                </a>
               );
             })}
           </ul>

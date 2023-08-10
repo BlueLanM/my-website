@@ -217,6 +217,7 @@
   font-size: 19.5px;
   line-height: 25px;
   color: #fefefe;
+  background-color: #f6f8fa;
 }
 .procode pre {
   // background-color: #2a2a32;
@@ -231,18 +232,22 @@ html[data-theme="dark"] .introCard {
 }
 html[data-theme="dark"] .front {
   // transition: none;
-  box-shadow: 0 10px 60px 5px #1d6c94, 0 0 10px 0 #1d6c94;
+  box-shadow: 0 10px 60px 5px #000000, 0 0 10px 0 #000000;
   background-color: #1e1e1e;
 }
 html[data-theme="dark"] .fall {
   // transition: none;
-  box-shadow: 0 10px 60px 5px #1d6c94, 0 0 10px 0 #1d6c94;
+  box-shadow: 0 10px 60px 5px #000000, 0 0 10px 0 #000000;
   background-color: #1e1e1e;
 }
 html[data-theme="dark"] .followed {
   // transition: none;
-  box-shadow: 0 10px 60px 5px #1d6c94, 0 0 10px 0 #1d6c94;
+  box-shadow: 0 10px 60px 5px #000000, 0 0 10px 0 #000000;
 
+  background-color: #1e1e1e;
+}
+html[data-theme="dark"] .procode  {
+  // transition: none;
   background-color: #1e1e1e;
 }
 html[data-theme="dark"] .procode pre {
@@ -598,7 +603,7 @@ html[data-theme="dark"] .parallax > use:nth-child(4) {
     display: none;
   }
   .animated {
-    display: flex;
+    // display: flex;
     flex-direction: column;
     align-items: center;
   }

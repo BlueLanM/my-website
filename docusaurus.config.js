@@ -278,7 +278,7 @@ const config = {
           //   ],
           // },
           {
-            title: "Build with Docusaurus",
+            // title: "Build with Docusaurus",
             items: [
               // {
               //   label: "项目",
@@ -288,13 +288,16 @@ const config = {
               //   label: "导航",
               //   to: "website",
               // },
-              // {
-              //   html: ``,
-              // },
+              {
+                html:"<span>Build with </span><img alt='brightgreen' src='https://img.shields.io/badge/-Docusaurus-38a737?style=flat&logo=docusaurus' style='vertical-align:sub'>"
+              },
+              {
+                html: ` `,
+              },
             ],
           },
         ],
-        copyright: `<span style='font-size:24px'>@2023 LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docusaurus.io/"><img alt="brightgreen" src="https://img.shields.io/badge/-Docusaurus-38a737?style=flat&logo=docusaurus" style="vertical-align:sub"></a>`,
+        copyright: `<span style='font-size:24px'>@2023 LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docusaurus.io/"></a><img style='vertical-align: bottom;' src='https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg'>`,
       },
       prism: {
         theme: lightCodeTheme,
