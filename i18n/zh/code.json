@@ -384,5 +384,21 @@
   "showcase.card.sourceLink":{
     "message": "源码",
     "description": "The label for the source link of a showcase card"
+  },
+  "theme.friend.title":{
+    "message":"左邻右舍",
+    "description":"Friend"
+  },
+  "theme.friend.description":{
+    "message":"海内存知己，天涯若比邻",
+    "description":"Friend description"
+  },
+  "theme.notebook.title":{
+    "message":"留言吧",
+    "description":"Message Board"
+  },
+  "theme.notebook.description":{
+    "message":"好耶",
+    "description":"Guestbook description"
   }
 }

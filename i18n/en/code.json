@@ -476,6 +476,22 @@
   "theme.PwaReloadPopup.closeButtonAriaLabel": {
     "message": "Close",
     "description": "The ARIA label for close button of PWA reload popup"
+  },
+  "theme.friend.title":{
+    "message":"Friend",
+    "description":"Friend"
+  },
+  "theme.friend.description":{
+    "message":"A bosom friend afar brings a distant land near.",
+    "description":"Friend description"
+  },
+  "theme.notebook.title":{
+    "message":"Guestbook",
+    "description":"Message Board"
+  },
+  "theme.notebook.description":{
+    "message":"yohoooo",
+    "description":"Guestbook description"
   }
  
 }
