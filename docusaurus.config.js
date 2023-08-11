@@ -218,6 +218,11 @@ const config = {
             className: "header-steam-link",
             "aria-label": "Steam",
           },
+          {
+            position: "right",
+            to: "https://www.travellings.cn/go.html",
+            html:`<img style='width:6rem;vertical-align: bottom;'  src='https://www.travellings.cn/assets/logo.gif'/>`
+          },
         ],
       },
 
