@@ -220,8 +220,10 @@ const config = {
           },
           {
             position: "right",
+            className: "header-traval",
             to: "https://www.travellings.cn/go.html",
             html:`<img style='width:6rem;vertical-align: bottom;'  src='https://www.travellings.cn/assets/logo.gif'/>`
+            // html:`<img style='width:1.7rem;vertical-align: bottom;' src='https://www.travellings.cn/assets/travelling-light.png'/>`
           },
         ],
       },
