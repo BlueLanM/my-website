@@ -36,6 +36,12 @@ export const Friends: Friend[] = [
       "https://cravatar.cn/avatar/6a0d12a88075ef7d7c6f0483bacf3cb4?d=identicon",
     description: "A New Story Born",
   },
+  {
+    title: "喵雨の小屋",
+    website: "https://meowrain.cn",
+    avatar: "https://static.meowrain.cn/i/2022/08/20/btdbql-3.jpg",
+    description: "努力学习中…",
+  },
 ];
 
 export type Friend = {
