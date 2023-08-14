@@ -19,6 +19,7 @@ function NoteHeader() {
         <p>{DESCRIPTION}</p>
       </section>
       <div>
+        <p>欢迎申请交换友链噢！</p>
         <p>
           <strong>在申请友链之前请先将本站加入贵站的友链中</strong>
         </p>
@@ -26,6 +27,7 @@ function NoteHeader() {
           <strong>在下方留言后，待通过申请后会直接发送邮件</strong>
         </p>
       </div>
+
       <h3>本站信息</h3>
       <pre>
         <p>
