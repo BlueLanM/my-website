@@ -23,7 +23,7 @@ function FriendHeader() {
     <section className="margin-top--lg margin-bottom--lg text--center">
       <h1>{TITLE}</h1>
       <p>{DESCRIPTION}</p>
-      <Link className="button button--primary" href="/notebook">
+      <Link className={"friend_desc"} href="/notebook">
         <Translate id="showcase.notebook">申请友链</Translate>
       </Link>
     </section>
