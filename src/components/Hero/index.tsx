@@ -87,11 +87,13 @@ function Hero() {
             </animated.div>
 
             <SocialLinks style={trails[2]} />
+
+            <a className={styles.intro} href={"./about"}>
+              <Translate id="hompage.hero.introduce">关于我</Translate>
+            </a>
+
             <animated.div style={trails[3]} className={styles.animated}>
               {/* <DayAndNight /> */}
-              {/* <a className={styles.intro} href={"./about"}>
-              <Translate id="hompage.hero.introduce">关于我</Translate>
-            </a> */}
 
               <span className={styles.word_item} ref={typingElement} />
               <div ref={descElement} className={styles.desc_list}>

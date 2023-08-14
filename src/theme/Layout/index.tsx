@@ -38,7 +38,7 @@ export default function Layout(props: Props): JSX.Element {
   useKeyboardNavigation();
 
   return (
-    <LayoutProvider>
+    <LayoutProvider className={styles.layout}>
       <PageMetadata title={title} description={description} />
       <SkipToContent />
       <AnnouncementBar />

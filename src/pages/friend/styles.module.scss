@@ -9,6 +9,7 @@ li{
   margin: 0 auto;
   max-width: 1024px;
   padding: 0.5rem 1rem;
+  
  a{
   color:#000;
   text-decoration: none;
@@ -72,6 +73,13 @@ li{
      
     }
     
+  }
+}
+
+html[data-theme="dark"] .friend_card_li{
+  &:hover{
+    box-shadow: 0px 3px 10px 5px #6F67FF;
+      background-color: #dcdbdb;
   }
 }
 

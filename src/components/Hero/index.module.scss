@@ -454,28 +454,85 @@ html[data-theme="dark"] .bloghome__intro > p {
   top: 120%;
 }
 
-.intro {
-  display: inline-block;
-  color: white;
-  padding: 0.75em 20px;
-  margin-top: 1rem;
-  margin-left: -2px;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  background: linear-gradient(
-    90deg,
-    var(--ifm-color-primary) 11.3%,
-    var(--ifm-color-primary-light) 161.54%
-  );
-  box-shadow: rgb(0 105 165 / 35%) 0 0 32px;
-  border-radius: 7px;
-  font-family: "Yuanti SC", Youyuan, "You Yuan", "幼圆", "PingFang SC",
-    "Microsoft Yahei", Helvetica, sans-serif;
 
-  &:hover {
-    text-decoration: none;
-    color: white;
-  }
+
+// .intro {
+ 
+  // display: inline-block;
+  // color: white;
+  // padding: 0.75em 20px;
+  // margin-top: 1rem;
+  // margin-left: -2px;
+  // margin-bottom: 1rem;
+  // font-weight: 600;
+  // background: linear-gradient(
+  //   90deg,
+  //   var(--ifm-color-primary) 11.3%,
+  //   var(--ifm-color-primary-light) 161.54%
+  // );
+  // box-shadow: rgb(0 105 165 / 35%) 0 0 32px;
+  // border-radius: 7px;
+  // font-family: "Yuanti SC", Youyuan, "You Yuan", "幼圆", "PingFang SC",
+  //   "Microsoft Yahei", Helvetica, sans-serif;
+
+  // &:hover {
+  //   text-decoration: none;
+  //   color: white;
+  // }
+
+  .intro {
+    position: relative;
+    padding: 10px 20px;
+  //   background: linear-gradient(
+  //   90deg,
+  //   var(--ifm-color-primary) 11.3%,
+  //   var(--ifm-color-primary-light) 161.54%
+  // );
+    background:#fff;
+    color: #6F67FF;
+    cursor: pointer;
+    border: 0 #6F67FF;
+    box-shadow: inset 0 0 0 2px #6F67FF;
+    border-radius: 10px;
+    
+    &::before,
+    &::after {
+      box-sizing: inherit;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 5px solid transparent;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      transform-origin: center;
+      transition: all 1s ease-in;
+    }
+    &::before {
+      border-top-color: #FFF;
+      border-bottom-color: #FFF;
+      transform: scale3d(0, 1, 1);
+  
+    }
+    &::after {
+      border-left-color: #FFF;
+      border-right-color: #FFF;
+      transform: scale3d(1, 0, 1);
+
+    }
+    &:hover {
+      text-decoration: none;
+      color: #6F67FF;
+     
+      &:before,
+      &:after {
+        transform: scale3d(1, 1, 1);
+        transition: all 1s ease;
+      }
+    }
+  // }
+  
 
   // &::before {
   //   background: var(--ifm-color-primary);

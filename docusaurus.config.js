@@ -5,6 +5,8 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const path = require("path");
 
+
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
@@ -65,10 +67,11 @@ const config = {
     path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"),
     path.resolve(__dirname, "./src/plugin/plugin-google"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
+  
 
     [
       path.resolve(__dirname, "./src/plugin/plugin-content-blog"),
-
+     
       {
         path: "blog",
         routeBasePath: "/",
@@ -85,6 +88,8 @@ const config = {
           title: "蓝莓",
         },
       },
+      
+      
     ],
 
     [
@@ -93,34 +98,7 @@ const config = {
         disableInDev: false,
       },
     ],
-    // [
-    //   "@docusaurus/plugin-pwa",
-    //   {
-    //     debug: true,
-    //     offlineModeActivationStrategies: [
-    //       "appInstalled",
-    //       "standalone",
-    //       "queryString",
-    //     ],
-    //     pwaHead: [
-    //       {
-    //         tagName: "link",
-    //         rel: "icon",
-    //         href: "/img/logo.png",
-    //       },
-    //       {
-    //         tagName: "link",
-    //         rel: "manifest",
-    //         href: "/manifest.json",
-    //       },
-    //       {
-    //         tagName: "meta",
-    //         name: "theme-color",
-    //         content: "rgb(51 139 255)",
-    //       },
-    //     ],
-    //   },
-    // ],
+    
   ],
 
   themeConfig:
@@ -298,13 +276,12 @@ const config = {
               {
                 html:"<span>Build with </span><img alt='brightgreen' src='https://img.shields.io/badge/-Docusaurus-38a737?style=flat&logo=docusaurus' style='vertical-align:sub'>"
               },
-              {
-                html: ` `,
-              },
+             
+             
             ],
           },
         ],
-        copyright: `<span style='font-size:24px'>@2023 LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docusaurus.io/"></a><img style='vertical-align: bottom;' src='https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg'>`,
+        copyright: `<span style='font-size:24px'>@2023 LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docusaurus.io/"></a><img className='footer_vercel' style='vertical-align: bottom;' src='https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg'>`,
       },
       prism: {
         theme: lightCodeTheme,
