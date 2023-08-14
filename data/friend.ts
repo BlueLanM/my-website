@@ -29,6 +29,13 @@ export const Friends: Friend[] = [
     avatar: "https://cdn.fjwr.xyz:1883/handsome/assets/img/header.jpg",
     description: "一个划水摸鱼的博主",
   },
+  {
+    title: "Trtyr’s Blog",
+    website: "https://www.trtyr.top/",
+    avatar:
+      "https://cravatar.cn/avatar/6a0d12a88075ef7d7c6f0483bacf3cb4?d=identicon",
+    description: "A New Story Born",
+  },
 ];
 
 export type Friend = {
