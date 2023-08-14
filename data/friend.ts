@@ -42,6 +42,12 @@ export const Friends: Friend[] = [
     avatar: "https://static.meowrain.cn/i/2022/08/20/btdbql-3.jpg",
     description: "努力学习中…",
   },
+  {
+    title: "顾梦",
+    website: "https://blog.jishuqin.cn",
+    avatar: "https://cloud.jishuqin.cn/avatar.png",
+    description: "不想满心遗憾，那就全力以赴.",
+  },
 ];
 
 export type Friend = {
