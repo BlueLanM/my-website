@@ -203,6 +203,11 @@ const config = {
             html:`<img style='width:6rem;vertical-align: bottom;'  src='https://www.travellings.cn/assets/logo.gif'/>`
             // html:`<img style='width:1.7rem;vertical-align: bottom;' src='https://www.travellings.cn/assets/travelling-light.png'/>`
           },
+          {
+            position:'right',
+            to:'https://www.foreverblog.cn/go.html',
+            html:`<img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:4rem;vertical-align: bottom;" title="穿梭虫洞-随机访问十年之约友链博客">`
+          },
         ],
       },
 

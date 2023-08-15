@@ -14,9 +14,9 @@ body {
   flex: 1 0 auto;
   display: flex;
   flex-direction: column;
-  background: url('https://laymonage.com/bg.svg')  no-repeat;
+  /* background: url('https://laymonage.com/bg.svg')  no-repeat;
   background-size: 100% 100%;
-  background-attachment:fixed;
+  background-attachment:fixed; */
 }
 
 /* Docusaurus-specific utility class */
