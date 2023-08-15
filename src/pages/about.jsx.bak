@@ -9,7 +9,7 @@
   <a href="https://github.com/BlueLanM">Github</a>
 </div>
 <div>
-  <Icon icon="ri:qq-line" width="20" heigth="20" />{" "}
+  {" "}
   <a href="http://wpa.qq.com/msgrd?v=3&uin=2351406802&site=qq&menu=yes">QQ</a>
 </div>
 <div>
@@ -20,3 +20,14 @@
   <Icon icon="ri:mail-open-line" width="20" heigth="20" />{" "}
   <a href="mailto:w2351406802@163.com">w2351406802@163.com</a>
 </div>
+
+
+<a
+    className={styles.data_mine}
+    href="https://www.zhihu.com/people/lanm-82-86"
+  >
+    <img
+      alt="zhihu"
+      src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fzhihu%2Flanm-82-86&query=count&color=282c34&label=%E7%9F%A5%E4%B9%8E&labelColor=0084ff&logo=zhihu&logoColor=ffffff&suffix=+%E5%85%B3%E6%B3%A8&cacheSeconds=3600"
+    />
+  </a>
