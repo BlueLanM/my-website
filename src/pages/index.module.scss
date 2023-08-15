@@ -21,3 +21,30 @@
   align-items: center;
   justify-content: center;
 }
+
+.socialData{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
+}
+
+
+.data_mine{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+ 
+}
+.data_mine:not(:nth-child(3n)){
+  margin-right: 60px;  
+  width: 170px;
+}
+
+
+
+.data_mine img{
+  flex: 0 0 33%;
+}
+
