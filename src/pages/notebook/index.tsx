@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Layout from "@theme/Layout";
 import Translate, { translate } from "@docusaurus/Translate";
-import Comment from "../../../src/components/Comment";
+import Comment from "@site/src/components/Comment";
 import styles from "./index.module.scss";
 
 import NoteHeader from "./component/NoteHeader";

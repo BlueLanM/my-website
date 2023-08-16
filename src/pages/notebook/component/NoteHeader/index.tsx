@@ -1,5 +1,6 @@
 import React from "react";
 
+import "react-photo-view/dist/react-photo-view.css";
 import Translate, { translate } from "@docusaurus/Translate";
 
 function NoteHeader() {
@@ -19,7 +20,9 @@ function NoteHeader() {
         <p>{DESCRIPTION}</p>
       </section>
       <div>
-        <p>欢迎申请交换友链噢！</p>
+        <p>
+          <strong>欢迎申请交换友链噢！</strong>
+        </p>
         <p>
           <strong>在申请友链之前请先将本站加入贵站的友链中</strong>
         </p>

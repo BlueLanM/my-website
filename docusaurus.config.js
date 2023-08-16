@@ -27,6 +27,7 @@ const config = {
       },
     },
   },
+  
   // themes: ["@docusaurus/theme-search-algolia"],
   presets: [
     [
@@ -38,6 +39,7 @@ const config = {
           sidebarPath: "sidebars.ts",
           showLastUpdateTime: true,
         },
+       
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
@@ -61,12 +63,18 @@ const config = {
       }),
     ],
   ],
+ scripts:[{
+  src:'https://busuanzi.icodeq.com/busuanzi.pure.mini.js',
+  async:true
+ }],
   plugins: [
     "docusaurus-plugin-sass",
-
+    // path.resolve(__dirname, "./src/plugin/plugin-busuanzi"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"),
     path.resolve(__dirname, "./src/plugin/plugin-google"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
+    
+    
   
 
     [
@@ -281,6 +289,7 @@ const config = {
               {
                 html:"<span>Build with </span><img alt='brightgreen' src='https://img.shields.io/badge/-Docusaurus-38a737?style=flat&logo=docusaurus' style='vertical-align:sub'>"
               },
+              
              
              
             ],
@@ -292,6 +301,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+     
       // colorMode: {
       //   disableSwitch: true,
       //   defaultMode: "dark",
