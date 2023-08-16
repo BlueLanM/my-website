@@ -19,6 +19,7 @@ import {
 import { useKeyboardNavigation } from "@docusaurus/theme-common/internal";
 import SkipToContent from "@theme/SkipToContent";
 import AnnouncementBar from "@theme/AnnouncementBar";
+
 import Navbar from "@theme/Navbar";
 import Footer from "@theme/Footer";
 import LayoutProvider from "@theme/Layout/Provider";
@@ -95,9 +96,11 @@ export default function Layout(props: Props): JSX.Element {
         }}
       >
         <PageMetadata title={title} description={description} />
-        <SkipToContent />
+        <SkipToContent></SkipToContent>
+
         <AnnouncementBar />
         <Navbar />
+
         <SakanaReact
           showLine={false}
           style={{ position: "fixed", bottom: "1rem", right: "7rem" }}

@@ -22,7 +22,8 @@ import type { Props as BlogPostItemsProps } from "@theme/BlogPostItems";
 import BlogPostItems from "@theme/BlogPostItems";
 import Layout from "@theme/Layout";
 import SearchMetadata from "@theme/SearchMetadata";
-
+import CodeBlock from "@theme/CodeBlock";
+import { motion } from "framer-motion";
 import useGlobalData from "@docusaurus/useGlobalData";
 import BlogInfo from "../../../src/components/BlogInfo";
 import Hero from "../../../src/components/Hero";
@@ -31,6 +32,26 @@ import { useViewType } from "./useViewType";
 import Translate from "@docusaurus/Translate";
 import { Icon } from "@iconify/react";
 import { Fade } from "react-awesome-reveal";
+import styles from "./index.module.scss";
+
+function SiteInfo() {
+  return (
+    <div className={styles.siteInfo}>
+      <CodeBlock language="jsx">
+        <div className="bloghome__posts-card margin-bottom--md">
+          <div className="row bloginfo__card">
+            <div>
+              本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+            </div>
+            <div>
+              本站总访客数 <span id="busuanzi_value_site_uv"></span> 人
+            </div>
+          </div>
+        </div>
+      </CodeBlock>
+    </div>
+  );
+}
 
 function BlogListPageMetadata(props: Props): JSX.Element {
   const { metadata } = props;
@@ -217,7 +238,7 @@ function BlogRecommend({
 function BlogListPageContent(props: Props) {
   const { metadata, items } = props;
   console.log(items);
-
+  const ref = React.useRef<HTMLDivElement>(null);
   const isBlogOnlyMode = !metadata.permalink.includes("page");
   const isPaginated = metadata.page > 1;
 
@@ -243,40 +264,52 @@ function BlogListPageContent(props: Props) {
           className="container padding-vert--sm"
           style={!isCardView ? { maxWidth: 1200 } : {}}
         >
-          {!isPaginated && (
-            <h2 className="blog__section-title">
-              <Translate id="theme.blog.title.new">最新博客</Translate>
-            </h2>
-          )}
-          <div className="row">
-            <div className={"col col--12"}>
-              <ViewTypeSwitch
-                viewType={viewType}
-                toggleViewType={toggleViewType}
-              />
-            </div>
-          </div>
-          <div className="row">
-            <div
-              className={isCardView ? "col col--9" : "col col--12"}
-              style={{ transition: "all 0.3s ease" }}
-            >
-              <div className="bloghome__posts">
-                {(isListView || isCardView) && (
-                  <div className="bloghome__posts-list">
-                    <BlogPostItems items={items} />
-                  </div>
-                )}
-                {isGridView && (
-                  <div className="bloghome__posts-grid">
-                    <BlogPostGridItems items={items} />
-                  </div>
-                )}
-                <BlogListPaginator metadata={metadata} />
+          <motion.main ref={ref} className="margin-vert--md">
+            {!isPaginated && (
+              <h2 className="blog__section-title">
+                <Translate id="theme.blog.title.new">最新博客</Translate>
+              </h2>
+            )}
+            <div className="row">
+              <div className={"col col--12"}>
+                <ViewTypeSwitch
+                  viewType={viewType}
+                  toggleViewType={toggleViewType}
+                />
               </div>
             </div>
-            {isCardView && <BlogInfo />}
-          </div>
+            <div className="row">
+              {isCardView && (
+                <motion.div
+                  drag
+                  dragConstraints={ref}
+                  className={styles.dragBox}
+                >
+                  <SiteInfo />
+                </motion.div>
+              )}
+              <div
+                className={isCardView ? "col col--9" : "col col--12"}
+                style={{ transition: "all 0.3s ease" }}
+              >
+                <div className="bloghome__posts">
+                  {(isListView || isCardView) && (
+                    <div className="bloghome__posts-list">
+                      <BlogPostItems items={items} />
+                    </div>
+                  )}
+                  {isGridView && (
+                    <div className="bloghome__posts-grid">
+                      <BlogPostGridItems items={items} />
+                    </div>
+                  )}
+                  <BlogListPaginator metadata={metadata} />
+                </div>
+              </div>
+
+              {isCardView && <BlogInfo />}
+            </div>
+          </motion.main>
         </div>
       </div>
     </Layout>

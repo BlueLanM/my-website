@@ -77,6 +77,7 @@ function Hero() {
                   alt="logo"
                 ></img>
               </Link>
+
               <span className={styles.intro__name}></span>
             </animated.div>
             <animated.div style={trails[1]}>
@@ -114,6 +115,7 @@ function Hero() {
             </animated.div>
           </div>
         </div>
+
         <div className={styles.bloghome__image} onClick={handleOnClick}>
           <div className={styles.introCard}>
             <IntroCard count={0} curState={states[card1]} />
@@ -123,6 +125,7 @@ function Hero() {
           </div>
         </div>
       </animated.div>
+
       <div className={styles.footer}>
         <div className={styles.innerheader}></div>
         <div>

@@ -289,13 +289,7 @@ const config = {
               {
                 html:"<span>Build with </span><img alt='brightgreen' src='https://img.shields.io/badge/-Docusaurus-38a737?style=flat&logo=docusaurus' style='vertical-align:sub'>"
               },
-              {
-                html:`本站总访问量 <span id="busuanzi_value_site_pv"></span> 次`
-              },
-             
-              {
-                html:`本站总访客数 <span id="busuanzi_value_site_uv"></span> 人`
-              }
+              
             ],
           },
         ],
