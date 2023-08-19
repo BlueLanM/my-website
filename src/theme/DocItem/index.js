@@ -10,6 +10,7 @@ import {DocProvider} from '@docusaurus/theme-common/internal';
 import DocItemMetadata from '@theme/DocItem/Metadata';
 import DocItemLayout from '@theme/DocItem/Layout';
 import Comment from "../../components/Comment";
+import styles from "./index.module.scss"
 export default function DocItem(props) {
   const docHtmlClassName = `docs-doc-id-${props.content.metadata.unversionedId}`;
   const MDXComponent = props.content;
@@ -20,7 +21,7 @@ export default function DocItem(props) {
         <DocItemLayout>
           <MDXComponent />
         </DocItemLayout>
-        <div className='docItemCol_src-theme-DocItem-Layout-styles-module'><Comment/></div>
+        <div className={styles.docComment}><Comment/></div>
       </HtmlClassNameProvider>
     </DocProvider>
   );
