@@ -1,1 +1,9 @@
+.docComment{
+  width:75%;
+}
 
+@media (max-width: 996px) {
+  .docComment{
+    width:100%;
+  }
+}
