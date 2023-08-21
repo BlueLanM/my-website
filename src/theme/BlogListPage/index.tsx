@@ -279,7 +279,7 @@ function BlogListPageContent(props: Props) {
               </div>
             </div>
             <div className="row">
-              {isCardView && (
+              {/* {isCardView && (
                 <motion.div
                   drag
                   dragConstraints={ref}
@@ -287,7 +287,7 @@ function BlogListPageContent(props: Props) {
                 >
                   <SiteInfo />
                 </motion.div>
-              )}
+              )} */}
               <div
                 className={isCardView ? "col col--9" : "col col--12"}
                 style={{ transition: "all 0.3s ease" }}
