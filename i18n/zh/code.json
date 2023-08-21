@@ -123,7 +123,7 @@
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "阅读需{readingTime} 分钟",
+    "message": "阅读需{readingTime}分钟",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMoreLabel": {

@@ -85,6 +85,8 @@
 }
 
 html {
+  font-family:"Fira Code";
+  
   --divider-color: #ebebeb;
   --post-shadow-color: rgb(220 220 220 / 30%);
   --post-shadow: 0 0 20px 10px var(--post-shadow-color);
@@ -129,6 +131,16 @@ html[data-theme='dark'] {
 html,
 body {
   scroll-behavior: smooth;
+}
+
+blockquote{
+ 
+  border-left: 5px solid #6F67FF;
+}
+
+html[data-theme='dark'] blockquote{
+ 
+ background-color: #fff;
 }
 
 
@@ -271,69 +283,84 @@ html[data-theme="dark"] .theme-code-block {
   }
 }
 
+html[data-theme="dark"] .markdown {
+  p{
+    color:#e4e4e4;
+  }
+}
+
 .markdown {
-
-
+  // font-family: '华文宋体';
+  font-family:"Fira Code",'华文楷体';
+  font-weight: bolder;
+  p{
+    color:#575757;
+    line-height: 2.5rem;
+    text-indent: 2rem;
+    font-family:"Fira Code",'华文楷体';
+    font-size: 17px;
+    font-weight: bolder;
+  }
   h1 {
     font-size: 2.2em;
   }
 
   h2 {
     font-size: 1.8em;
-    padding-left: 1em;
+    // padding-left: 1em;
     margin-top: 2rem;
     position: relative;
     width: 100%;
     height: 40px;
 
-    &::before {
-      position: absolute;
-      left: 0px;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      content: '';
-      box-shadow: inset 0 0 0 2px #8463ff;
-      animation: h2An 4s linear infinite;
-      z-index: 11;
-      animation-delay: -2s;
+    // &::before {
+    //   position: absolute;
+    //   left: 0px;
+    //   top: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   content: '';
+    //   box-shadow: inset 0 0 0 2px #8463ff;
+    //   animation: h2An 4s linear infinite;
+    //   z-index: 11;
+    //   animation-delay: -2s;
 
-    }
+    // }
 
-    &::after {
-      position: absolute;
-      left: 0px;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      content: '';
-      box-shadow: inset 0 0 0 2px #8463ff;
-      animation: h2An 4s linear infinite;
-      z-index: 11
-    }
+    // &::after {
+    //   position: absolute;
+    //   left: 0px;
+    //   top: 0;
+    //   bottom: 0;
+    //   right: 0;
+    //   content: '';
+    //   box-shadow: inset 0 0 0 2px #8463ff;
+    //   animation: h2An 4s linear infinite;
+    //   z-index: 11
+    // }
   }
 
-  @keyframes h2An {
-    0% {
-      clip: rect(0, 1000px, 5px, 0)
-    }
+  // @keyframes h2An {
+  //   0% {
+  //     clip: rect(0, 1000px, 5px, 0)
+  //   }
 
-    25% {
-      clip: rect(0, 5px, 40px, 0)
-    }
+  //   25% {
+  //     clip: rect(0, 5px, 40px, 0)
+  //   }
 
-    50% {
-      clip: rect(35px, 1000px, 40px, 5px)
-    }
+  //   50% {
+  //     clip: rect(35px, 1000px, 40px, 5px)
+  //   }
 
-    75% {
-      clip: rect(0, 1000px, 40px, 995px)
-    }
+  //   75% {
+  //     clip: rect(0, 1000px, 40px, 995px)
+  //   }
 
-    100% {
-      clip: rect(0, 1000px, 5px, 0)
-    }
-  }
+  //   100% {
+  //     clip: rect(0, 1000px, 5px, 0)
+  //   }
+  // }
 
   // @keyframes h2An {
   //   0% {
@@ -354,18 +381,18 @@ html[data-theme="dark"] .theme-code-block {
   //   }
   // }
 
-  @keyframes h2AnAfter {
-    0% {
-      width: 0%;
-      opacity: 1;
-      transform: translateX(0);
-    }
+  // @keyframes h2AnAfter {
+  //   0% {
+  //     width: 0%;
+  //     opacity: 1;
+  //     transform: translateX(0);
+  //   }
 
-    100% {
-      opacity: 0;
-      width: 100% // transform: translate(100px);
-    }
-  }
+  //   100% {
+  //     opacity: 0;
+  //     width: 100% // transform: translate(100px);
+  //   }
+  // }
 
   h3 {
     font-size: 1.4em;

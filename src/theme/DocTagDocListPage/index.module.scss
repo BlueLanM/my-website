@@ -1,0 +1,29 @@
+html{
+    --ifm-spacing-horizontal:1rem;
+}
+
+.row{
+  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+}
+.tagUl{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+.tagList{
+    color:#000;
+    line-height: 2rem;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1140px) {
+    .tagUl{
+        display: none;
+    }
+}

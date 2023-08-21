@@ -82,12 +82,6 @@ const sidebars = {
     "Life/house",
     "Life/network",
     "Life/workPlace",
-
-    {
-      label: "Song",
-      type: "category",
-      items: ["Life/Song/f*cklove"],
-    },
   ],
 };
 
