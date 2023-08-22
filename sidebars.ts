@@ -72,16 +72,28 @@ const sidebars = {
     },
   ],
   life: [
-    "Life/introduction",
     {
-      label: "享受孤独",
+      label: "生活",
       type: "category",
-      items: ["Life/lonely"],
+      items: [
+        "Life/introduction",
+        "Life/lonely",
+        "Life/dream",
+        "Life/house",
+        "Life/network",
+        "Life/workPlace",
+      ],
     },
-    "Life/dream",
-    "Life/house",
-    "Life/network",
-    "Life/workPlace",
+    {
+      label: "回忆",
+      type: "category",
+      items: ["Memory/introduction"],
+    },
+    {
+      label: "娱乐",
+      type: "category",
+      items: ["Game/introduction"],
+    },
   ],
 };
 

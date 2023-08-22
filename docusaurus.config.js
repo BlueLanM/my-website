@@ -163,9 +163,13 @@ const config = {
             to: "friend",
           },
           {
-            label: "工具",
+            label: "更多",
             position: "right",
             items: [
+              {
+                label: "赞助",
+                to: "thanks",
+              },
               {
                 label: "组件库",
                 to: "https://component.lanm.love",
