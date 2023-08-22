@@ -27,9 +27,13 @@
     "message": "项目",
     "description": "Navbar item with label 项目"
   },
-  "item.label.工具": {
-    "message": "工具",
-    "description": "Navbar item with label 工具"
+  "item.label.友链": {
+    "message": "友链",
+    "description": "Navbar item with label 友链"
+  },
+  "item.label.更多": {
+    "message": "更多",
+    "description": "Navbar item with label 更多"
   },
   "item.label.组件库": {
     "message": "组件库",

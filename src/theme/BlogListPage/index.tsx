@@ -44,7 +44,7 @@ function SiteInfo() {
               本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
             </div>
             <div>
-              本站总访客数 <span id="busuanzi_value_site_uv"></span> 人
+              已有 <span id="busuanzi_value_site_uv"></span> 人在此留下脚印
             </div>
           </div>
         </div>
