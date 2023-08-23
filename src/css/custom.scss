@@ -38,7 +38,7 @@
 
   /* 标签背景 */
   --tag-background: var(--ifm-color-primary);
-  --tag-background-dark: #0179fa77;
+  --tag-background-dark: #6600ff77;
   --tag-background-light: #1982bb;
 
   /* 代码块背景 */
@@ -91,7 +91,7 @@ html {
   --post-shadow-color: rgb(220 220 220 / 30%);
   --post-shadow: 0 0 20px 10px var(--post-shadow-color);
   --blog-item-background-color: linear-gradient(180deg,#fcfcfc,#fff);
-  background-color: #fffdfc;
+  // background-color: #fffdfc;
   --blog-item-shadow: 0 10px 60px 5px #f1f5f9,0 0 10px 0 #dbdbe1;
 }
 
@@ -284,9 +284,7 @@ html[data-theme="dark"] .theme-code-block {
 }
 
 html[data-theme="dark"] .markdown {
-  p{
-    color:#e4e4e4;
-  }
+  
 }
 
 .markdown {
@@ -697,11 +695,20 @@ html[data-theme="dark"] .post__tags {
 }
 
 html[data-theme="dark"] .pagination-nav__link {
-  background: var(--tag-background-dark);
-  box-shadow: 0 0 32px rgb(0 105 165 / 35%);
+  // background: var(--tag-background-dark);
+  background: #1D1D1F;
+  // box-shadow: 0 0 32px rgba(0, 3, 170, 0.35);
   color: white;
-  border: none;
+  border: --tag-background-dark;
+  .pagination-nav__sublabel {
+    color: #fff;
+    margin: 0.5em 0;
+  }
+  &:hover{
+    background: #a79fff;
+  }
 }
+
 
 .pagination-nav__item--next>.pagination-nav__link {
   background: linear-gradient(90deg,
