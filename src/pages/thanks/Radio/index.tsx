@@ -48,7 +48,7 @@ function Radio() {
         variants={variants}
         viewport={{ once: true, amount: 0.8 }}
       >
-        <motion.img
+        <img
           src={
             status == "1"
               ? "/img/thanks/vx.png"
@@ -57,9 +57,6 @@ function Radio() {
               : "/img/thanks/bmc_qr.png"
           }
           alt=""
-          initial="from"
-          animate="to"
-          variants={variants}
         />
       </motion.li>
     </div>
