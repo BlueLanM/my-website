@@ -3,6 +3,7 @@ slug: vercel-deploy-blog
 title: 用Vercel部署个人博客
 date: 2023-02-13
 authors: LanM
+weather: 晴
 tags: [Vercel, Program]
 keywords: [Vercel, Program]
 description: 使用 Vercel 部署个人博客过程记录，简单方便、访问快、免费部署。
