@@ -3,6 +3,7 @@ slug: vercel-deploy-config
 title: Vercel部署配置项
 date: 2023-04-10
 authors: LanM
+weather: 晴
 tags: [Vercel, Program]
 keywords: [Vercel, Program]
 ---

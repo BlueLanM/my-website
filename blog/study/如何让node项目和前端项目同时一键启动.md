@@ -2,6 +2,7 @@
 slug: node-start-with-project
 title: 一键启动node项目和前端项目
 date: 2023-02-09
+weather: 晴
 authors: LanM
 tags: [Study, Node]
 keywords: [Study, Node]

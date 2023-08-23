@@ -3,6 +3,7 @@ slug: XRender
 title: 阿里巴巴中后台-XRender学习使用
 date: 2023-08-04
 authors: LanM
+weather: 晴
 tags: [Study]
 keywords: [Study]
 image: /assets/images/Xrender-62b1a8a543599f937884d84f3d56f0da.png

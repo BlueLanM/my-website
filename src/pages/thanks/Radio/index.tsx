@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./index.module.scss";
 import { Icon } from "@iconify/react";
-import Comment from "@site/src/components/Comment";
+
 import { motion, Variants } from "framer-motion";
 
 function Radio() {
@@ -62,7 +62,6 @@ function Radio() {
           variants={variants}
         />
       </motion.li>
-      <Comment />
     </div>
   );
 }

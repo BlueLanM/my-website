@@ -3,6 +3,7 @@ slug: /happyBirthday
 title: Happy Birthday!
 date: 2023-03-10
 authors: LanM
+weather: 晴
 tags: [Life, 随笔]
 keywords: [Life, 随笔]
 ---

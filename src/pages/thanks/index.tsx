@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.scss";
 import Translate, { translate } from "@docusaurus/Translate";
 import Layout from "@theme/Layout";
+import Comment from "@site/src/components/Comment";
 import Radio from "./Radio";
 
 const TITLE = translate({
@@ -45,7 +46,8 @@ function Thanks() {
       <main className="margin-vert--lg">
         <div className={styles.container}>
           <ThanksHeader />
-          <ThanksRadio />
+          {/* <ThanksRadio /> */}
+          <Comment />
         </div>
       </main>
     </Layout>
