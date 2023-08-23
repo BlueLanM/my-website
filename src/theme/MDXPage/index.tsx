@@ -8,6 +8,7 @@ import {
 import Layout from "@theme/Layout";
 import MDXContent from "@theme/MDXContent";
 import TOC from "@theme/TOC";
+import Comment from "@site/src/components/Comment";
 import type { Props } from "@theme/MDXPage";
 
 import styles from "./styles.module.css";
@@ -46,6 +47,9 @@ export default function MDXPage(props: Props): JSX.Element {
                 />
               </div>
             )}
+          </div>
+          <div style={{ marginTop: "2rem", padding: "0 10rem" }}>
+            <Comment />
           </div>
         </main>
       </Layout>
