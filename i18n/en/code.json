@@ -492,6 +492,23 @@
   "theme.notebook.description":{
     "message":"yohoooo",
     "description":"Guestbook description"
+  },
+  "theme.thanks.title":{
+    "message":"Contributions",
+    "description":"contributions title"
+  },
+  "theme.thanks.description":{
+    "message":"Gifts of roses, hand there are lingering fragrance 🌹",
+    "description":"contributions description"
+  },
+  "theme.thanks.code":{
+    "message":"If the articles I have written and the open source contributions I have made are helpful to you, sponsorship is welcome. Your little thought is the greatest affirmation and encouragement to me.",
+    "description":"contributions code"
+  },
+  "theme.thanks.info":{
+    "message":"The sponsorship fee will be used for domain name renewal",
+    "description":"contributions info"
   }
- 
+  
+  
 }

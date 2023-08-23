@@ -15,8 +15,9 @@ export default function FooterLayout({ style, links, logo, copyright }) {
     >
       <div className="container container-fluid">
         {links}
+        {/* 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次 |  */}
         <div>
-          本站总访问量 <span id="busuanzi_value_site_pv"></span> 次 |  已有 <span id="busuanzi_value_site_uv"></span> 人在此留下脚印
+           已有 <span id="busuanzi_value_site_uv"></span> 人在此留下脚印
         </div>
 
         {(logo || copyright) && (
