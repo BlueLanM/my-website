@@ -400,5 +400,23 @@
   "theme.notebook.description":{
     "message":"好耶",
     "description":"Guestbook description"
+  },
+  "theme.thanks.title":{
+    "message":"赞助",
+    "description":"contributions title"
+  },
+  "theme.thanks.description":{
+    "message":"赠人玫瑰，手有余香 🌹",
+    "description":"contributions description"
+  },
+  "theme.thanks.code":{
+    "message":"如果我写的文章和所做的开源贡献对你有帮助，欢迎赞助。你的一点心意就是对我最大的肯定和鼓励。",
+    "description":"contributions code"
+  },
+  "theme.thanks.info":{
+    "message":"所获赞助费用将用于域名续费",
+    "description":"contributions info"
   }
+  
+  
 }
