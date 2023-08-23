@@ -1,25 +1,20 @@
-
-  .dragMain{
-    
-   
-  }
 .dragBox {
-    position: sticky;
-    // bottom: 1rem;
-    top:1rem;
-    right: 1rem;
-    z-index: 99999;
-    display: inline-flex;
-    text-align: left;
-    cursor: move;
-  }
+  position: sticky;
+  // bottom: 1rem;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99999;
+  display: inline-flex;
+  text-align: left;
+  cursor: move;
+}
 
-  .siteInfo {
-    text-align: left;
-    padding: 10px;
-    width: 400px;
-    font-size: 0.9rem;
-    border-radius: var(--ifm-pre-border-radius);
-    border: 0.1rem solid rgba(0, 0, 0, 0.1);
-    --ifm-leading: 0;
-  }
+.siteInfo {
+  text-align: left;
+  padding: 10px;
+  width: 400px;
+  font-size: 0.9rem;
+  border-radius: var(--ifm-pre-border-radius);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --ifm-leading: 0;
+}
