@@ -22,24 +22,45 @@
   justify-content: center;
 }
 
-.socialData{
+.socialData {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
-
-.data_mine{
+.data_mine {
   display: flex;
   align-items: center;
   cursor: pointer;
   margin-bottom: 10px;
- 
 }
 
-.data_mine img{
+.data_mine img {
   flex: 0 0 33%;
 }
 
+.blog_history {
+  li {
+    // list-style-image: url("/img/about/circle-color.svg");
+
+    list-style-type: circle;
+  }
+  li::marker {
+    font-size: 25px;
+
+    color: blueviolet;
+  }
+  li:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      border: 1px solid;
+      position: absolute;
+      height: 1rem;
+      bottom: -13px;
+      left: -18px;
+    }
+  }
+}
