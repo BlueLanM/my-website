@@ -46,7 +46,7 @@ function Thanks() {
       <main className="margin-vert--lg">
         <div className={styles.container}>
           <ThanksHeader />
-          {/* <ThanksRadio /> */}
+          <ThanksRadio />
           <Comment />
         </div>
       </main>
