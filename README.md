@@ -4,10 +4,6 @@
 ## ✨ Features
 
 - ✍️ **Markdown** - 写作方便
-- 🎨 **Beautiful** - 整洁，美观
-- 🖥️ **PWA** - 支持 PWA，可安装，离线可用
-- 🏞️ **i18n** - 支持国际化
-- 💯 **SEO** - 搜索引擎优化，易于收录
 - 📊 **谷歌分析** - 支持 Google Analytics
 - 🔎 **全文搜索** - 支持 [Algolia DocSearch](https://github.com/algolia/docsearch)
 - 🗃️ **博文视图** - 不同的博文视图，列表、宫格、卡片
@@ -43,8 +39,11 @@
 ## 📥 Start
 
 ```sh
-git clone https://github.com/BlueLanM/blog.git
-cd blog
-yarn install
+git clone https://github.com/BlueLanM/my-website.git
+
+cd my-website
+
+yarn
+
 yarn start
 ```
