@@ -82,6 +82,7 @@ const sidebars = {
         "Life/house",
         "Life/network",
         "Life/workPlace",
+        "Life/ordinary",
       ],
     },
     {
