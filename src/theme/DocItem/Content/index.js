@@ -98,7 +98,9 @@ export default function DocItemContent({ children }) {
             )}
             <Spacer />
             <Icon icon="mdi:eye" />
-            <span id="busuanzi_value_page_pv"></span>
+            <span id="busuanzi_container_page_pv">
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
           </div>
           <div>
             <hr />
