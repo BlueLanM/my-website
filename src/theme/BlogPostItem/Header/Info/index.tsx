@@ -81,7 +81,7 @@ export default function BlogPostItemHeaderInfo({
       status: "mdi:weather-rainy",
     },
     {
-      name: "多云",
+      name: "阴",
       status: "mdi:weather-partly-cloudy",
     },
     {

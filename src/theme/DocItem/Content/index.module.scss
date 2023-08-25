@@ -1,13 +1,22 @@
-.container {
+.info {
+  display: flex;
   font-size: 0.9rem;
-  color: #5e5e5e;
+  color: #898989;
+  align-items: center;
+  margin-bottom: 1rem;
   svg {
     margin: 0px 5px;
     font-size: 1rem;
   }
 }
 
-html[data-theme="dark"] .container {
+.container {
+  hr {
+    background-color: #fff;
+  }
+}
+
+html[data-theme="dark"] .info {
   color: #c5c5c5;
 }
 
