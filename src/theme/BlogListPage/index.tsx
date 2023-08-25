@@ -103,6 +103,7 @@ function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.Element {
     <>
       {items.map(({ content: BlogPostContent }, index) => {
         const { metadata: blogMetaData, frontMatter } = BlogPostContent;
+
         const { title } = frontMatter;
         const { permalink, date, tags } = blogMetaData;
         const dateObj = new Date(date);
@@ -110,6 +111,7 @@ function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.Element {
           "0" +
           (dateObj.getMonth() + 1)
         ).slice(-2)}-${("0" + dateObj.getDate()).slice(-2)}`;
+        console.log(blogMetaData);
 
         return (
           <div className="post__list-item" key={blogMetaData.permalink}>
@@ -237,7 +239,7 @@ function BlogRecommend({
 
 function BlogListPageContent(props: Props) {
   const { metadata, items } = props;
-  console.log(items);
+
   const ref = React.useRef<HTMLDivElement>(null);
   const isBlogOnlyMode = !metadata.permalink.includes("page");
   const isPaginated = metadata.page > 1;
@@ -288,6 +290,7 @@ function BlogListPageContent(props: Props) {
                   <SiteInfo />
                 </motion.div>
               )} */}
+
               <div
                 className={isCardView ? "col col--9" : "col col--12"}
                 style={{ transition: "all 0.3s ease" }}
@@ -305,6 +308,9 @@ function BlogListPageContent(props: Props) {
                   )}
                   <BlogListPaginator metadata={metadata} />
                 </div>
+                {/* <div className="bloghome__posts-grid">
+                  <BlogPostGridItems items={items} />
+                </div> */}
               </div>
 
               {isCardView && <BlogInfo />}
