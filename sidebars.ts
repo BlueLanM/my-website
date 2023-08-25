@@ -77,12 +77,21 @@ const sidebars = {
       type: "category",
       items: [
         "Life/introduction",
-        "Life/lonely",
-        "Life/dream",
-        "Life/house",
-        "Life/network",
-        "Life/workPlace",
-        "Life/ordinary",
+        {
+          label: "日常",
+          type: "category",
+          items: ["Life/Daily/workPlace"],
+        },
+        {
+          label: "思考",
+          type: "category",
+          items: ["Life/Think/lonely", "Life/Think/ordinary"],
+        },
+        {
+          label: "攻略",
+          type: "category",
+          items: ["Life/Guide/house", "Life/Guide/dream", "Life/Guide/network"],
+        },
       ],
     },
     {
