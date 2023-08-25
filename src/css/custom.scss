@@ -284,18 +284,22 @@ html[data-theme="dark"] .theme-code-block {
 }
 
 html[data-theme="dark"] .markdown {
-  
+  p{
+    color:#eeeeee;
+  }
 }
+
+
 
 .markdown {
   // font-family: '华文宋体';
-  font-family:"Fira Code",'华文楷体';
+  font-family:"Fira Code",'华文宋体';
   font-weight: bolder;
   p{
     color:#575757;
     line-height: 2.5rem;
     text-indent: 2rem;
-    font-family:"Fira Code",'华文楷体';
+    font-family:"Fira Code",'华文宋体';
     font-size: 17px;
     font-weight: bolder;
   }
