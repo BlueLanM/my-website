@@ -55,6 +55,12 @@ export const Friends: Friend[] = [
       "https://picked-1301273887.cos.ap-nanjing.myqcloud.com/favicon.webp",
     description: "且将新火试新茶",
   },
+  {
+    title: "Leonus",
+    website: "https://blog.leonus.cn/",
+    avatar: "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
+    description: "进一寸有进一寸的欢喜。",
+  },
 ];
 
 export type Friend = {
