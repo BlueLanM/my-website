@@ -46,7 +46,7 @@ function Date({
     <time
       dateTime={date}
       itemProp="datePublished"
-      style={{ display: "flex", alignItems: "center" }}
+      style={{ display: "flex", alignItems: "center", lineHeight: "normal" }}
     >
       <Icon icon="mdi:clock-time-three" color="#6F67FF" />
       {formattedDate}
