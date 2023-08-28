@@ -80,7 +80,8 @@ export default function DocItemContent({ children }) {
         <header className={styles.container}>
           <Heading as="h1">{syntheticTitle}</Heading>
           <div className={styles.info}>
-            <div>{createDate}</div>
+            <Icon icon="mdi:clock-time-three" color="#6F67FF" />
+            <span className={styles.info_date}>{createDate}</span>
             <div className={styles.week}> {week[weekDay].time} </div>
             <Spacer />
             {frontData.weather ? (
