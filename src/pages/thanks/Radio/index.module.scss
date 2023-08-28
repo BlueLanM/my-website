@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  li {
+    list-style: none;
+  }
   .radio_flex {
     display: flex;
     font-size: 1.5rem;

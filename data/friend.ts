@@ -48,6 +48,13 @@ export const Friends: Friend[] = [
     avatar: "https://cloud.jishuqin.cn/avatar.png",
     description: "不想满心遗憾，那就全力以赴.",
   },
+  {
+    title: "L3ZCの试验田",
+    website: "https://l3zc.com",
+    avatar:
+      "https://picked-1301273887.cos.ap-nanjing.myqcloud.com/favicon.webp",
+    description: "且将新火试新茶",
+  },
 ];
 
 export type Friend = {
