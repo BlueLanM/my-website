@@ -102,7 +102,12 @@ const sidebars = {
     {
       label: "娱乐",
       type: "category",
-      items: ["Game/introduction"],
+      items: ["Game/introduction", "Game/csgo", "Game/kingdom"],
+    },
+    {
+      label: "LanMの厨房",
+      type: "category",
+      items: ["LanMKitchen/cook1", "LanMKitchen/cook2", "LanMKitchen/cook3"],
     },
   ],
 };
