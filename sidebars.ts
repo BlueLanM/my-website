@@ -107,7 +107,12 @@ const sidebars = {
     {
       label: "LanMの厨房",
       type: "category",
-      items: ["LanMKitchen/cook1", "LanMKitchen/cook2", "LanMKitchen/cook3"],
+      items: [
+        "LanMKitchen/cook1",
+        "LanMKitchen/cook2",
+        "LanMKitchen/cook3",
+        "LanMKitchen/cook4",
+      ],
     },
   ],
 };
