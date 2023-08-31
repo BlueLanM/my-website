@@ -5,8 +5,6 @@ const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const path = require("path");
 
-
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "蓝莓のBlog",
@@ -27,7 +25,7 @@ const config = {
       },
     },
   },
-  
+
   // themes: ["@docusaurus/theme-search-algolia"],
   presets: [
     [
@@ -39,7 +37,7 @@ const config = {
           sidebarPath: "sidebars.ts",
           showLastUpdateTime: true,
         },
-       
+
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
@@ -63,23 +61,22 @@ const config = {
       }),
     ],
   ],
- scripts:[{
-  src:'https://busuanzi.icodeq.com/busuanzi.pure.mini.js',
-  async:true
- }],
+  scripts: [
+    {
+      src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js",
+      async: true,
+    },
+  ],
   plugins: [
     "docusaurus-plugin-sass",
     // path.resolve(__dirname, "./src/plugin/plugin-busuanzi"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"),
     path.resolve(__dirname, "./src/plugin/plugin-google"),
     path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
-    
-    
-  
 
     [
       path.resolve(__dirname, "./src/plugin/plugin-content-blog"),
-     
+
       {
         path: "blog",
         routeBasePath: "/",
@@ -96,8 +93,6 @@ const config = {
           title: "蓝莓",
         },
       },
-      
-      
     ],
 
     [
@@ -106,7 +101,6 @@ const config = {
         disableInDev: false,
       },
     ],
-    
   ],
 
   themeConfig:
@@ -212,13 +206,13 @@ const config = {
             position: "right",
             className: "header-traval",
             to: "https://www.travellings.cn/go.html",
-            html:`<img style='width:6rem;vertical-align: bottom;'  src='https://www.travellings.cn/assets/logo.gif'/>`
+            html: `<img style='width:6rem;vertical-align: bottom;'  src='https://www.travellings.cn/assets/logo.gif'/>`,
             // html:`<img style='width:1.7rem;vertical-align: bottom;' src='https://www.travellings.cn/assets/travelling-light.png'/>`
           },
           {
-            position:'right',
-            to:'https://www.foreverblog.cn/go.html',
-            html:`<img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:4rem;vertical-align: bottom;" title="穿梭虫洞-随机访问十年之约友链博客">`
+            position: "right",
+            to: "https://www.foreverblog.cn/go.html",
+            html: `<img src="https://img.foreverblog.cn/wormhole_3_tp.gif" alt="" style="width:4rem;vertical-align: bottom;" title="穿梭虫洞-随机访问十年之约友链博客">`,
           },
         ],
       },
@@ -291,19 +285,18 @@ const config = {
               //   to: "website",
               // },
               {
-                html:"<span>Build with </span><img alt='brightgreen' src='https://img.shields.io/badge/-Docusaurus-38a737?style=flat&logo=docusaurus' style='vertical-align:sub'>"
+                html: "<span>Build with </span><img alt='brightgreen' src='https://img.shields.io/badge/-Docusaurus-38a737?style=flat&logo=docusaurus' style='vertical-align:sub'>",
               },
-              
             ],
           },
         ],
-        copyright: `<span style='font-size:24px'>@2023 LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docusaurus.io/"></a><img className='footer_vercel' style='vertical-align: bottom;' src='https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg'>`,
+        copyright: `<span style='font-size:24px'>@2023 LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docusaurus.io/"></a><a href='https://vercel.com/'><img className='footer_vercel' style='vertical-align: bottom;' src='https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg'></a>`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-     
+
       // colorMode: {
       //   disableSwitch: true,
       //   defaultMode: "dark",
