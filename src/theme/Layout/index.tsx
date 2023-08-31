@@ -100,12 +100,12 @@ export default function Layout(props: Props): JSX.Element {
 
         <AnnouncementBar />
         <Navbar />
-
-        <SakanaReact
-          showLine={false}
-          style={{ position: "fixed", bottom: "1rem", right: "7rem" }}
-        />
-
+        <div className={styles.sakana}>
+          <SakanaReact
+            showLine={false}
+            style={{ position: "fixed", bottom: "1rem", right: "7rem" }}
+          />
+        </div>
         <div
           id={SkipToContentFallbackId}
           className={clsx(
