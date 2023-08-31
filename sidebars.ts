@@ -80,7 +80,7 @@ const sidebars = {
         {
           label: "日常",
           type: "category",
-          items: ["Life/Daily/workPlace"],
+          items: ["Life/Daily/workPlace", "Life/Daily/daybyday"],
         },
         {
           label: "思考",
