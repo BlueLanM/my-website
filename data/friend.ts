@@ -76,8 +76,7 @@ export const Friends: Friend[] = [
   {
     title: "肥猪qwq",
     website: "https://blog.feizhuqwq.com",
-    avatar:
-      "https://i1-cdn.feizhuqwq.com/img-assets/logo/faviconHD.jpg?w=[size]",
+    avatar: "https://i1-cdn.feizhuqwq.com/img-assets/logo/faviconHD.jpg",
     description: "因为不可能，所以才值得相信。",
   },
 ];
