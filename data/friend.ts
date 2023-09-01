@@ -61,6 +61,12 @@ export const Friends: Friend[] = [
     avatar: "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
     description: "进一寸有进一寸的欢喜。",
   },
+  {
+    title: "喵二の小博客",
+    website: "https://www.miaoer.xyz",
+    avatar: "https://www.miaoer.xyz/weblogo.jpg",
+    description: "缘，妙不可言",
+  },
 ];
 
 export type Friend = {
