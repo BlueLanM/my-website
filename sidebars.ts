@@ -105,8 +105,15 @@ const sidebars = {
       items: [
         "Game/introduction",
         "Game/gameRecommend",
-        "Game/csgo",
-        "Game/kingdom",
+        {
+          label: "测评＆经历",
+          type: "category",
+          items: [
+            "Game/Experience/csgo",
+            "Game/Experience/apex",
+            "Game/Experience/kingdom",
+          ],
+        },
       ],
     },
     {
