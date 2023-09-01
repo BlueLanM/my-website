@@ -67,6 +67,12 @@ export const Friends: Friend[] = [
     avatar: "https://www.miaoer.xyz/weblogo.jpg",
     description: "缘，妙不可言",
   },
+  {
+    title: "元のDiary",
+    website: "https://blog.yuano.cc",
+    avatar: "https://img.yuano.cc/upload/wulimiao.jpg",
+    description: "我在网络中蜗居的小窝",
+  },
 ];
 
 export type Friend = {
