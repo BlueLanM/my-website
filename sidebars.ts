@@ -102,7 +102,12 @@ const sidebars = {
     {
       label: "娱乐",
       type: "category",
-      items: ["Game/introduction", "Game/csgo", "Game/kingdom"],
+      items: [
+        "Game/introduction",
+        "Game/gameRecommend",
+        "Game/csgo",
+        "Game/kingdom",
+      ],
     },
     {
       label: "LanMの厨房",
