@@ -62,13 +62,7 @@ const sidebars = {
       link: {
         type: "generated-index",
       },
-      items: [
-        "Study/Markdown笔记/markdown-title",
-        "Study/Markdown笔记/markdown-list",
-        "Study/Markdown笔记/markdown-note",
-        "Study/Markdown笔记/markdown-Hyperlink",
-        "Study/Markdown笔记/markdown-code",
-      ],
+      items: ["Study/Markdown笔记/introduction"],
     },
   ],
   life: [
@@ -95,9 +89,9 @@ const sidebars = {
       ],
     },
     {
-      label: "回忆",
+      label: "记忆",
       type: "category",
-      items: ["Memory/introduction"],
+      items: ["Memory/introduction", "Memory/memory1", "Memory/memory2"],
     },
     {
       label: "娱乐",
