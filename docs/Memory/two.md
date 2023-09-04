@@ -8,7 +8,3 @@ authors: LanM
 tags: [memory]
 keywords: [memory]
 ---
-
-import Cold from "./cold.tsx"
-
-<Cold/>
