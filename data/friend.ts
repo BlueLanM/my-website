@@ -23,12 +23,12 @@ export const Friends: Friend[] = [
     website: "https://blog.linioi.com/",
     avatar: "https://blog.linioi.com/hotlink-ok/images/avatar.jpg",
   },
-  {
-    title: "妖の森",
-    website: "https://fjwr.xyz",
-    avatar: "https://cdn.fjwr.xyz:1883/handsome/assets/img/header.jpg",
-    description: "一个划水摸鱼的博主",
-  },
+  // {
+  //   title: "妖の森",
+  //   website: "https://fjwr.xyz",
+  //   avatar: "https://cdn.fjwr.xyz:1883/handsome/assets/img/header.jpg",
+  //   description: "一个划水摸鱼的博主",
+  // },
   {
     title: "Trtyr’s Blog",
     website: "https://www.trtyr.top/",
