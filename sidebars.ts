@@ -120,6 +120,7 @@ const sidebars = {
         "LanMKitchen/cook4",
         "LanMKitchen/cook5",
         "LanMKitchen/cook6",
+        "LanMKitchen/cook7",
       ],
     },
   ],
