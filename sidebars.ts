@@ -74,7 +74,11 @@ const sidebars = {
         {
           label: "日常",
           type: "category",
-          items: ["Life/Daily/workPlace", "Life/Daily/daybyday"],
+          items: [
+            "Life/Daily/workPlace",
+            "Life/Daily/daybyday",
+            "Life/Daily/aftervacation",
+          ],
         },
         {
           label: "思考",
