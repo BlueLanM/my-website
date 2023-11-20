@@ -78,6 +78,7 @@ const sidebars = {
             "Life/Daily/workPlace",
             "Life/Daily/daybyday",
             "Life/Daily/aftervacation",
+            "Life/Daily/anyang",
           ],
         },
         {
