@@ -12,6 +12,12 @@ export const Friends: Friend[] = [
     avatar: "https://avatars.githubusercontent.com/u/54560462?v=4",
   },
   {
+    title: "CWorld’s Blog",
+    description: "求知若愚，虚怀若谷",
+    website: "https://blog.cworld.top/",
+    avatar: "https://cravatar.cn/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200",
+  },
+  {
     title: "freejishu的美丽世界",
     description: "A New World",
     website: "http://www.freejishu.com",
