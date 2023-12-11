@@ -84,12 +84,21 @@ const sidebars = {
         {
           label: "思考",
           type: "category",
-          items: ["Life/Think/lonely", "Life/Think/ordinary"],
+          items: [
+            "Life/Think/lonely",
+            "Life/Think/ordinary",
+            "Life/Think/work",
+          ],
         },
         {
           label: "攻略",
           type: "category",
-          items: ["Life/Guide/house", "Life/Guide/dream", "Life/Guide/network"],
+          items: [
+            "Life/Guide/house",
+            "Life/Guide/dream",
+            "Life/Guide/network",
+            "Life/Guide/switch",
+          ],
         },
       ],
     },
