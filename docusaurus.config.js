@@ -152,6 +152,11 @@ const config = {
             to: "project",
           },
           {
+            label: "留言板",
+            position: "right",
+            to: "notebook",
+          },
+          {
             label: "友链",
             position: "right",
             to: "friend",
