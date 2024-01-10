@@ -99,7 +99,6 @@ const sidebars = {
             "Life/Guide/dream",
             "Life/Guide/network",
             "Life/Guide/switch",
-            "Life/Guide/pokemon",
           ],
         },
       ],
