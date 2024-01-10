@@ -50,8 +50,8 @@ export const Friends: Friend[] = [
   },
   {
     title: "顾梦",
-    website: "https://blog.jishuqin.cn",
-    avatar: "https://cloud.jishuqin.cn/avatar.png",
+    website: "https://blog.gumengyo.top",
+    avatar: "https://cloud.gumengyo.top/avatar.png",
     description: "不想满心遗憾，那就全力以赴.",
   },
   {
