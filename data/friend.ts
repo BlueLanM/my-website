@@ -79,12 +79,6 @@ export const Friends: Friend[] = [
     avatar: "https://img.yuano.cc/upload/wulimiao.jpg",
     description: "我在网络中蜗居的小窝",
   },
-  {
-    title: "肥猪qwq",
-    website: "https://blog.feizhuqwq.com",
-    avatar: "https://i1-cdn.feizhuqwq.com/img-assets/logo/faviconHD.jpg",
-    description: "因为不可能，所以才值得相信。",
-  },
 ];
 
 export type Friend = {
