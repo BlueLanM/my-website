@@ -80,6 +80,7 @@ const sidebars = {
             "Life/Daily/aftervacation",
             "Life/Daily/anyang",
             "Life/Daily/cat",
+            "Life/Daily/yearsLater",
           ],
         },
         {
