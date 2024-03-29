@@ -14,7 +14,7 @@ keywords: [Study]
 
 <!-- truncate -->
 
-摸索半天最后发现是 npm 镜像源的问题，原淘宝镜像源 http://npm.taobao.org 已过期了，需要替换成 http://registry.npm.taobao.org
+摸索半天最后发现是 npm 镜像源的问题，原淘宝镜像源 http://npm.taobao.org 已过期了，需要替换成 https://registry.npmmirror.com
 
 而我用的 yarn 所以需要在 .yarnrc 文件里改一下
 
