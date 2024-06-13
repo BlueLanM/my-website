@@ -476,7 +476,7 @@ export const ProjectCard = (props) => {
             role="presentation"
             style={{ paddingRight: "0.1px", marginLeft: "20px" }}
           >
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <span className={styles.cm_operator}>{"+ "}</span>
             <span className={styles.cm_string}>"made in Docusaurus"</span>
             <span className={styles.cm_dou}>,</span>
@@ -499,7 +499,7 @@ export const ProjectCard = (props) => {
             role="presentation"
             style={{ paddingRight: "0.1px", marginLeft: "20px" }}
           >
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <span className={styles.cm_operator}>{"+ "}</span>
             <span className={styles.cm_string}>"made in ReactJS and Vite"</span>
             <span className={styles.cm_dou}>,</span>
@@ -522,7 +522,7 @@ export const ProjectCard = (props) => {
             role="presentation"
             style={{ paddingRight: "0.1px", marginLeft: "20px" }}
           >
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <span className={styles.cm_operator}>{"+ "}</span>
             <span className={styles.cm_string}>
               "made in ReactJS and storybook"
@@ -538,8 +538,7 @@ export const ProjectCard = (props) => {
             &nbsp;<span className={styles.cm_property}>NodeJS-CRUD</span>
             <span className={styles.cm_mao}>:</span>
             <span className={styles.cm_string}>
-              "The interface for adding, deleting,&nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; modifying, and querying
+              "The interface for adding, deleting, modifying, and querying
               Nodejs"
             </span>
           </span>
@@ -549,7 +548,7 @@ export const ProjectCard = (props) => {
             role="presentation"
             style={{ paddingRight: "0.1px", marginLeft: "20px" }}
           >
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <span className={styles.cm_operator}>{"+ "}</span>
             <span className={styles.cm_string}>
               "made in nodejs and express and MySQL"

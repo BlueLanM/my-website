@@ -64,5 +64,6 @@
   },
   "engines": {
     "node": ">=16.14"
-  }
+  },
+  "repository": "https://github.com/BlueLanM/my-website.git"
 }
