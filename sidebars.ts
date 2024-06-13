@@ -126,6 +126,16 @@ const sidebars = {
       ],
     },
     {
+      label: "LanMの画室",
+      type: "category",
+      items: [
+        "LanMStudio/draw-1",
+        "LanMStudio/draw-2",
+        "LanMStudio/draw-3",
+        "LanMStudio/draw-4",
+      ],
+    },
+    {
       label: "LanMの厨房",
       type: "category",
       items: [

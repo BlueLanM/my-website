@@ -401,17 +401,18 @@ html[data-theme="dark"] .markdown {
 
     &::before {
       margin-right: 0.5em;
-      width: 1.3em;
-      height: 1.3em;
+      width: 20px;
+      height: 20px;
       display: inline-block;
       display: flex;
       justify-content: center;
+      align-items: center;
       border-radius: 50%;
       background: var(--ifm-color-primary);
       // text-align: center;
       animation: h3Before 2s infinite alternate-reverse;
       color: white;
-      content: "✖️";
+      content: "＋";
       -webkit-animation: h3Before 2s infinite alternate-reverse;
     }
   }
@@ -419,7 +420,8 @@ html[data-theme="dark"] .markdown {
   @keyframes h3Before {
     from {
       transform: rotate(0deg);
-    }
+     
+}
 
     to {
       transform: rotate(360deg);
