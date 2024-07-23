@@ -70,7 +70,7 @@ export const Friends: Friend[] = [
   {
     title: "喵二の小博客",
     website: "https://www.miaoer.xyz",
-    avatar: "https://www.miaoer.xyz/weblogo.jpg",
+    avatar: "https://www.miaoer.xyz/avatar.webp",
     description: "缘，妙不可言",
   },
   {
