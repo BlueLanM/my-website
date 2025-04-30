@@ -10,7 +10,7 @@ function NoteHeader() {
 	});
 	const DESCRIPTION = translate({
 		id: "theme.note.description",
-		message: "好耶！！"
+		message: "好耶！！！"
 	});
 
 	return (
