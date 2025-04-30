@@ -15,6 +15,5 @@ jobs:
           yarn build
  
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: dist # The folder the action should deploy.
+        run: |
+          GIT_USER=BlueLanM yarn deploy
