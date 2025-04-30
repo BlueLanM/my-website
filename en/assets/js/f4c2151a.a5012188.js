@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2354],{6581:e=>{e.exports=JSON.parse('{"label":"Jquery","permalink":"/en/docs/tags/jquery","allTagsPath":"/en/docs/tags","count":1,"items":[{"id":"Study/Topic/window_onload","title":"window.onload\u548c$(document).ready","description":"\u76f8\u540c","permalink":"/en/docs/window_onload"}]}')}}]);
