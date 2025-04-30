@@ -16,4 +16,4 @@ jobs:
  
       - name: Deploy 🚀
         run: |
-          yarn deploy
+          GIT_USER=BlueLanM yarn deploy
