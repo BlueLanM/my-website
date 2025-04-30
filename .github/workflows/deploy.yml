@@ -16,7 +16,7 @@ jobs:
         yarn
         yarn build 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
         ACCESS_TOKEN: ${{ secrets.GITEE_TOKEN }}
         BRANCH: gh-pages
