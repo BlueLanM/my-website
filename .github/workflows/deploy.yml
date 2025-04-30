@@ -16,4 +16,4 @@ jobs:
  
       - name: Deploy 🚀
         run: |
-          cmd /C "set "GIT_USER=BlueLanM" && yarn deploy"
+          GIT_USER=BlueLanM yarn deploy
