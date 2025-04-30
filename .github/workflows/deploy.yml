@@ -16,4 +16,6 @@ jobs:
  
       - name: Deploy 🚀
         run: |
+          git config user.email "w2351406802@163.com"
+          git config user.name "BlueLanM"
           GIT_USER=BlueLanM yarn deploy
