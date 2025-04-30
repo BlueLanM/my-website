@@ -15,9 +15,6 @@ jobs:
       run: |
         yarn
         yarn build 
-    - name: deploy
-      run: |
-        GIT_USER=BlueLanM yarn deploy
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
