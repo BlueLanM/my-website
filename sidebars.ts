@@ -132,7 +132,10 @@ const sidebars = {
 				"LanMStudio/draw-1",
 				"LanMStudio/draw-2",
 				"LanMStudio/draw-3",
-				"LanMStudio/draw-4"
+				"LanMStudio/draw-4",
+				"LanMStudio/draw-5",
+				"LanMStudio/draw-6",
+				"LanMStudio/draw-7"
 			]
 		},
 		{
