@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bluelanm.github.io/en/</id>
     <title>蓝莓</title>
-    <updated>2025-07-28T00:00:00.000Z</updated>
+    <updated>2025-08-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bluelanm.github.io/en/"/>
     <subtitle>蓝莓のBlog Blog</subtitle>
     <icon>https://bluelanm.github.io/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[200天]]></title>
+        <id>https://bluelanm.github.io/en/200day</id>
+        <link href="https://bluelanm.github.io/en/200day"/>
+        <updated>2025-08-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[image]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" alt="image" src="/en/assets/images/love7-74dbe379a16a37e4906e9faffb749269.jpg" width="720" height="418" class="img_CujE"></p><p>纪念一下200天嘿嘿。</p><p><img loading="lazy" alt="image" src="/en/assets/images/love6-c00c71dcc4d5eedc34207c12b822d762.jpg" width="3024" height="4032" class="img_CujE"></p><p>两个人的戒指</p><p><img loading="lazy" alt="image" src="/en/assets/images/ring-da10a9d588709ee29ee0eb842145be7e.jpg" width="4032" height="3024" class="img_CujE"></p><p>人生第一次收到花，开心。
+<img loading="lazy" alt="image" src="/en/assets/images/200day-721dd5edc2cc9cc28ffccb15b14a6113.jpg" width="3072" height="4096" class="img_CujE"></p>]]></content>
+        <author>
+            <name>LanM</name>
+            <uri>https://github.com/BlueLanM</uri>
+        </author>
+        <category label="Life" term="Life"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[好久不见]]></title>
         <id>https://bluelanm.github.io/en/long time</id>
