@@ -11,7 +11,7 @@ const config = {
 	tagline: "据说最高级的快乐有三种：自律，爱，创造",
 	favicon: "img/favicon.ico",
 	url: "https://bluelanm.github.io",
-	baseUrl: "/website/",
+	baseUrl: "/blog/",
 	organizationName: "BlueLanM",
 	projectName: "bluelanm.github.io",
 	onBrokenLinks: "throw",
@@ -82,7 +82,7 @@ const config = {
 
 			{
 				path: "blog",
-				routeBasePath: "/website",
+				routeBasePath: "/",
 				editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
 					`https://github.com/BlueLanM/my-website/edit/master/${blogDirPath}/${blogPath}`,
 				editLocalizedFiles: false,
