@@ -11,12 +11,11 @@ const config = {
 	tagline: "据说最高级的快乐有三种：自律，爱，创造",
 	favicon: "img/favicon.ico",
 	url: "https://bluelanm.github.io",
-	baseUrl: "/my-website/",
+	baseUrl: "/",
 	organizationName: "BlueLanM",
 	projectName: "my-website",
 	onBrokenLinks: "throw",
 	deploymentBranch: "gh-pages",
-	trailingSlash: false,
 	onBrokenMarkdownLinks: "warn",
 	i18n: {
 		defaultLocale: "zh",
@@ -82,7 +81,7 @@ const config = {
 
 			{
 				path: "blog",
-				routeBasePath: "/my-website/",
+				routeBasePath: "/",
 				editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
 					`https://github.com/BlueLanM/my-website/edit/master/${blogDirPath}/${blogPath}`,
 				editLocalizedFiles: false,
