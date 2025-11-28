@@ -10,7 +10,7 @@ const config = {
 	title: "蓝莓のBlog",
 	tagline: "据说最高级的快乐有三种：自律，爱，创造",
 	favicon: "img/favicon.ico",
-	url: "https://bluelanm.github.io/",
+	url: "https://bluelanm.github.io",
 	baseUrl: "/blog/",
 	organizationName: "BlueLanM",
 	projectName: "bluelanm.github.io",
