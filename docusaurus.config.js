@@ -16,6 +16,7 @@ const config = {
 	projectName: "my-website",
 	onBrokenLinks: "throw",
 	deploymentBranch: "gh-pages",
+	trailingSlash: false,
 	onBrokenMarkdownLinks: "warn",
 	i18n: {
 		defaultLocale: "zh",
