@@ -4,8 +4,8 @@
   <ShortName>蓝莓のBlog</ShortName>
   <Description>Search 蓝莓のBlog</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://bluelanm.github.io/blog/en/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://bluelanm.github.io/blog/en/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://bluelanm.github.io/blog/en/opensearch.xml" />
-  <moz:SearchForm>https://bluelanm.github.io/blog/en/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://bluelanm.github.io/en/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://bluelanm.github.io/en/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://bluelanm.github.io/en/opensearch.xml" />
+  <moz:SearchForm>https://bluelanm.github.io/en/</moz:SearchForm>
 </OpenSearchDescription>

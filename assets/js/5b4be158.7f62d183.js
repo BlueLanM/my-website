@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7065],{2087:e=>{e.exports=JSON.parse('{"title":"Git","slug":"/category/git","permalink":"/docs/category/git","navigation":{"previous":{"title":"JavaScript\u9762\u8bd5\u9898","permalink":"/docs/IQ/JavaScript"},"next":{"title":"Git\u95ee\u9898\u8bb0\u5f55","permalink":"/docs/git-record"}}}')}}]);

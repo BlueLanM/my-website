@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7041],{3604:e=>{e.exports=JSON.parse('{"title":"Markdown","slug":"/category/markdown","permalink":"/docs/category/markdown","navigation":{"previous":{"title":"\u57fa\u7840\u7c7b\u578b","permalink":"/docs/typescript-type"},"next":{"title":"markdown\u6559\u7a0b","permalink":"/docs/markdown"}}}')}}]);
