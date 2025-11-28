@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[1075],{2300:e=>{e.exports=JSON.parse('{"label":"Vercel","permalink":"/my-website/en/tags/vercel","allTagsPath":"/my-website/en/tags","count":2}')}}]);
