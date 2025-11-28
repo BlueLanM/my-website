@@ -13,7 +13,7 @@ const config = {
 	url: "https://bluelanm.github.io",
 	baseUrl: "/blog/",
 	organizationName: "BlueLanM",
-	projectName: "bluelanm.github.io",
+	projectName: "my-website",
 	onBrokenLinks: "throw",
 	deploymentBranch: "master",
 	onBrokenMarkdownLinks: "warn",
