@@ -36,6 +36,7 @@ const config = {
 			({
 				docs: {
 					path: "docs",
+					routeBasePath: "/docs",
 					sidebarPath: "sidebars.ts",
 					showLastUpdateTime: true
 				},
@@ -81,7 +82,7 @@ const config = {
 
 			{
 				path: "blog",
-				routeBasePath: "/",
+				routeBasePath: "/website",
 				editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
 					`https://github.com/BlueLanM/my-website/edit/master/${blogDirPath}/${blogPath}`,
 				editLocalizedFiles: false,
