@@ -13,9 +13,10 @@ const config = {
 	url: "https://bluelanm.github.io",
 	baseUrl: "/blog/",
 	organizationName: "BlueLanM",
-	projectName: "my-website",
+	projectName: "bluelanm.github.io",
 	onBrokenLinks: "throw",
-	deploymentBranch: "master",
+	deploymentBranch: "gh-pages",
+	trailingSlash: false,
 	onBrokenMarkdownLinks: "warn",
 	i18n: {
 		defaultLocale: "zh",
