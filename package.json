@@ -5,9 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build --out-dir build/blog",
+    "build": "docusaurus build --out-dir build/my-webiste",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy --out-dir build/blog",
+    "deploy": "docusaurus deploy --out-dir build/my-webiste",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
