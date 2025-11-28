@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[2866],{2152:s=>{s.exports=JSON.parse('{"label":"CSS","permalink":"/docs/tags/css","allTagsPath":"/docs/tags","count":1,"items":[{"id":"Study/IQ/IQ-CSS","title":"HTMl5/CSS\u9762\u8bd5\u9898","description":"Html5 \u548c CSS3","permalink":"/docs/IQ/CSS"}]}')}}]);
