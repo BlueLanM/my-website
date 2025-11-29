@@ -51,10 +51,10 @@ function Radio() {
         <img
           src={
             status == "1"
-              ? "/img/thanks/vx.png"
+              ? "/my-website/img/thanks/vx.png"
               : status == "2"
-              ? "/img/thanks/alipay.jpg"
-              : "/img/thanks/bmc_qr.png"
+              ? "/my-website/img/thanks/alipay.jpg"
+              : "/my-website/img/thanks/bmc_qr.png"
           }
           alt=""
         />

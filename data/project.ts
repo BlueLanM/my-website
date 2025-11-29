@@ -2,7 +2,7 @@ export const projects: Project[] = [
 	{
 		title: "蓝莓的小站",
 		description: "基于Docusaurus v2 静态网站生成器实现个人博客",
-		preview: "/img/project/blog2.0.png",
+		preview: "/my-website/img/project/blog2.0.png",
 		website: "https://bluelanm.github.io/my-website/",
 		source: "https://github.com/BlueLanM/my-website",
 		tags: ["opensource", "design", "favorite", "personal"],
@@ -11,7 +11,7 @@ export const projects: Project[] = [
 	{
 		title: "蓝莓的组件库",
 		description: "基于storyBook开发的个人组件库",
-		preview: "/img/project/component.png",
+		preview: "/my-website/img/project/component.png",
 		website: "https://component.lanm.love/",
 		source: "https://github.com/BlueLanM/lanm-component",
 		tags: ["opensource", "design", "favorite", "personal"],
@@ -20,7 +20,7 @@ export const projects: Project[] = [
 	{
 		title: "蓝莓的CSS玩具库",
 		description: "个人CSS收集库,基于Vite",
-		preview: "/img/project/toy2.0.png",
+		preview: "/my-website/img/project/toy2.0.png",
 		website: "https://tools.lanm.love",
 		source: "https://github.com/BlueLanM/lanm-toy-library",
 		tags: ["opensource", "design", "favorite", "personal"],
@@ -29,7 +29,7 @@ export const projects: Project[] = [
 	{
 		title: "Nodejs",
 		description: "实现基于Nodejs增删改查接口",
-		preview: "/img/project/nodejs.png",
+		preview: "/my-website/img/project/nodejs.png",
 		website: "https://github.com/BlueLanM/NodeJs",
 		source: "https://github.com/BlueLanM/NodeJs",
 		tags: ["opensource", "design", "personal"],
@@ -38,7 +38,7 @@ export const projects: Project[] = [
 	{
 		title: "数据填报平台",
 		description: "实现对数据里的模型管理",
-		preview: "/img/project/dataModal.png",
+		preview: "/my-website/img/project/dataModal.png",
 		website: "",
 		tags: ["design", "large"],
 		type: "personal"
@@ -46,7 +46,7 @@ export const projects: Project[] = [
 	{
 		title: "数据填报前台",
 		description: "前台页面展示",
-		preview: "/img/project/home.png",
+		preview: "/my-website/img/project/home.png",
 		website: "",
 		tags: ["design", "large"],
 		type: "personal"
@@ -54,7 +54,7 @@ export const projects: Project[] = [
 	{
 		title: "八爪鱼数据中台",
 		description: "一带一路文献库",
-		preview: "/img/project/bazhuayu.png",
+		preview: "/my-website/img/project/bazhuayu.png",
 		website: "",
 		tags: ["design", "large"],
 		type: "personal"
