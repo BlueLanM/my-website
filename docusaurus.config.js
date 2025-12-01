@@ -323,7 +323,7 @@ const config = {
     }),
 	title: "蓝莓のBlog",
 
-	url: "https://bluelanm.github.io/my-website/"
+	url: "https://bluelanm.github.io"
 };
 
 module.exports = config;
