@@ -253,11 +253,11 @@ const config = {
 						label: "更多",
 						position: "right"
 					},
-					{
-						label: "导航",
-						position: "right",
-						to: "website"
-					},
+					// {
+					// 	label: "导航",
+					// 	position: "right",
+					// 	to: "website"
+					// },
 					{
 						position: "left",
 						type: "localeDropdown"

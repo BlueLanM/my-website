@@ -1,6 +1,6 @@
 export const Friends: Friend[] = [
 	{
-		avatar: "https://cdn.jsdelivr.net/gh/6isixi/imgcloud/avatar.jpg",
+		avatar: "	https://blog.lkurococ.top/_next/image?url=https%3A…%2F600292e5a454abe3b6e653801834fb60.jpg&w=48&q=75",
 		description: "被子外面很危险！",
 		title: "Kurococ Liu",
 		website: "https://blog.lkurococ.top/"
@@ -43,23 +43,10 @@ export const Friends: Friend[] = [
 		website: "https://www.trtyr.top/"
 	},
 	{
-		avatar: "https://static.meowrain.cn/i/2022/08/20/btdbql-3.jpg",
-		description: "努力学习中…",
-		title: "喵雨の小屋",
-		website: "https://meowrain.cn"
-	},
-	{
 		avatar: "https://cloud.gumengyo.top/avatar.png",
 		description: "不想满心遗憾，那就全力以赴.",
 		title: "顾梦",
 		website: "https://blog.gumengyo.top"
-	},
-	{
-		avatar:
-      "https://picked-1301273887.cos.ap-nanjing.myqcloud.com/favicon.webp",
-		description: "且将新火试新茶",
-		title: "L3ZCの试验田",
-		website: "https://l3zc.com"
 	},
 	{
 		avatar: "https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5",
