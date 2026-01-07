@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import _ from "loadsh";
+import _ from "lodash";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import Translate, { translate } from "@docusaurus/Translate";
@@ -30,8 +30,8 @@ interface ProjectState {
 export function prepareUserState(): ProjectState | undefined {
 	if (ExecutionEnvironment.canUseDOM) {
 		return {
-			scrollTopPosition: window.scrollY,
-			focusedElementId: document.activeElement?.id
+			focusedElementId: document.activeElement?.id,
+			scrollTopPosition: window.scrollY
 		};
 	}
 

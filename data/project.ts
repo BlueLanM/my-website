@@ -1,63 +1,63 @@
 export const projects: Project[] = [
 	{
-		title: "蓝莓的小站",
 		description: "基于Docusaurus v2 静态网站生成器实现个人博客",
 		preview: "/my-website/img/project/blog2.0.png",
-		website: "https://bluelanm.github.io/my-website/",
 		source: "https://github.com/BlueLanM/my-website",
 		tags: ["opensource", "design", "favorite", "personal"],
-		type: "web"
+		title: "蓝莓的小站",
+		type: "web",
+		website: "https://bluelanm.github.io/my-website/"
 	},
 	{
-		title: "蓝莓的组件库",
 		description: "基于storyBook开发的个人组件库",
 		preview: "/my-website/img/project/component.png",
-		website: "https://component.lanm.love/",
 		source: "https://github.com/BlueLanM/lanm-component",
 		tags: ["opensource", "design", "favorite", "personal"],
-		type: "web"
+		title: "蓝莓的组件库",
+		type: "web",
+		website: "https://bluelanm.github.io/lanm-component"
 	},
 	{
-		title: "蓝莓的CSS玩具库",
 		description: "个人CSS收集库,基于Vite",
 		preview: "/my-website/img/project/toy2.0.png",
-		website: "https://tools.lanm.love",
 		source: "https://github.com/BlueLanM/lanm-toy-library",
 		tags: ["opensource", "design", "favorite", "personal"],
-		type: "web"
+		title: "蓝莓的CSS玩具库",
+		type: "web",
+		website: "https://bluelanm.github.io/lanm-toy-library/"
 	},
 	{
-		title: "Nodejs",
 		description: "实现基于Nodejs增删改查接口",
 		preview: "/my-website/img/project/nodejs.png",
-		website: "https://github.com/BlueLanM/NodeJs",
 		source: "https://github.com/BlueLanM/NodeJs",
 		tags: ["opensource", "design", "personal"],
-		type: "other"
+		title: "Nodejs",
+		type: "other",
+		website: "https://github.com/BlueLanM/NodeJs"
 	},
 	{
-		title: "数据填报平台",
 		description: "实现对数据里的模型管理",
 		preview: "/my-website/img/project/dataModal.png",
-		website: "",
 		tags: ["design", "large"],
-		type: "personal"
+		title: "数据填报平台",
+		type: "personal",
+		website: ""
 	},
 	{
-		title: "数据填报前台",
 		description: "前台页面展示",
 		preview: "/my-website/img/project/home.png",
-		website: "",
 		tags: ["design", "large"],
-		type: "personal"
+		title: "数据填报前台",
+		type: "personal",
+		website: ""
 	},
 	{
-		title: "八爪鱼数据中台",
 		description: "一带一路文献库",
 		preview: "/my-website/img/project/bazhuayu.png",
-		website: "",
 		tags: ["design", "large"],
-		type: "personal"
+		title: "八爪鱼数据中台",
+		type: "personal",
+		website: ""
 	}
 ];
 
@@ -88,35 +88,35 @@ export interface Project {
 }
 
 export const Tags: Record<TagType, Tag> = {
-	favorite: {
-		label: "喜爱",
-		description: "我最喜欢的网站，一定要去看看!",
-		color: "#e9669e"
-	},
-	opensource: {
-		label: "开源",
-		description: "开源项目可以提供灵感!",
-		color: "#39ca30"
-	},
-	product: {
-		label: "产品",
-		description: "与产品相关的项目!",
-		color: "#dfd545"
-	},
 	design: {
-		label: "设计",
+		color: "#a44fb7",
 		description: "设计漂亮的网站!",
-		color: "#a44fb7"
+		label: "设计"
+	},
+	favorite: {
+		color: "#e9669e",
+		description: "我最喜欢的网站，一定要去看看!",
+		label: "喜爱"
 	},
 	large: {
-		label: "大型",
+		color: "#8c2f00",
 		description: "大型项目，原多于平均数的页面",
-		color: "#8c2f00"
+		label: "大型"
+	},
+	opensource: {
+		color: "#39ca30",
+		description: "开源项目可以提供灵感!",
+		label: "开源"
 	},
 	personal: {
-		label: "个人",
+		color: "#12affa",
 		description: "个人项目",
-		color: "#12affa"
+		label: "个人"
+	},
+	product: {
+		color: "#dfd545",
+		description: "与产品相关的项目!",
+		label: "产品"
 	}
 };
 
