@@ -243,55 +243,10 @@ function BlogListPageContent(props: Props) {
 	const isPaginated = metadata.page > 1;
 
 	const { viewType, toggleViewType } = useViewType();
-	// 使用 sessionStorage 来记录是否已经首次加载
-	const [loading, setLoading] = useState(() => {
-		// 只在首次访问且是博客首页时显示 loading
-		if (typeof window !== 'undefined' && isBlogOnlyMode && !isPaginated) {
-			const hasLoaded = sessionStorage.getItem('blogPageLoaded');
-			return !hasLoaded;
-		}
-		return false;
-	});
 
 	const isCardView = viewType === "card";
 	const isListView = viewType === "list";
 	const isGridView = viewType === "grid";
-
-	useEffect(() => {
-		if (loading) {
-			const timer = setTimeout(() => {
-				setLoading(false);
-				// 标记已经加载过
-				if (typeof window !== 'undefined') {
-					sessionStorage.setItem('blogPageLoaded', 'true');
-				}
-			}, 2000);
-			return () => clearTimeout(timer);
-		}
-	}, [loading]);
-
-	if (loading) {
-		return (
-			<div className={styles.blog_list}>
-				<div className={styles.blog_list_content}>
-					{/* 旋转环动画 */}
-					<div className={styles.blog_list_spinner}>
-						<div className={styles.blog_list_spinner_ring}></div>
-						<div className={styles.blog_list_spinner_ring}></div>
-						<div className={styles.blog_list_spinner_ring}></div>
-					</div>
-					
-					{/* Loading文字 */}
-					<div className={styles.blog_list_text}>LOADING</div>
-					
-					{/* 进度条 */}
-					<div className={styles.blog_list_progress}>
-						<div className={styles.blog_list_progress_bar}></div>
-					</div>
-				</div>
-			</div>
-		);
-	}
 
 	return (
 		<Layout wrapperClassName="blog=-list__page">
@@ -367,6 +322,55 @@ function BlogListPageContent(props: Props) {
 }
 
 export default function BlogListPage(props: Props): JSX.Element {
+	const { metadata } = props;
+	const isBlogOnlyMode = !metadata.permalink.includes("page");
+	const isPaginated = metadata.page > 1;
+
+	// 在最外层检查loading状态
+	const [loading, setLoading] = React.useState(() => {
+		if (typeof window !== 'undefined' && isBlogOnlyMode && !isPaginated) {
+			const hasLoaded = sessionStorage.getItem('blogPageLoaded');
+			return !hasLoaded;
+		}
+		return false;
+	});
+
+	React.useEffect(() => {
+		if (loading) {
+			const timer = setTimeout(() => {
+				setLoading(false);
+				if (typeof window !== 'undefined') {
+					sessionStorage.setItem('blogPageLoaded', 'true');
+				}
+			}, 2000);
+			return () => clearTimeout(timer);
+		}
+	}, [loading]);
+
+	// 如果在loading状态，直接返回loading UI，不渲染其他任何组件
+	if (loading) {
+		return (
+			<div className={styles.blog_list}>
+				<div className={styles.blog_list_content}>
+					{/* 旋转环动画 */}
+					<div className={styles.blog_list_spinner}>
+						<div className={styles.blog_list_spinner_ring}></div>
+						<div className={styles.blog_list_spinner_ring}></div>
+						<div className={styles.blog_list_spinner_ring}></div>
+					</div>
+					
+					{/* Loading文字 */}
+					<div className={styles.blog_list_text}>LOADING</div>
+					
+					{/* 进度条 */}
+					<div className={styles.blog_list_progress}>
+						<div className={styles.blog_list_progress_bar}></div>
+					</div>
+				</div>
+			</div>
+		);
+	}
+
 	return (
 		<HtmlClassNameProvider
 			className={clsx(
