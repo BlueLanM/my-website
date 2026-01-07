@@ -2,7 +2,7 @@
 /* hero */
 .hero {
 	display: grid;
-	overflow-x: hidden;
+	overflow: hidden;
 	// align-items: center;
 	position: relative;
 	margin: 0;
@@ -19,26 +19,26 @@
 	display: flex;
 	position: relative;
 	z-index: 10;
-	// flex-direction: column;
 	align-items: start;
 	padding: 1em;
 	padding-left: 4rem;
-	padding-top:4rem;
-	.intro_desc{
+	padding-top: 4rem;
+	.intro_desc {
 		width: 24rem;
-		color:#6c63ff
+		line-height: 1.8;
+		color: #6c63ff;
 	}
 	.bloginfo__img_avator {
-		padding: 4px;
-		// max-width: 100%;
+		padding: 6px;
 		border-radius: 50%;
 		width: 15rem;
 		height: 15rem;
-		background-color: #fff;
-		box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
-		transition: 0.4s;
+		background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
+		box-shadow: 0 8px 32px rgba(108, 99, 255, 0.15);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 		&:hover {
-			box-shadow: 0 0 30px rgb(0 120 231 / 0.2);
+			box-shadow: 0 12px 48px rgba(108, 99, 255, 0.25);
+			transform: translateY(-4px) scale(1.02);
 		}
 	}
 	// justify-content: center;
@@ -62,112 +62,142 @@
 }
 .introCard {
 	position: relative;
-	width: 65%;
+	width: 35%;
 	max-height: 100vh;
 	cursor: pointer;
-	pointer-events: none;
 	transition: 0.5s all ease-in-out;
 }
+
+// 隐藏状态 - 完全不可见且在后方
 .card {
 	display: flex;
 	position: absolute;
 	right: -185px;
 	top: 100px;
+	z-index: 1;
 	flex-direction: column;
-	padding: 15px 13px;
-	border-radius: 10px;
+	padding: 20px 16px;
+	border-radius: 16px;
 	width: 90%;
 	min-width: 610px;
 	max-width: 610px;
 	height: 460px;
-	background: #f6f8fa;
-	box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
+	background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 	opacity: 0;
+	pointer-events: none;
+	transform: rotateZ(12deg) scale(0.95);
+	transform-origin: bottom right;
+	transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// 最后方的卡片 - 模糊可见
 .cards {
-	opacity: 0;
+	display: flex;
+	position: absolute;
+	right: -185px;
+	top: 100px;
+	z-index: 2;
+	flex-direction: column;
+	padding: 20px 16px;
+	border-radius: 16px;
+	width: 90%;
+	min-width: 610px;
+	max-width: 610px;
+	height: 460px;
+	background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+	opacity: 0.4;
+	pointer-events: none;
+	transform: rotateZ(10deg) scale(0.96);
+	transform-origin: bottom right;
+	transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// 当前显示的主卡片
 .front {
 	display: flex;
-	// @extend .introCard;
 	position: absolute;
 	right: -185px;
 	top: 100px;
 	z-index: 10;
 	flex-direction: column;
-	padding: 15px 13px;
-	border-radius: 10px;
+	padding: 20px 16px;
+	border-radius: 16px;
 	width: 90%;
 	min-width: 610px;
 	max-width: 610px;
 	height: 460px;
-	background: #f6f8fa;
-	box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
-	// transform: rotateZ(-6deg);
+	background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+	box-shadow: 0 16px 64px rgba(0, 0, 0, 0.15), 0 0 2px rgba(0, 0, 0, 0.08);
 	opacity: 1;
 	pointer-events: auto;
-	transform: rotateZ(0);
+	transform: rotateZ(0deg) scale(1);
 	transform-origin: bottom right;
-	transition: 0.5s all ease-in-out;
+	transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// 紧跟在主卡片后面的卡片
 .followed {
 	display: flex;
-	// @extend .introCard;
 	position: absolute;
 	right: -185px;
 	top: 100px;
 	z-index: 8;
 	flex-direction: column;
-	padding: 15px 13px;
-	border-radius: 10px;
+	padding: 20px 16px;
+	border-radius: 16px;
 	width: 90%;
 	min-width: 610px;
 	max-width: 610px;
 	height: 460px;
-	background: #f6f8fa;
-	box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
-	box-shadow: none;
-	opacity: 0.5;
-	transform: rotateZ(6deg);
+	background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+	opacity: 0.7;
+	pointer-events: none;
+	transform: rotateZ(6deg) scale(0.98);
 	transform-origin: bottom right;
-	transition: 0.5s all ease-in-out;
+	transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// 下落动画状态
 .fall {
 	display: flex;
-	// @extend .introCard;
 	position: absolute;
 	right: -185px;
 	top: 100px;
+	z-index: 15;
 	flex-direction: column;
-	padding: 15px 13px;
-	border-radius: 10px;
+	padding: 20px 16px;
+	border-radius: 16px;
 	width: 90%;
 	min-width: 610px;
 	max-width: 610px;
 	height: 460px;
-	background: #f6f8fa;
-	box-shadow: 4px 4px 20px 5px rgba(0, 0, 0, 0.3);
-	box-shadow: none;
+	background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+	pointer-events: none;
 	transform-origin: bottom right;
-	transition: 0.5s all ease-in-out;
-	// z-index: 12;
-	animation: falldown 1s ease-in-out;
+	animation: falldown 0.8s cubic-bezier(0.4, 0, 0.6, 1) forwards;
 }
 @keyframes falldown {
 	0% {
+		z-index: 15;
 		opacity: 1;
-		transform: rotateZ(0);
+		transform: rotateZ(0deg) scale(1);
+	}
+	40% {
+		opacity: 0.8;
+		transform: rotateZ(-30deg) scale(0.95);
 	}
 	70% {
-		opacity: 0.5;
-	}
-	90% {
-		opacity: 0;
-		transform: rotateZ(-90deg) scale(0.9);
+		opacity: 0.4;
+		transform: rotateZ(-70deg) scale(0.85);
 	}
 	100% {
+		z-index: 15;
 		opacity: 0;
-		transform: rotateZ(-90deg) scale(0);
+		transform: rotateZ(-95deg) scale(0.7) translateY(20px);
 	}
 }
 .circles {
@@ -204,24 +234,43 @@
 	padding: 0;
 	background-color: #f6f8fa;
 }
+// 添加卡片 hover 效果
+.front:hover {
+	box-shadow: 0 20px 72px rgba(0, 0, 0, 0.18), 0 0 2px rgba(0, 0, 0, 0.08);
+	transform: rotateZ(0deg) scale(1.02);
+}
+
+// 暗色主题样式
 html[data-theme="dark"] .introCard {
 	transition: none;
-	// background-color: #2a2a32;
+}
+html[data-theme="dark"] .card {
+	background: linear-gradient(135deg, #1a1a1d 0%, #16161a 100%);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+html[data-theme="dark"] .cards {
+	background: linear-gradient(135deg, #1e1e22 0%, #18181c 100%);
+	box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
 }
 html[data-theme="dark"] .front {
-	background-color: #1e1e1e;
-	// transition: none;
-	box-shadow: 0 10px 60px 5px #000, 0 0 10px 0 #000;
+	background: linear-gradient(135deg, #2a2a32 0%, #1e1e26 100%);
+	box-shadow: 0 16px 64px rgba(0, 0, 0, 0.6), 
+		0 0 0 1px rgba(108, 99, 255, 0.15),
+		0 0 24px rgba(108, 99, 255, 0.12);
 }
-html[data-theme="dark"] .fall {
-	background-color: #1e1e1e;
-	// transition: none;
-	box-shadow: 0 10px 60px 5px #000, 0 0 10px 0 #000;
+html[data-theme="dark"] .front:hover {
+	box-shadow: 0 20px 72px rgba(0, 0, 0, 0.7), 
+		0 0 0 1px rgba(108, 99, 255, 0.2),
+		0 0 32px rgba(108, 99, 255, 0.15);
+	transform: rotateZ(0deg) scale(1.02);
 }
 html[data-theme="dark"] .followed {
-	background-color: #1e1e1e;
-	// transition: none;
-	box-shadow: 0 10px 60px 5px #000, 0 0 10px 0 #000;
+	background: linear-gradient(135deg, #232326 0%, #1d1d20 100%);
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+html[data-theme="dark"] .fall {
+	background: linear-gradient(135deg, #232326 0%, #1d1d20 100%);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 html[data-theme="dark"] .procode  {
 	// transition: none;
@@ -307,10 +356,10 @@ html[data-theme="dark"] .bloghome__intro > p {
 	color: var(--ifm-color-primary);
 }
 .bloghome__image {
+	overflow: hidden;
 	position: relative;
 	z-index: 5;
 	align-items: center;
-	// overflow: hidden;
 	width: 100%;
 	justify-items: center;
 	// padding: 1em;
@@ -338,23 +387,34 @@ html[data-theme="dark"] .bloghome__intro > p {
 	justify-content: center;
 	align-items: center;
 	align-self: end;
-	padding: 2px;
-	border-radius: 6px;
-	background: linear-gradient(25deg, #1081ff, #72e1f6, #b185ff);
+	padding: 3px;
+	border-radius: 12px;
+	background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
 	cursor: pointer;
 	justify-self: center;
 	grid-column: span 2;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+		box-shadow: 0 8px 24px rgba(108, 99, 255, 0.3);
+		transform: translateY(-4px);
+	}
 }
 .bloghome__scroll-down button {
 	border: none;
-	border-radius: 4px;
+	border-radius: 10px;
 	width: 150px;
 	height: 48px;
 	background: white;
 	cursor: pointer;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	&:hover {
+		background: #f8f8f8;
+	}
 }
 .bloghome__scroll-down button svg {
-	stroke: #7f7f7f;
+	stroke: var(--ifm-color-primary);
+	transition: all 0.3s ease;
 }
 .social__links {
 	display: flex;
@@ -374,15 +434,17 @@ html[data-theme="dark"] .bloghome__intro > p {
 	border-radius: 50%;
 	width: 2rem;
 	height: 2rem;
+	background: rgba(108, 99, 255, 0.05);
 	line-height: 1;
-	transition: all 0.3s ease-in-out;
-	transition-property: all;
-	transition-duration: 0.3s;
-	transition-delay: 0s;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__links a:hover {
-	background-color: rgb(0 120 231 / 0.1);
-	transform: translateY(-5px);
+	background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+	box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
+	transform: translateY(-4px) scale(1.1);
+	svg path {
+		fill: #fff;
+	}
 }
 .social__links > *,
 .social__links svg,
@@ -434,52 +496,25 @@ html[data-theme="dark"] .bloghome__intro > p {
 // }
 .intro {
 	position: relative;
-	padding: 10px 20px;
-	border: 0 #6F67FF;
-	border-radius: 10px;
-	//   background: linear-gradient(
-	//   90deg,
-	//   var(--ifm-color-primary) 11.3%,
-	//   var(--ifm-color-primary-light) 161.54%
-	// );
-	background:#fff;
-	box-shadow: inset 0 0 0 2px #6F67FF;
+	padding: 12px 28px;
+	border: none;
+	border-radius: 12px;
+	background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-light) 100%);
+	box-shadow: 0 4px 16px rgba(108, 99, 255, 0.25);
 	cursor: pointer;
-	color: #6F67FF;
-	&::before,
-	&::after {
-		position: absolute;
-		left: 0;
-		top: 0;
-		box-sizing: inherit;
-		border: 5px solid transparent;
-		border-radius: 10px;
-		width: 100%;
-		height: 100%;
-		content: "";
-		transform-origin: center;
-		transition: all 1s ease-in;
-	}
-	&::before {
-		border-top-color: #FFF;
-		border-bottom-color: #FFF;
-		transform: scale3d(0, 1, 1);
-  
-	}
-	&::after {
-		border-left-color: #FFF;
-		border-right-color: #FFF;
-		transform: scale3d(1, 0, 1);
-
-	}
+	font-weight: 600;
+	color: #fff;
+	transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover {
+		background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+		box-shadow: 0 8px 28px rgba(108, 99, 255, 0.35);
 		text-decoration: none;
-		color: #6F67FF;
-		&::before,
-		&::after {
-			transform: scale3d(1, 1, 1);
-			transition: all 1s ease;
-		}
+		color: #fff;
+		transform: translateY(-2px);
+	}
+	&:active {
+		box-shadow: 0 4px 16px rgba(108, 99, 255, 0.25);
+		transform: translateY(0);
 	}
 	// }
   
