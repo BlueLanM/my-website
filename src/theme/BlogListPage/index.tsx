@@ -243,14 +243,40 @@ function BlogListPageContent(props: Props) {
 	const isPaginated = metadata.page > 1;
 
 	const { viewType, toggleViewType } = useViewType();
+	const [loading, setLoading] = useState(true);
 
 	const isCardView = viewType === "card";
 	const isListView = viewType === "list";
 	const isGridView = viewType === "grid";
 
-	return (
-		<Layout wrapperClassName="blog=-list__page">
-				
+	useEffect(() => {
+		if (loading) {
+			setTimeout(() => {
+				setLoading(false);
+			}, 2000);
+		}
+	}, [loading]);
+
+	return loading
+		? <div className={styles.blog_list}>
+			<div className={styles.blog_list_pl}>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_dot}></div>
+				<div className={styles.blog_list_pl_text}>Loading…</div>
+			</div>
+		</div>
+		: (
+			<Layout wrapperClassName="blog=-list__page">
 				{!isPaginated && isBlogOnlyMode && <Hero />}
 				<BackToTopButton />
 
@@ -316,86 +342,12 @@ function BlogListPageContent(props: Props) {
 							</div>
 						</motion.main>
 					</div>
-					</div>
-		</Layout>
-	);
+				</div>
+			</Layout>
+		);
 }
 
 export default function BlogListPage(props: Props): JSX.Element {
-	const { metadata } = props;
-	const isBlogOnlyMode = !metadata.permalink.includes("page");
-	const isPaginated = metadata.page > 1;
-
-	// 在最外层检查loading状态
-	const [loading, setLoading] = React.useState(() => {
-		if (typeof window !== 'undefined' && isBlogOnlyMode && !isPaginated) {
-			const hasLoaded = sessionStorage.getItem('blogPageLoaded');
-			return !hasLoaded;
-		}
-		return false;
-	});
-
-	React.useEffect(() => {
-		// 隐藏/显示页面其他元素
-		if (loading) {
-			// 隐藏navbar和其他元素
-			const navbar = document.querySelector('nav.navbar');
-			const announcement = document.querySelector('.announcement');
-			const footer = document.querySelector('footer');
-			
-			if (navbar) (navbar as HTMLElement).style.display = 'none';
-			if (announcement) (announcement as HTMLElement).style.display = 'none';
-			if (footer) (footer as HTMLElement).style.display = 'none';
-			document.body.style.overflow = 'hidden';
-
-			const timer = setTimeout(() => {
-				setLoading(false);
-				if (typeof window !== 'undefined') {
-					sessionStorage.setItem('blogPageLoaded', 'true');
-				}
-				
-				// 恢复显示
-				if (navbar) (navbar as HTMLElement).style.display = '';
-				if (announcement) (announcement as HTMLElement).style.display = '';
-				if (footer) (footer as HTMLElement).style.display = '';
-				document.body.style.overflow = '';
-			}, 2000);
-
-			return () => {
-				clearTimeout(timer);
-				// 清理：确保元素恢复显示
-				if (navbar) (navbar as HTMLElement).style.display = '';
-				if (announcement) (announcement as HTMLElement).style.display = '';
-				if (footer) (footer as HTMLElement).style.display = '';
-				document.body.style.overflow = '';
-			};
-		}
-	}, [loading]);
-
-	// 如果在loading状态，直接返回loading UI，不渲染其他任何组件
-	if (loading) {
-		return (
-			<div className={styles.blog_list}>
-				<div className={styles.blog_list_content}>
-					{/* 旋转环动画 */}
-					<div className={styles.blog_list_spinner}>
-						<div className={styles.blog_list_spinner_ring}></div>
-						<div className={styles.blog_list_spinner_ring}></div>
-						<div className={styles.blog_list_spinner_ring}></div>
-					</div>
-					
-					{/* Loading文字 */}
-					<div className={styles.blog_list_text}>LOADING</div>
-					
-					{/* 进度条 */}
-					<div className={styles.blog_list_progress}>
-						<div className={styles.blog_list_progress_bar}></div>
-					</div>
-				</div>
-			</div>
-		);
-	}
-
 	return (
 		<HtmlClassNameProvider
 			className={clsx(
