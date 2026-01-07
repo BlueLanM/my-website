@@ -243,7 +243,15 @@ function BlogListPageContent(props: Props) {
 	const isPaginated = metadata.page > 1;
 
 	const { viewType, toggleViewType } = useViewType();
-	const [loading, setLoading] = useState(true);
+	// 使用 sessionStorage 来记录是否已经首次加载
+	const [loading, setLoading] = useState(() => {
+		// 只在首次访问且是博客首页时显示 loading
+		if (typeof window !== 'undefined' && isBlogOnlyMode && !isPaginated) {
+			const hasLoaded = sessionStorage.getItem('blogPageLoaded');
+			return !hasLoaded;
+		}
+		return false;
+	});
 
 	const isCardView = viewType === "card";
 	const isListView = viewType === "list";
@@ -251,9 +259,14 @@ function BlogListPageContent(props: Props) {
 
 	useEffect(() => {
 		if (loading) {
-			setTimeout(() => {
+			const timer = setTimeout(() => {
 				setLoading(false);
+				// 标记已经加载过
+				if (typeof window !== 'undefined') {
+					sessionStorage.setItem('blogPageLoaded', 'true');
+				}
 			}, 2000);
+			return () => clearTimeout(timer);
 		}
 	}, [loading]);
 
