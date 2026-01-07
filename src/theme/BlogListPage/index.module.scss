@@ -22,7 +22,7 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 10000;
+	z-index: 999999 !important;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -31,6 +31,14 @@
 	width: 100vw;
 	height: 100vh;
 	background: var(--ifm-background-color);
+}
+/* 当loading显示时，隐藏body的滚动 */
+body:has(.blog_list) {
+	overflow: hidden;
+}
+/* 强制隐藏所有可能干扰的元素 */
+.blog_list ~ * {
+	display: none !important;
 }
 .blog_list_content {
 	display: flex;

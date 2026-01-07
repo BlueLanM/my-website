@@ -336,14 +336,39 @@ export default function BlogListPage(props: Props): JSX.Element {
 	});
 
 	React.useEffect(() => {
+		// 隐藏/显示页面其他元素
 		if (loading) {
+			// 隐藏navbar和其他元素
+			const navbar = document.querySelector('nav.navbar');
+			const announcement = document.querySelector('.announcement');
+			const footer = document.querySelector('footer');
+			
+			if (navbar) (navbar as HTMLElement).style.display = 'none';
+			if (announcement) (announcement as HTMLElement).style.display = 'none';
+			if (footer) (footer as HTMLElement).style.display = 'none';
+			document.body.style.overflow = 'hidden';
+
 			const timer = setTimeout(() => {
 				setLoading(false);
 				if (typeof window !== 'undefined') {
 					sessionStorage.setItem('blogPageLoaded', 'true');
 				}
+				
+				// 恢复显示
+				if (navbar) (navbar as HTMLElement).style.display = '';
+				if (announcement) (announcement as HTMLElement).style.display = '';
+				if (footer) (footer as HTMLElement).style.display = '';
+				document.body.style.overflow = '';
 			}, 2000);
-			return () => clearTimeout(timer);
+
+			return () => {
+				clearTimeout(timer);
+				// 清理：确保元素恢复显示
+				if (navbar) (navbar as HTMLElement).style.display = '';
+				if (announcement) (announcement as HTMLElement).style.display = '';
+				if (footer) (footer as HTMLElement).style.display = '';
+				document.body.style.overflow = '';
+			};
 		}
 	}, [loading]);
 
