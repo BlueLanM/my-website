@@ -270,26 +270,32 @@ function BlogListPageContent(props: Props) {
 		}
 	}, [loading]);
 
-	return loading
-		? <div className={styles.blog_list}>
-			<div className={styles.blog_list_pl}>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_dot}></div>
-				<div className={styles.blog_list_pl_text}>Loading…</div>
+	if (loading) {
+		return (
+			<div className={styles.blog_list}>
+				<div className={styles.blog_list_content}>
+					{/* 旋转环动画 */}
+					<div className={styles.blog_list_spinner}>
+						<div className={styles.blog_list_spinner_ring}></div>
+						<div className={styles.blog_list_spinner_ring}></div>
+						<div className={styles.blog_list_spinner_ring}></div>
+					</div>
+					
+					{/* Loading文字 */}
+					<div className={styles.blog_list_text}>LOADING</div>
+					
+					{/* 进度条 */}
+					<div className={styles.blog_list_progress}>
+						<div className={styles.blog_list_progress_bar}></div>
+					</div>
+				</div>
 			</div>
-		</div>
-		: (
-			<Layout wrapperClassName="blog=-list__page">
+		);
+	}
+
+	return (
+		<Layout wrapperClassName="blog=-list__page">
+				
 				{!isPaginated && isBlogOnlyMode && <Hero />}
 				<BackToTopButton />
 
@@ -355,9 +361,9 @@ function BlogListPageContent(props: Props) {
 							</div>
 						</motion.main>
 					</div>
-				</div>
-			</Layout>
-		);
+					</div>
+		</Layout>
+	);
 }
 
 export default function BlogListPage(props: Props): JSX.Element {
