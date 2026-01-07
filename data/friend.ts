@@ -1,6 +1,6 @@
 export const Friends: Friend[] = [
 	{
-		avatar: "	https://blog.lkurococ.top/_next/image?url=https%3A…%2F600292e5a454abe3b6e653801834fb60.jpg&w=48&q=75",
+		avatar: "https://cdn.lkurococ.top/2024/10/600292e5a454abe3b6e653801834fb60.jpg",
 		description: "被子外面很危险！",
 		title: "Kurococ Liu",
 		website: "https://blog.lkurococ.top/"
@@ -29,18 +29,11 @@ export const Friends: Friend[] = [
 		title: "清絮的博客",
 		website: "https://blog.linioi.com/"
 	},
-	// {
-	//   title: "妖の森",
-	//   website: "https://fjwr.xyz",
-	//   avatar: "https://cdn.fjwr.xyz:1883/handsome/assets/img/header.jpg",
-	//   description: "一个划水摸鱼的博主",
-	// },
 	{
-		avatar:
-      "https://cravatar.cn/avatar/6a0d12a88075ef7d7c6f0483bacf3cb4?d=identicon",
-		description: "A New Story Born",
-		title: "Trtyr’s Blog",
-		website: "https://www.trtyr.top/"
+	  title: "妖の森",
+	  website: "https://fjwr.xyz",
+	  avatar: "https://img-tx.fjwrr.com/nas/2024/10/16/670f65e1ad532.webp",
+	  description: "一个划水摸鱼的博主",
 	},
 	{
 		avatar: "https://cloud.gumengyo.top/avatar.png",
@@ -59,12 +52,6 @@ export const Friends: Friend[] = [
 		description: "缘，妙不可言",
 		title: "喵二の小博客",
 		website: "https://www.miaoer.xyz"
-	},
-	{
-		avatar: "https://img.yuano.cc/upload/wulimiao.jpg",
-		description: "我在网络中蜗居的小窝",
-		title: "元のDiary",
-		website: "https://blog.yuano.cc"
 	}
 ];
 
@@ -75,7 +62,7 @@ export interface Friend {
 	avatar?: any
 }
 
-// 昵称：蓝莓
-// 网址：https://https://bluelanm.github.io/my-website
-// 站点图标：https://https://bluelanm.github.io/my-website/img/3.ico
-// 描述：据说最高级的快乐有三种：自律，爱，创造。
+// 昵称：LanM
+// 网址：https://bluelanm.github.io
+// 站点图标：https://bluelanm.github.io/my-website/img/3.ico
+// 描述：蓝莓
