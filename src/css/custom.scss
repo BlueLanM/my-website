@@ -832,6 +832,13 @@ html[data-theme="dark"] .footer {
 	}
 	.navbar-sidebar {
 		display: block;
+		height: 100vh !important;
+		max-height: 100vh !important;
+	}
+	.navbar-sidebar__items {
+		overflow-y: auto !important;
+		height: calc(100vh - var(--ifm-navbar-height)) !important;
+		max-height: calc(100vh - var(--ifm-navbar-height)) !important;
 	}
 }
 code {
@@ -1001,4 +1008,29 @@ div[class^="announcementBar_"] {
 }
 .transition {
 	transition: all 0.3s ease;
+}
+/* 访问统计样式 */
+.footer__stats {
+	margin: 1rem 0;
+	padding: 1rem;
+	border-top: 1px solid var(--ifm-toc-border-color);
+	text-align: center;
+	font-size: 0.9rem;
+	color: var(--ifm-secondary-text-color);
+}
+.footer__stats span[id^="busuanzi_value"] {
+	margin: 0 4px;
+	font-weight: bold;
+	color: var(--ifm-color-primary);
+}
+/* 移动端响应式 */
+@media (max-width: 768px) {
+	.footer__stats > div:first-child {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.footer__stats > div:first-child > span {
+		margin-right: 0 !important;
+	}
 }

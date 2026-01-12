@@ -185,9 +185,9 @@ function BlogRecommend({
 								<ul className="blog__recommend">
 									<Fade direction="up" duration={800} triggerOnce={true}>
 										<Swiper
-											spaceBetween={50}
+											spaceBetween={30}
 											slidesPerGroup={1}
-											slidesPerView={2}
+											slidesPerView={1}
 											loop={true}
 											speed={5000}
 											autoplay={{
@@ -197,11 +197,17 @@ function BlogRecommend({
 											}}
 											freeMode={true}
 											modules={[Autoplay, Navigation, FreeMode]}
+											breakpoints={{
+												768: {
+													slidesPerView: 2,
+													spaceBetween: 50
+												}
+											}}
 										>
 											{recommendedPosts.map((post) => {
 												return (
-													<li className={clsx("card")} key={post.permalink}>
-														<SwiperSlide>
+													<SwiperSlide key={post.permalink}>
+														<div className={clsx("card")}>
 															{post.frontMatter.image && (
 																<div className={clsx("card__image")}>
 																	<Image
@@ -219,8 +225,8 @@ function BlogRecommend({
 																</h4>
 																<p>{post.description}</p>
 															</div>
-														</SwiperSlide>
-													</li>
+														</div>
+													</SwiperSlide>
 												);
 											})}
 										</Swiper>
@@ -259,23 +265,23 @@ function BlogListPageContent(props: Props) {
 
 	return loading
 		? <div className={styles.blog_list}>
-				<div className={styles.blog_list_content}>
-					{/* 旋转环动画 */}
-					<div className={styles.blog_list_spinner}>
-						<div className={styles.blog_list_spinner_ring}></div>
-						<div className={styles.blog_list_spinner_ring}></div>
-						<div className={styles.blog_list_spinner_ring}></div>
-					</div>
-					
-					{/* Loading文字 */}
-					<div className={styles.blog_list_text}>LOADING</div>
-					
-					{/* 进度条 */}
-					<div className={styles.blog_list_progress}>
-						<div className={styles.blog_list_progress_bar}></div>
-					</div>
+			<div className={styles.blog_list_content}>
+				{/* 旋转环动画 */}
+				<div className={styles.blog_list_spinner}>
+					<div className={styles.blog_list_spinner_ring}></div>
+					<div className={styles.blog_list_spinner_ring}></div>
+					<div className={styles.blog_list_spinner_ring}></div>
+				</div>
+
+				{/* Loading文字 */}
+				<div className={styles.blog_list_text}>LOADING</div>
+
+				{/* 进度条 */}
+				<div className={styles.blog_list_progress}>
+					<div className={styles.blog_list_progress_bar}></div>
 				</div>
 			</div>
+		</div>
 		: (
 			<Layout wrapperClassName="blog=-list__page">
 				{!isPaginated && isBlogOnlyMode && <Hero />}

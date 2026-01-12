@@ -24,7 +24,7 @@ const config = {
 	organizationName: "BlueLanM",
 	plugins: [
 		"docusaurus-plugin-sass",
-		// path.resolve(__dirname, "./src/plugin/plugin-busuanzi"),
+		path.resolve(__dirname, "./src/plugin/plugin-busuanzi"),
 		path.resolve(__dirname, "./src/plugin/plugin-baidu-tongji"),
 		path.resolve(__dirname, "./src/plugin/plugin-google"),
 		path.resolve(__dirname, "./src/plugin/plugin-baidu-push"),
@@ -96,14 +96,7 @@ const config = {
 
 	projectName: "my-website",
 
-	scripts: [
-		{
-			async: true,
-			src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js"
-		}
-	],
-
-	tagline: "据说最高级的快乐有三种：自律，爱，创造",
+	tagline: "蓝莓",
 
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -121,7 +114,7 @@ const config = {
 			},
 			footer: {
 
-				copyright: "<span style='font-size:24px'>@2023 LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://docusaurus.io/\"></a><a href='https://vercel.com/'><img className='footer_vercel' style='vertical-align: bottom;' src='https://images.ctfassets.net/e5382hct74si/78Olo8EZRdUlcDUFQvnzG7/fa4cdb6dc04c40fceac194134788a0e2/1618983297-powered-by-vercel.svg'></a>",
+				copyright: "<span style='font-size:24px'>@LanM. All rights reserved.🚀</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"https://docusaurus.io/\"></a>",
 
 				// copyright: `@${new Date().getFullYear()} LanM. All rights reserved.`,
 				links: [

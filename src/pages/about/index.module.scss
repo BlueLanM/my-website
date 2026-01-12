@@ -2,65 +2,59 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+	overflow: hidden;
+	position: relative;
+	padding: 4rem 0;
+	text-align: center;
 }
-
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+	.heroBanner {
+		padding: 2rem;
+	}
 }
-
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 .socialData {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	column-gap: 0.5rem;
 }
-
 .data_mine {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
-
 .data_mine img {
-  flex: 0 0 33%;
+	flex: 0 0 33%;
 }
-
 .blog_history {
-  li {
-    // list-style-image: url("/img/about/circle-color.svg");
-
-    list-style-type: circle;
-  }
-  li::marker {
-    font-size: 25px;
-
-    color: blueviolet;
-  }
-  li:not(:last-child) {
-    position: relative;
-
-    &::after {
-      content: "";
-      border: 1px solid;
-      position: absolute;
-      height: 1rem;
-      bottom: -13px;
-      left: -18px;
-    }
-  }
+	li {
+		// list-style-image: url("/img/about/circle-color.svg");
+		list-style-type: circle;
+	}
+	li::marker {
+		font-size: 25px;
+		color: blueviolet;
+	}
+	li:not(:last-child) {
+		position: relative;
+		&::after {
+			position: absolute;
+			left: -18px;
+			bottom: -13px;
+			border: 1px solid;
+			height: 1rem;
+			content: "";
+		}
+	}
+}
+.about_bottom{
+	margin-bottom: 20px;
 }

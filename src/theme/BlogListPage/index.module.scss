@@ -4,7 +4,7 @@
 	right: 1rem;
 	// bottom: 1rem;
 	top: 1rem;
-	z-index: 99999;
+	z-index: 50;
 	cursor: move;
 	text-align: left;
 }
@@ -22,7 +22,7 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 999999 !important;
+	z-index: 9999 !important;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
