@@ -283,13 +283,13 @@ const config = {
 						position: "right",
 						to: "https://steamcommunity.com/profiles/76561198892079974/"
 					},
-					// {
-					// 	position: "right",
-					// 	className: "header-traval",
-					// 	to: "https://www.travellings.cn/go.html",
-					// 	html: "<img style='width:6rem;vertical-align: bottom;'  src='https://www.travellings.cn/assets/logo.gif'/>"
-					// 	// html:`<img style='width:1.7rem;vertical-align: bottom;' src='https://www.travellings.cn/assets/travelling-light.png'/>`
-					// },
+					{
+						position: "right",
+						className: "header-traval",
+						to: "https://www.travellings.cn/go.html",
+						html: "<img style='width:6rem;vertical-align: bottom;' alt='开往-友链接力' src='https://www.travellings.cn/assets/logo.gif'/>"
+						// html:`<img style='width:1.7rem;vertical-align: bottom;' src='https://www.travellings.cn/assets/travelling-light.png'/>`
+					},
 					{
 						html: "<img src=\"https://foreverblog.cn/assets/logo/logo_en_default.png\" alt=\"\" style=\"width:auto;height:16px;vertical-align: middle;\" title=\"穿梭虫洞-随机访问十年之约友链博客\">",
 						position: "right",
