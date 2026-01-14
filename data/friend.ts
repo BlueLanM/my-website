@@ -58,6 +58,18 @@ export const Friends: Friend[] = [
 		description: "迄今所有人生都大写着失败，但不妨碍我继续向前✨",
 		title: "XingJiのBlog",
 		website: "https://love.xingji.fun/"
+	},
+	{
+		avatar: "https://hanlife02.com/api/v2/objects/avatar/vrkkxm60zb217or1qu.jpg",
+		description: "Don't stay awake for too long.",
+		title: "Ethan",
+		website: "https://hanlife02.com/"
+	},
+	{
+		avatar: "https://cn.cravatar.com/avatar/e6db963600dd82ff9d9e21998b2bd35d",
+		description: "期待下雨天的夜晚",
+		title: "一叶竹",
+		website: "https://iyyz.org"
 	}
 ];
 
