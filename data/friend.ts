@@ -30,10 +30,10 @@ export const Friends: Friend[] = [
 		website: "https://blog.linioi.com/"
 	},
 	{
-	  title: "妖の森",
-	  website: "https://fjwr.xyz",
-	  avatar: "https://img-tx.fjwrr.com/nas/2024/10/16/670f65e1ad532.webp",
-	  description: "一个划水摸鱼的博主",
+		avatar: "https://img.fjwr.xyz/nas/20251128/4bfe173104e9fba3709da15957b8f5c5.jpg",
+		description: "折腾！永无止境",
+		title: "妖の森",
+		website: "https://fjwr.xyz"
 	},
 	{
 		avatar: "https://cloud.gumengyo.top/avatar.png",
