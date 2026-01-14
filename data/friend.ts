@@ -52,6 +52,12 @@ export const Friends: Friend[] = [
 		description: "缘，妙不可言",
 		title: "喵二の小博客",
 		website: "https://www.miaoer.xyz"
+	},
+	{
+		avatar: "https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg",
+		description: "迄今所有人生都大写着失败，但不妨碍我继续向前✨",
+		title: "XingJiのBlog",
+		website: "https://love.xingji.fun/"
 	}
 ];
 
