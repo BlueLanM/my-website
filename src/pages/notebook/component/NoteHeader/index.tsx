@@ -34,16 +34,16 @@ function NoteHeader() {
 			<h3>本站信息</h3>
 			<pre>
 				<p>
-					<strong>网站名称：LanM蓝莓Blog</strong>
+					<strong>网站名称：LanM</strong>
 				</p>
 				<p>
-					<strong>网站地址：https://bluelanm.github.io/my-website</strong>
+					<strong>网站地址：https://bluelanm.github.io</strong>
 				</p>
 				<p>
 					<strong>网站头像：https://bluelanm.github.io/my-website/img/3.ico</strong>
 				</p>
 				<div>
-					<strong>网站描述：据说最高级的快乐有三种：自律，爱，创造。</strong>
+					<strong>网站描述：蓝莓</strong>
 				</div>
 			</pre>
 		</div>
