@@ -87,10 +87,15 @@ export interface Friend {
 \tavatar?: any
 }
 
-// 昵称：LanM
-// 网址：https://bluelanm.github.io
-// 站点图标：https://bluelanm.github.io/my-website/img/3.ico
-// 描述：蓝莓`;
+/*
+  申请友链~
+  
+	昵称：LanM
+	网址：https://bluelanm.github.io
+	站点图标：https://bluelanm.github.io/my-website/img/3.ico
+	描述：蓝莓
+  
+*/`;
 
 		return code;
 	};
