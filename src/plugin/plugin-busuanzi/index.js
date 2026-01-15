@@ -6,9 +6,7 @@ module.exports = function(context, options) {
 				postBodyTags: [
 					{
 						attributes: {
-							async: true,
-							defer: true,
-							src: `${context.siteConfig.baseUrl}busuanzi.abbr.min.js`
+							src: "//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js"
 						},
 						tagName: "script"
 					}
