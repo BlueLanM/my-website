@@ -111,7 +111,6 @@ function BlogPostGridItems({ items }: BlogPostItemsProps): JSX.Element {
 					"0"
           + (dateObj.getMonth() + 1)
 				).slice(-2)}-${("0" + dateObj.getDate()).slice(-2)}`;
-				console.log(blogMetaData);
 
 				return (
 					<div className="post__list-item" key={blogMetaData.permalink}>

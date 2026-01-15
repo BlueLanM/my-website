@@ -41,7 +41,7 @@ export default function DocItemContent({ children }) {
 	const syntheticTitle = useSyntheticTitle();
 	const { metadata } = useDoc();
 	const frontData = metadata.frontMatter;
-	console.log(metadata);
+
 	const createDate = dayjs(frontData.date).format("YYYY/MM/DD");
 	const weekDay = dayjs(frontData.date).day();
 
