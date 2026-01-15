@@ -8,6 +8,9 @@ const path = require("path");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	baseUrl: "/my-website/",
+	clientModules: [
+		path.resolve(__dirname, "./src/client-modules/busuanzi.js")
+	],
 	deploymentBranch: "gh-pages",
 	favicon: "img/favicon.ico",
 	i18n: {
