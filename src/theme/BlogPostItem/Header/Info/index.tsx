@@ -129,9 +129,7 @@ export default function BlogPostItemHeaderInfo({
 							<Spacer />
 							<div className={styles.weather}>
 								<Icon icon="mdi:eye" color="#6F67FF" />
-								<span id="busuanzi_container_page_pv">
-									<span id="busuanzi_value_page_pv"></span>
-								</span>
+								<span id="busuanzi_page_pv">加载中...</span>
 							</div>
 						</>
 					}
