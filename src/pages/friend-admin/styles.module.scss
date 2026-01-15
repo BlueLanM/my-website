@@ -1,0 +1,253 @@
+.adminContainer {
+	margin: 2rem auto;
+	padding: 2rem;
+	max-width: 1200px;
+	h1 {
+		margin-bottom: 2rem;
+		text-align: center;
+		color: var(--ifm-color-primary);
+	}
+	h2 {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		color: var(--ifm-color-primary-dark);
+	}
+	h3 {
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+	}
+}
+.actions {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+	gap: 1rem;
+	button {
+		padding: 0.75rem 1.5rem;
+		border: none;
+		border-radius: 8px;
+		cursor: pointer;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		&:hover {
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+			transform: translateY(-2px);
+		}
+	}
+}
+.btnAdd {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+}
+.btnCopy {
+	background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+	color: white;
+}
+.editForm {
+	margin-bottom: 2rem;
+	padding: 2rem;
+	border: 2px solid var(--ifm-color-primary);
+	border-radius: 12px;
+	background: var(--ifm-card-background-color);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	h2 {
+		margin-top: 0;
+	}
+}
+.formGroup {
+	margin-bottom: 1.5rem;
+	label {
+		display: block;
+		margin-bottom: 0.5rem;
+		font-weight: 600;
+		color: var(--ifm-font-color-base);
+	}
+	input {
+		padding: 0.75rem;
+		border: 1px solid var(--ifm-color-emphasis-300);
+		border-radius: 6px;
+		width: 100%;
+		background: var(--ifm-background-color);
+		font-size: 1rem;
+		color: var(--ifm-font-color-base);
+		transition: border-color 0.3s ease;
+		&:focus {
+			border-color: var(--ifm-color-primary);
+			outline: none;
+			box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+		}
+	}
+}
+.avatarPreview {
+	margin-top: 1rem;
+	border: 2px solid var(--ifm-color-primary);
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+}
+.formActions {
+	display: flex;
+	gap: 1rem;
+	margin-top: 2rem;
+	button {
+		flex: 1;
+		padding: 0.75rem;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		&:hover {
+			transform: translateY(-2px);
+		}
+	}
+}
+.btnSave {
+	background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+	color: white;
+	&:hover {
+		box-shadow: 0 4px 12px rgba(17, 153, 142, 0.3);
+	}
+}
+.btnCancel {
+	background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+	color: white;
+	&:hover {
+		box-shadow: 0 4px 12px rgba(238, 9, 121, 0.3);
+	}
+}
+.friendList {
+	margin-bottom: 2rem;
+	table {
+		overflow: hidden;
+		border-collapse: collapse;
+		border-radius: 8px;
+		width: 100%;
+		background: var(--ifm-card-background-color);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		thead {
+			background: var(--ifm-color-primary);
+			color: white;
+			th {
+				padding: 1rem;
+				text-align: left;
+				font-weight: 600;
+			}
+		}
+		tbody {
+			tr {
+				border-bottom: 1px solid var(--ifm-color-emphasis-200);
+				&:hover {
+					background: var(--ifm-color-emphasis-100);
+				}
+				td {
+					padding: 1rem;
+					vertical-align: middle;
+					a {
+						text-decoration: none;
+						color: var(--ifm-color-primary);
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.avatar {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+}
+.btnEdit {
+	margin-right: 0.5rem;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 6px;
+	background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+	cursor: pointer;
+	color: white;
+	transition: all 0.3s ease;
+	&:hover {
+		box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+		transform: translateY(-2px);
+	}
+}
+.btnDelete {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 6px;
+	background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+	cursor: pointer;
+	color: white;
+	transition: all 0.3s ease;
+	&:hover {
+		box-shadow: 0 4px 12px rgba(250, 112, 154, 0.3);
+		transform: translateY(-2px);
+	}
+}
+.codePreview {
+	margin-bottom: 2rem;
+	padding: 1.5rem;
+	border-radius: 8px;
+	background: var(--ifm-card-background-color);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	pre {
+		overflow-x: auto;
+		padding: 1rem;
+		border-radius: 6px;
+		max-height: 400px;
+		background: var(--ifm-code-background);
+		code {
+			line-height: 1.6;
+			font-family: 'Courier New', monospace;
+			font-size: 0.9rem;
+			color: var(--ifm-font-color-base);
+		}
+	}
+}
+.instructions {
+	padding: 1.5rem;
+	border-left: 4px solid var(--ifm-color-primary);
+	border-radius: 8px;
+	background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+	ol {
+		margin-bottom: 0;
+		padding-left: 1.5rem;
+		li {
+			margin-bottom: 0.75rem;
+			line-height: 1.6;
+			code {
+				padding: 0.2rem 0.4rem;
+				border-radius: 4px;
+				background: var(--ifm-code-background);
+				font-size: 0.9em;
+			}
+		}
+	}
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+	.adminContainer {
+		padding: 1rem;
+	}
+	.actions {
+		flex-direction: column;
+	}
+	.friendList table {
+		font-size: 0.85rem;
+		thead th,
+		tbody td {
+			padding: 0.5rem;
+		}
+	}
+	.btnEdit,
+	.btnDelete {
+		padding: 0.4rem 0.6rem;
+		font-size: 0.85rem;
+	}
+}

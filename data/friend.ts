@@ -88,6 +88,12 @@ export const Friends: Friend[] = [
 		description: "阅己，越己，悦己",
 		title: "悦己",
 		website: "http://www.yveji.com"
+	},
+	{
+		avatar: "https://blog.chenmyawa.top/avatar.jpg",
+		description: "这是一只鸽子，只会咕咕叫",
+		title: "Chenmyの小破站",
+		website: "https://blog.chenmyawa.top/"
 	}
 ];
 
@@ -98,7 +104,12 @@ export interface Friend {
 	avatar?: any
 }
 
-// 昵称：LanM
-// 网址：https://bluelanm.github.io
-// 站点图标：https://bluelanm.github.io/my-website/img/3.ico
-// 描述：蓝莓
+/*
+  申请友链~
+  ```
+	昵称：LanM
+	网址：https://bluelanm.github.io
+	站点图标：https://bluelanm.github.io/my-website/img/3.ico
+	描述：蓝莓
+  ```
+*/
