@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import clsx from "clsx";
 import { translate } from "@docusaurus/Translate";
 import { usePluralForm } from "@docusaurus/theme-common";
@@ -94,25 +94,6 @@ export default function BlogPostItemHeaderInfo({
 		}
 	];
 	const weekDay = dayjs(frontMatter.date).day();
-
-	useEffect(() => {
-		// 手动触发不蒜子刷新
-		const fetchBusuanzi = () => {
-			if (typeof window !== "undefined" && window.busuanzi) {
-				window.busuanzi.fetch();
-			} else {
-				const checkInterval = setInterval(() => {
-					if (window.busuanzi) {
-						window.busuanzi.fetch();
-						clearInterval(checkInterval);
-					}
-				}, 100);
-				setTimeout(() => clearInterval(checkInterval), 5000);
-			}
-		};
-		const timer = setTimeout(fetchBusuanzi, 100);
-		return () => clearTimeout(timer);
-	}, []);
 
 	return (
 		<div className={clsx(styles.container, "margin-vert--md", className)}>

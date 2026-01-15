@@ -10,27 +10,17 @@ import RunTime from "@site/src/components/RunTime";
 
 export default function FooterLayout({ style, links, logo, copyright }) {
 	useEffect(() => {
-		// 手动触发不蒜子刷新
-		const fetchBusuanzi = () => {
-			if (typeof window !== "undefined" && window.busuanzi) {
-				// 如果不蒜子已加载，手动触发fetch
-				window.busuanzi.fetch();
-			} else {
-				// 如果脚本还没加载，监听脚本加载完成
-				const checkInterval = setInterval(() => {
-					if (window.busuanzi) {
-						window.busuanzi.fetch();
-						clearInterval(checkInterval);
-					}
-				}, 100);
+		// 检测不蒜子脚本是否加载成功
+		const checkBusuanzi = () => {
+			const pvElement = document.getElementById("busuanzi_site_pv");
 
-				// 5秒后停止检查
-				setTimeout(() => clearInterval(checkInterval), 5000);
+			if (pvElement && pvElement.textContent === "--") {
+				console.log("等待不蒜子统计加载...");
 			}
 		};
 
-		// 延迟执行，确保DOM已渲染
-		const timer = setTimeout(fetchBusuanzi, 100);
+		// 延迟检查，给脚本加载时间
+		const timer = setTimeout(checkBusuanzi, 3000);
 
 		return () => clearTimeout(timer);
 	}, []);

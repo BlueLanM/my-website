@@ -4,7 +4,7 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-import React, { useEffect } from "react";
+import React from "react";
 import clsx from "clsx";
 import { ThemeClassNames } from "@docusaurus/theme-common";
 import { useDoc } from "@docusaurus/theme-common/internal";
@@ -73,25 +73,6 @@ export default function DocItemContent({ children }) {
 			status: "mdi:weather-snowy"
 		}
 	];
-
-	useEffect(() => {
-		// 手动触发不蒜子刷新
-		const fetchBusuanzi = () => {
-			if (typeof window !== "undefined" && window.busuanzi) {
-				window.busuanzi.fetch();
-			} else {
-				const checkInterval = setInterval(() => {
-					if (window.busuanzi) {
-						window.busuanzi.fetch();
-						clearInterval(checkInterval);
-					}
-				}, 100);
-				setTimeout(() => clearInterval(checkInterval), 5000);
-			}
-		};
-		const timer = setTimeout(fetchBusuanzi, 100);
-		return () => clearTimeout(timer);
-	}, []);
 
 	return (
 		<div className={clsx(ThemeClassNames.docs.docMarkdown, "markdown")}>
