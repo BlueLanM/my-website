@@ -1,25 +1,44 @@
-name: Deploy Github pages
+name: 自动部署到 GitHub Pages
+
 on:
   push:
     branches:
-      - master
+      - master  # 当推送到 master 分支时触发
+    paths:
+      - 'data/friend.ts'  # 只有当友链文件改变时才触发
+      - 'blog/**'
+      - 'docs/**'
+      - 'src/**'
+
+  workflow_dispatch:  # 允许手动触发
+
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+    
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
-      with:
-        persist-credentials: false
-    - name: Install and Build
-      run: |
-        yarn
-        yarn build 
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-        ACCESS_TOKEN: ${{ secrets.GITEE_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
-        BUILD_SCRIPT: yarn && GIT_USER=bluelanm yarn deploy
-        
+      - name: 检出代码
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 获取完整的 git 历史
+      
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      
+      - name: 安装依赖
+        run: yarn install --frozen-lockfile
+      
+      - name: 构建网站
+        run: yarn build
+      
+      - name: 部署到 GitHub Pages
+        env:
+          GIT_USER: BlueLanM
+          GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          yarn deploy:gh
