@@ -1,11 +1,5 @@
 export const Friends: Friend[] = [
 	{
-		avatar: "https://cravatar.cn/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200",
-		description: "求知若愚，虚怀若谷",
-		title: "CWorld’s Blog",
-		website: "https://blog.cworld.top/"
-	},
-	{
 		avatar: "https://cdn-p.freejishu.com/img/2022/01/19/gNxI.jpg",
 		description: "A New World",
 		title: "freejishu的美丽世界",
@@ -84,10 +78,16 @@ export const Friends: Friend[] = [
 		website: "https://blog.chenmyawa.top/"
 	},
 	{
-		avatar: "	https://cravatar.cn/avatar/73426b309c6e3ef2cf3a82ff23353351",
+		avatar: "https://cravatar.cn/avatar/73426b309c6e3ef2cf3a82ff23353351",
 		description: "在回忆的白纸上，绘上梦想的碎片。",
 		title: "MqyGalaxy|Blog",
 		website: "https://blog.moeqy.com/"
+	},
+	{
+		avatar: "https://avatars.githubusercontent.com/u/81922999?v=4",
+		description: "星河滚烫，无问西东",
+		title: "百里飞洋の博客",
+		website: "https://blog.meta-code.top/"
 	}
 ];
 
