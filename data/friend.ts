@@ -1,11 +1,5 @@
 export const Friends: Friend[] = [
 	{
-		avatar: "https://cdn.lkurococ.top/2024/10/600292e5a454abe3b6e653801834fb60.jpg",
-		description: "被子外面很危险！",
-		title: "Kurococ Liu",
-		website: "https://blog.lkurococ.top/"
-	},
-	{
 		avatar: "https://avatars.githubusercontent.com/u/54560462?v=4",
 		description: "天天摸鱼身体棒~",
 		title: "matto",
