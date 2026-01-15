@@ -76,6 +76,12 @@ export const Friends: Friend[] = [
 		description: "生活明朗，万物可爱",
 		title: "安知鱼",
 		website: "https://blog.anheyu.com/"
+	},
+	{
+		avatar: "https://lxnchan.cn/assets/logo-v2.webp",
+		description: "先空着2333",
+		title: "泠泫凝的异次元空间",
+		website: "https://lxnchan.cn"
 	}
 ];
 
