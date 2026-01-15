@@ -8,7 +8,7 @@ module.exports = function(context, options) {
 						attributes: {
 							async: true,
 							defer: true,
-							src: `${context.siteConfig.baseUrl}busuanzi.min.js`
+							src: `${context.siteConfig.baseUrl}busuanzi.abbr.min.js`
 						},
 						tagName: "script"
 					}

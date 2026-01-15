@@ -179,10 +179,16 @@ const config = {
 			giscus: {
 				category: "Comments",
 				categoryId: "DIC_kwDOI4VNdc4CUC_9",
+				crossorigin: "anonymous",
+				emitMetadata: "0",
+				inputPosition: "bottom",
 				lang: "zh-CN",
 				mapping: "pathname",
+				reactionsEnabled: "1",
 				repo: "BlueLanM/my-website",
-				repoId: "R_kgDOI4VNdQ"
+				repoId: "R_kgDOI4VNdQ",
+				strict: "0",
+				theme: "preferred_color_scheme"
 			},
 			image: "img/docusaurus-social-card.jpg",
 			navbar: {
@@ -277,10 +283,10 @@ const config = {
 						to: "https://steamcommunity.com/profiles/76561198892079974/"
 					},
 					{
-						position: "right",
 						className: "header-traval",
-						to: "https://www.travellings.cn/go.html",
-						html: "<img style='width:6rem;vertical-align: bottom;' alt='开往-友链接力' src='https://www.travellings.cn/assets/logo.gif'/>"
+						html: "<img style='width:6rem;vertical-align: bottom;' alt='开往-友链接力' src='https://www.travellings.cn/assets/logo.gif'/>",
+						position: "right",
+						to: "https://www.travellings.cn/go.html"
 						// html:`<img style='width:1.7rem;vertical-align: bottom;' src='https://www.travellings.cn/assets/travelling-light.png'/>`
 					},
 					{
