@@ -1,11 +1,5 @@
 export const Friends: Friend[] = [
 	{
-		avatar: "https://avatars.githubusercontent.com/u/54560462?v=4",
-		description: "天天摸鱼身体棒~",
-		title: "matto",
-		website: "https://www.matto.top"
-	},
-	{
 		avatar: "https://cravatar.cn/avatar/1ffe42aa45a6b1444a786b1f32dfa8aa?s=200",
 		description: "求知若愚，虚怀若谷",
 		title: "CWorld’s Blog",
