@@ -41,10 +41,10 @@ function SiteInfo() {
 				<div className="bloghome__posts-card margin-bottom--md">
 					<div className="row bloginfo__card">
 						<div>
-              本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+							本站总访问量 <span id="busuanzi_site_pv">加载中...</span> 次
 						</div>
 						<div>
-              已有 <span id="busuanzi_value_site_uv"></span> 人在此留下脚印
+              				已有 <span id="busuanzi_site_uv">加载中...</span> 人在此留下脚印
 						</div>
 					</div>
 				</div>

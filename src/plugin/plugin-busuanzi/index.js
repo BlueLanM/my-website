@@ -1,20 +1,21 @@
 module.exports = function(context, options) {
 	return {
-		name: "docusaurus-plugin-busuanzi",
 		injectHtmlTags() {
 			return {
 				headTags: [],
-				preBodyTags: [],
 				postBodyTags: [
 					{
-						tagName: "script",
 						attributes: {
 							async: true,
-							src: "https://busuanzi.icodeq.com/busuanzi.pure.mini.js"
-						}
+							defer: true,
+							src: "/busuanzi.min.js"
+						},
+						tagName: "script"
 					}
-				]
+				],
+				preBodyTags: []
 			};
-		}
+		},
+		name: "docusaurus-plugin-busuanzi"
 	};
 };
