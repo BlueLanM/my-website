@@ -82,6 +82,12 @@ export const Friends: Friend[] = [
 		description: "先空着2333",
 		title: "泠泫凝的异次元空间",
 		website: "https://lxnchan.cn"
+	},
+	{
+		avatar: "http://www.yveji.com/vis/yveji_logo.png",
+		description: "阅己，越己，悦己",
+		title: "悦己",
+		website: "http://www.yveji.com"
 	}
 ];
 
