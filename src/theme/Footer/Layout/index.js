@@ -37,7 +37,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
 					borderTop: "1px solid var(--ifm-toc-border-color)",
 					color: "var(--ifm-secondary-text-color)",
 					fontSize: "0.9rem",
-					margin: "1rem 0",
+					margin: "0px",
 					padding: "1rem"
 				}}>
 					<div style={{ marginBottom: "0.5rem" }}>
@@ -57,12 +57,13 @@ export default function FooterLayout({ style, links, logo, copyright }) {
 					<RunTime time={"2023/02/08"} />
 				</div>
 				{(logo || copyright) && (
-					<div className="footer__bottom text--center">
+					<div className="footer__bottom text--center" style={{ margin: "0px" }}>
 						{logo && <div className="margin-bottom--sm">{logo}</div>}
-						{copyright}
-						<div style={{ marginTop: "0.5rem" }}>
+						<div>
 							<a href="https://icp.gov.moe/?keyword=20260324" target="_blank" rel="noreferrer">萌ICP备20260324号</a>
 						</div>
+						{copyright}
+
 					</div>
 				)}
 			</div>
