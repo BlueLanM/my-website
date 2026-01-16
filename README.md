@@ -42,15 +42,3 @@
 ![image](https://github.com/user-attachments/assets/447e9fbd-17a9-45fa-bdda-e6204e782fd3)
 ![image](https://github.com/user-attachments/assets/ecc30112-9fff-43a8-8c04-8a17dd422e70)
 
-
-## 📥 Start
-
-```sh
-git clone https://github.com/BlueLanM/my-website.git
-
-cd my-website
-
-yarn
-
-yarn start
-```
