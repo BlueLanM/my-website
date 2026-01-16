@@ -287,6 +287,12 @@ const config = {
 					},
 					{
 						className: "header-traval",
+						html: "<img src='https://travel.moe/images/logo/gif-kt/startup-pink-dark.gif' alt='异次元之旅' style=\"width:auto;height:24px;vertical-align: middle;\" title=’异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！‘ />",
+						position: "right",
+						to: "https://travel.moe/go.html"
+					},
+					{
+						className: "header-traval",
 						html: "<img style='width:6rem;vertical-align: bottom;' alt='开往-友链接力' src='https://www.travellings.cn/assets/logo.gif'/>",
 						position: "right",
 						to: "https://www.travellings.cn/go.html"

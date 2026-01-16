@@ -59,11 +59,10 @@ export default function FooterLayout({ style, links, logo, copyright }) {
 				{(logo || copyright) && (
 					<div className="footer__bottom text--center" style={{ margin: "0px" }}>
 						{logo && <div className="margin-bottom--sm">{logo}</div>}
-						<div>
+						<div style={{ marginTop: "0.5rem" }}>
 							<a href="https://icp.gov.moe/?keyword=20260324" target="_blank" rel="noreferrer">萌ICP备20260324号</a>
 						</div>
 						{copyright}
-
 					</div>
 				)}
 			</div>
