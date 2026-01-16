@@ -849,7 +849,6 @@ html[data-theme="dark"] .footer {
 		max-height: 100vh !important;
 	}
 	.navbar-sidebar__items {
-		overflow-y: auto !important;
 		height: calc(100vh - var(--ifm-navbar-height)) !important;
 		max-height: calc(100vh - var(--ifm-navbar-height)) !important;
 	}
