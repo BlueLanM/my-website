@@ -88,6 +88,12 @@ export const Friends: Friend[] = [
 		description: "星河滚烫，无问西东",
 		title: "百里飞洋の博客",
 		website: "https://blog.meta-code.top/"
+	},
+	{
+		avatar: "https://blog.adlamp.cn/upload/LOGO_max.png",
+		description: "这是一个网工的博客。",
+		title: "ADLAMP",
+		website: "https://blog.adlamp.cn/"
 	}
 ];
 
