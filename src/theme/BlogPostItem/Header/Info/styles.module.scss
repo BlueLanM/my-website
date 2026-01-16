@@ -1,22 +1,88 @@
 .container {
-  font-size: 0.9rem;
-  color: #5e5e5e;
-  svg {
-    margin: 0px 5px;
-    font-size: 1rem;
-  }
+	font-size: 0.9rem;
+	color: #5e5e5e;
+  
+	// 让子元素自动换行，优化小屏幕显示
+	> div {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+    
+		// 为子元素添加分隔符，但第一个元素不添加
+		> *:not(:first-child)::before {
+			margin-right: 0.5rem;
+			color: #ccc;
+			content: "|";
+		}
+		> time {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			gap: 0.3rem;
+		}
+	}
+	svg {
+		flex-shrink: 0;
+		margin: 0 3px;
+		font-size: 1rem;
+	}
 }
-
 html[data-theme="dark"] .container {
-  color: #c5c5c5;
+	color: #c5c5c5;
+	> div > *:not(:first-child)::before {
+		color: #666;
+	}
 }
-
 .week {
-  margin: 0px 5px;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+}
+.weather {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	gap: 0.2rem;
 }
 
-.weather {
-  display: flex;
-  align-items: center;
-  margin: 0px 5px 0 0;
+// 阅读时间专属样式
+.readingTime {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	gap: 0.2rem;
+}
+
+// 移动端优化
+@media (max-width: 768px) {
+	.container {
+		font-size: 0.85rem;
+		svg {
+			margin: 0 2px;
+			font-size: 0.95rem;
+		}
+	}
+  
+	// 在平板尺寸下隐藏阅读时间
+	.readingTime {
+		display: none;
+	}
+}
+
+// 超小屏幕优化
+@media (max-width: 480px) {
+	.container {
+		font-size: 0.8rem;
+		> div {
+			gap: 0.3rem;
+			> time {
+				gap: 0.3rem;
+			}
+		}
+		svg {
+			margin: 0 1px;
+			font-size: 0.9rem;
+		}
+	}
 }

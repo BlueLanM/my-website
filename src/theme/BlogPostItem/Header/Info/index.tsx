@@ -46,7 +46,7 @@ function Date({
 		<time
 			dateTime={date}
 			itemProp="datePublished"
-			style={{ alignItems: "center", display: "flex", lineHeight: "normal" }}
+			style={{ alignItems: "center", display: "flex", flexWrap: "wrap", justifyContent: "center", lineHeight: "normal" }}
 		>
 			<Icon icon="mdi:clock-time-three" color="#6F67FF" />
 			{formattedDate}
@@ -98,42 +98,33 @@ export default function BlogPostItemHeaderInfo({
 	return (
 		<div className={clsx(styles.container, "margin-vert--md", className)}>
 			<div>
-				<Date
-					date={date}
-					formattedDate={formattedDate}
-					children={
-						<>
-							<div className={styles.week}> {week[weekDay].time} </div>
-							<Spacer />
-							{frontMatter.weather ? (
-								weather.map((item: any) => {
-									if (item.name === frontMatter.weather) {
-										return (
-											<div className={styles.weather}>
-												<Icon icon={item.status} color="#6F67FF" />
-												<span> {item.name} </span>
-											</div>
-										);
-									}
-								})
-							) : (
-								<Icon icon="mdi:emoticon-dead-outline" />
-							)}
-							<Spacer />
-							{typeof readingTime !== "undefined" && (
-								<div className={styles.weather}>
-									<Icon icon="mdi:clipboard-text-clock" color="#6F67FF" />
-									<ReadingTime readingTime={readingTime} />
-								</div>
-							)}
-							<Spacer />
-							<div className={styles.weather}>
-								<Icon icon="mdi:eye" color="#6F67FF" />
-								<span id="busuanzi_page_pv">加载中...</span>
+				<Date date={date} formattedDate={formattedDate} children={null} />
+
+				<div className={styles.week}>{week[weekDay].time}</div>
+
+				{frontMatter.weather && weather.map((item: any) => {
+					if (item.name === frontMatter.weather) {
+						return (
+							<div className={styles.weather} key={item.name}>
+								<Icon icon={item.status} color="#6F67FF" />
+								<span>{item.name}</span>
 							</div>
-						</>
+						);
 					}
-				/>
+					return null;
+				})}
+
+				{typeof readingTime !== "undefined" && (
+					<div className={styles.readingTime}>
+						<Icon icon="mdi:clipboard-text-clock" color="#6F67FF" />
+						<ReadingTime readingTime={readingTime} />
+					</div>
+				)}
+
+				<div className={styles.weather}>
+					<Icon icon="mdi:eye" color="#6F67FF" />
+					<span id="busuanzi_page_pv">加载中...</span>
+				</div>
 			</div>
 		</div>
 	);
