@@ -447,10 +447,6 @@ html[data-theme="dark"] .navbar {
 }
 /* 语言切换下拉菜单样式 */
 .navbar__item.dropdown {
-	overflow: hidden;
-	max-width: 150px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	.navbar__link {
 		overflow: hidden;
 		max-width: 100%;
