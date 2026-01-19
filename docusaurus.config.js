@@ -291,7 +291,7 @@ const config = {
 						to: "https://travel.moe/go.html"
 					},
 					{
-						html: "<img height='18px' src='https://boringbay.com/api/badge/bluelanm.github.io'></img>",
+						html: "<img height='24px' style='vertical-align:middle;' src='https://boringbay.com/api/badge/bluelanm.github.io'></img>",
 						position: "right",
 						to: "https://boringbay.com"
 					},
