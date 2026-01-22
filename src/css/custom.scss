@@ -824,8 +824,43 @@ html[data-theme="dark"] .footer {
 		opacity: 1;
 	}
 }
+/* 平板尺寸导航栏优化 (997px-1100px) */
+@media (min-width: 997px) and (max-width: 1100px) {
+	.navbar__items {
+		gap: 0.25rem;
+	}
+	.navbar__item {
+		padding: 0 0.25rem;
+	}
+	.navbar__link {
+		padding: 0.25rem 0.5rem;
+		font-size: 0.9rem;
+	}
+	/* 隐藏部分外部徽章图片以节省空间 */
+	.navbar__item:has(img[src*="travel.moe"]),
+	.navbar__item:has(img[src*="boringbay.com"]),
+	.navbar__item:has(img[src*="foreverblog.cn"]) {
+		display: none;
+	}
+	/* 缩小 travellings 图片宽度 */
+	.header-traval img {
+		width: 4rem !important;
+	}
+	/* Logo 和标题间距优化 */
+	.navbar__brand {
+		margin-right: 0.5rem;
+	}
+	.navbar__title {
+		margin-left: 0.5rem;
+		font-size: 1.1rem;
+	}
+	/* 语言切换按钮优化 */
+	.navbar__item--locale-dropdown {
+		padding: 0 0.25rem;
+	}
+}
 /* 导航收缩相应尺寸调大 */
-@media (max-width: 1100px) {
+@media (max-width: 996px) {
 	.navbar>.container,
 	.navbar>.container-fluid {
 		padding: 0;
@@ -841,10 +876,12 @@ html[data-theme="dark"] .footer {
 	}
 	.navbar-sidebar {
 		display: block;
+		z-index: 99999 !important;
 		height: 100vh !important;
 		max-height: 100vh !important;
 	}
 	.navbar-sidebar__items {
+		z-index: 99999 !important;
 		height: calc(100vh - var(--ifm-navbar-height)) !important;
 		max-height: calc(100vh - var(--ifm-navbar-height)) !important;
 	}
