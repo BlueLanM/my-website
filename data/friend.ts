@@ -48,12 +48,6 @@ export const Friends: Friend[] = [
 		website: "https://hanlife02.com/"
 	},
 	{
-		avatar: "https://cn.cravatar.com/avatar/e6db963600dd82ff9d9e21998b2bd35d",
-		description: "期待下雨天的夜晚",
-		title: "一叶竹",
-		website: "https://iyyz.org"
-	},
-	{
 		avatar: "https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg",
 		description: "生活明朗，万物可爱",
 		title: "安知鱼",
