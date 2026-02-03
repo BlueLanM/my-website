@@ -82,6 +82,12 @@ export const Friends: Friend[] = [
 		description: "这是一个网工的博客。",
 		title: "ADLAMP",
 		website: "https://blog.adlamp.cn/"
+	},
+	{
+		avatar: "https://www.lapis.cafe/avatar.webp",
+		description: "理解以真实为本，但真实本身并不会自动呈现",
+		title: "时歌的博客",
+		website: "https://www.lapis.cafe"
 	}
 ];
 
