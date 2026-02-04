@@ -88,6 +88,12 @@ export const Friends: Friend[] = [
 		description: "理解以真实为本，但真实本身并不会自动呈现",
 		title: "时歌的博客",
 		website: "https://www.lapis.cafe"
+	},
+	{
+		avatar: "https://cozier-1315026820.cos.ap-guangzhou.myqcloud.com/%E5%A4%B4%E5%83%8F1.png",
+		description: "但行己路 无问山海",
+		title: "洗子の小窝",
+		website: "https://xizi.live/"
 	}
 ];
 
