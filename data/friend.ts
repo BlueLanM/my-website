@@ -94,6 +94,12 @@ export const Friends: Friend[] = [
 		description: "但行己路 无问山海",
 		title: "洗子の小窝",
 		website: "https://xizi.live/"
+	},
+	{
+		avatar: "https://www.qixz.cn/avatar.avif",
+		description: "青序成栈·向简而生",
+		title: "青序栈",
+		website: "https://www.qixz.cn/"
 	}
 ];
 
